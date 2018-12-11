@@ -160,36 +160,108 @@
 	</aside>
 
 	<div class="main inner">
-		<section class="inner-container" >
+		<section class="inner-container inner-container--wrap">
 			<ul class="breadcrumbs">
 				<li>
 					<a href="#">Главная</a>
 				</li>
 				<li>
-					Продажа
+					ЛК
 				</li>
 			</ul>
-			<h1 class="h1 tl-center mb-50">Вход</h1>
-			<form action="/" class="form form-login">
-				<div class="form__row">
-					<input type="text" class="form__input" placeholder="Почта/телефон">
+			<h1 class="h1 tl-center mb-50">Настройки</h1>
+			<div class="lk">
+				<div class="lk-row">
+					<div class="lk-user">
+						<div class="lk-user__img">
+							<img src="img/user-image.png" alt="alt">
+						</div>
+						<div class="lk-user__info">
+							<div class="lk-user__name">Иванов Артем</div>
+							<div class="lk-user__city">Москва</div>
+						</div>
+					</div>
+					<div class="lk-scale">
+						<div class="lk-scale__top">
+							<div class="lk-scale__content">
+								Продано: <span>7</span>
+							</div>
+							<div class="lk-scale__content">
+								Куплено: <span>3</span>
+							</div>
+						</div>
+						<div class="lk-scale__bottom">
+							<div class="lk-scale__row">
+								<span class="lk-scale__progress" style="width: 60%"></span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="form__row">
-					<input type="text" class="form__input" placeholder="Пароль">
+			</div>
+			<form action="/" class="form form-registration form-lk">
+				<div class="form-registration__wrap">
+					<div class="form-registration__item">
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Страна">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Город">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Индекс">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Улица/Дом/Квартира/Корпус">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="User name">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Имя">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Фамилия">
+						</div>
+					</div>
+					<div class="form-registration__item">
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Телефон">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Почта">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Введите номер карты">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Изменить пароль">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Подтвердить пароль">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Введите размеры обуви">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Введите размеры одежды верх">
+						</div>
+						<div class="form__row">
+							<input type="text" class="form__input" placeholder="Введите размеры одежды низ">
+						</div>
+					</div>
 				</div>
-				<button class="btn btn--green btn--registr maxw340">Регистрация</button>
-				<div class="registr-block maxw340">
-					<span>Регистрация через</span>
-					<a href="#" class="btn btn--vk">
-						<img src="img/vk.svg" alt="alt">
-					</a>
+				<div class="checkbox checkbox-small mb-15">
+					<input type="checkbox" id="check1" checked="">
+					<label for="check1" class="checkbox__label">Получать уведомления на почту</a></label>
 				</div>
-				<div class="registr-block maxw340">
-					<span>Нет аккаунта? <a href="#" class="linked-green">Зарегистрироваться</a></span>
+				<div class="checkbox checkbox-small">
+					<input type="checkbox" id="check2">
+					<label for="check2" class="checkbox__label">Получать sms уведомления</a></label>
 				</div>
+				<button class="btn btn--green btn--registr maxw340">Сохранить</button>
+				
 			</form>
 		</section>
-	
 	</div>
 
 	<footer class="footer footer-inner">

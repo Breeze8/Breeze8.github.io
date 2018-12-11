@@ -159,8 +159,8 @@
 		</nav>
 	</aside>
 
-	<div class="main inner">
-		<section class="inner-container" >
+	<div class="main inner inner--custom">
+		<section class="inner-container">
 			<ul class="breadcrumbs">
 				<li>
 					<a href="#">Главная</a>
@@ -169,27 +169,78 @@
 					Продажа
 				</li>
 			</ul>
-			<h1 class="h1 tl-center mb-50">Вход</h1>
-			<form action="/" class="form form-login">
-				<div class="form__row">
-					<input type="text" class="form__input" placeholder="Почта/телефон">
+			<div class="inner-container--max">
+				<h1 class="h1 tl-center mb-50">Продажа</h1>
+				<div class="sale">
+					<div class="sale-item">
+						<div class="sale-item__img">
+							<img src="img/sale.svg" alt="alt">
+						</div>
+						<p>Разместите товар по своей цене или продайте сразу</p>
+					</div>
+					<div class="sale-item">
+						<div class="sale-item__img">
+							<img src="img/telegram.svg" alt="alt">
+						</div>
+						<p>Отправьте его нам на проверку в течение двух дней</p>
+					</div>
+					<div class="sale-item">
+						<div class="sale-item__img">
+							<img src="img/money.svg" alt="alt">
+						</div>
+						<p>Получите желаемую сумму за товар</p>
+					</div>
 				</div>
-				<div class="form__row">
-					<input type="text" class="form__input" placeholder="Пароль">
-				</div>
-				<button class="btn btn--green btn--registr maxw340">Регистрация</button>
-				<div class="registr-block maxw340">
-					<span>Регистрация через</span>
-					<a href="#" class="btn btn--vk">
-						<img src="img/vk.svg" alt="alt">
-					</a>
-				</div>
-				<div class="registr-block maxw340">
-					<span>Нет аккаунта? <a href="#" class="linked-green">Зарегистрироваться</a></span>
-				</div>
-			</form>
+			</div>
 		</section>
 	
+	</div>
+
+	<div class="sale-drop">
+		<div class="sale-drop__wrap">
+			<div class="sale-drop__head">Укажите название товара</div>
+			<input type="text" class="sale-drop__input selectize-input--goods maxw100 selectize-input selectize-input--custom" placeholder="Например, Кроссовки Nike Air Jordan">
+			<div class="sale-drop__row sale-drop__row--custom">
+				<div class="sale-drop__item">
+					<div class="sale-drop__head">Размер</div>
+					<select class="selectize3 maxw100" placeholder="US  9">
+                        <option value="">Select a color</option>
+                        <option value="2018">US  9</option>
+                        <option value="2017">US  10</option>
+                        <option value="2016">US  11</option>
+                        <option value="2015">US  12</option>
+                    </select>
+				</div>
+				<div class="sale-drop__item">
+					<div class="sale-drop__head">Желаемая цена</div>
+					<div class="selectize-input--drop">
+						<input type="text" class="maxw100 sale-drop__input selectize-input selectize-input--custom" placeholder="5000">
+					</div>
+				</div>
+			</div>
+			<div class="sale-drop__block" id="drop-area">
+				<div class="sale-drop__block-head">Загрузите фотографии вашего товара</div>
+				<div class="sale-drop__block-img">
+					<img src="img/download.png" alt="alt">
+				</div>
+				<div class="sale-drop__block-move">ПЕРЕТАЩИТЕ ФАЙЛ</div>
+				<div class="sale-drop__block-text">
+					<form action="#">
+					  <div class="input-file-container">  
+					    <input class="input-file" id="my-file" type="file">
+					    <span>или</span>
+					    <label tabindex="0" for="my-file" class="input-file-trigger linked-green">Выберите из ПК</label>
+					  </div>
+					  <p class="file-return"></p>
+					</form>
+				</div>
+			</div>
+			<button class="btn btn--green btn--main">Продать товар</button>
+			<div class="checkbox tl-center">
+				<input type="checkbox" id="check1" checked="">
+				<label for="check1" class="checkbox__label">Согласен с <a href="#">Правилами сайта</a></label>
+			</div>
+		</div>
 	</div>
 
 	<footer class="footer footer-inner">
