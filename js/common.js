@@ -1,10 +1,10 @@
 $(function() {
 
-	$('.goods-images__main-wrap').slick({
+
+	$('.goods-images__main').slick({
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  arrows: false,
-		  // fade: true,
 		  vertical: true,
 		  verticalSwiping: true,
 		  rows: false,
@@ -13,7 +13,7 @@ $(function() {
 		$('.goods-images__preview').slick({
 			  slidesToShow: 4,
 			  slidesToScroll: 1,
-			  asNavFor: '.goods-images__main-wrap',
+			  asNavFor: '.goods-images__main',
 			  // centerMode: true,
 			  focusOnSelect: true,
 			  arrows: false,
@@ -282,18 +282,5 @@ $(function() {
 	fileInput.addEventListener( "change", function( event ) {  
 	    the_return.innerHTML = this.value;  
 	});  
- 	
 
 });
-
-
-// $(window).resize(function(){
-
-//     if($(this).width() < 992) {
-
-//          $('.goods-images__main').mCustomScrollbar("destroy");
-
-         
-//     }
-           
-// }).trigger("resize");
