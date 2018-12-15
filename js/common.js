@@ -1,13 +1,24 @@
-$(document).on("click",".goods-images__preview a[href^='#']",function(e){
-  var href=$(this).attr("href"),target=$(href).parents(".mCustomScrollbar"); 
-  if(target.length){
-    e.preventDefault();
-    target.mCustomScrollbar("scrollTo",href);
-  }
-});
-
-
 $(function() {
+
+	$('.goods-images__main-wrap').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  // fade: true,
+		  vertical: true,
+		  verticalSwiping: true,
+		  rows: false,
+		  asNavFor: '.goods-images__preview'
+		});
+		$('.goods-images__preview').slick({
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  asNavFor: '.goods-images__main-wrap',
+			  // centerMode: true,
+			  focusOnSelect: true,
+			  arrows: false,
+			  rows: false,
+		});
 
 	$('.main-sidebar-goods a[href*="#"]').on('click', function (e) {
 		e.preventDefault();
@@ -23,8 +34,6 @@ $(function() {
 		$(this).addClass('active');
 
 	});
-
-	$('.goods-images__main').mCustomScrollbar();
 
 	if($('.filter-content__wrap--first .filter-content__row').length > 10) {
 
@@ -248,7 +257,7 @@ $(function() {
 		responsiveWidth: 1010,
 		anchors:['firstPage','secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
 		// navigation: true,
-   		 menu: '.main-sidebar__list'
+   		 menu: '.main-sidebar__list',
 	});
 
  	if($('.s-filter-nav button').hasClass("mixitup-control-active")) {
@@ -278,29 +287,13 @@ $(function() {
 });
 
 
-$(window).resize(function(){
+// $(window).resize(function(){
 
-    if($(this).width() < 992) {
+//     if($(this).width() < 992) {
 
-         $('.goods-images__main').mCustomScrollbar("destroy");
+//          $('.goods-images__main').mCustomScrollbar("destroy");
 
-         $('.goods-images__main-wrap').slick({
-		  slidesToShow: 1,
-		  slidesToScroll: 1,
-		  arrows: false,
-		  fade: true,
-		  rows: false,
-		  asNavFor: '.goods-images__preview'
-		});
-		$('.goods-images__preview').slick({
-			  slidesToShow: 3,
-			  slidesToScroll: 1,
-			  asNavFor: '.goods-images__main-wrap',
-			  centerMode: true,
-			  focusOnSelect: true,
-			  arrows: false,
-			  rows: false,
-		});
-    }
+         
+//     }
            
-}).trigger("resize");
+// }).trigger("resize");
