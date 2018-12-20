@@ -144,6 +144,13 @@ $(function() {
 		      }
 		    },
 		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		      }
+		    },
+		    {
 		      breakpoint: 479,
 		      settings: {
 		        slidesToShow: 1,
@@ -198,8 +205,6 @@ $(function() {
 		slidesToShow: 4,
   		slidesToScroll: 1,
   		dots: true,
- 		nextArrow: $('.next'),
- 		prevArrow: $('.prev'),
   		responsive: [
 		    {
 		      breakpoint: 1921,
@@ -211,15 +216,24 @@ $(function() {
 		    {
 		      breakpoint: 1441,
 		      settings: {
-		        slidesToShow: 4,
+		        slidesToShow: 5,
 		        slidesToScroll: 1,
 		      }
 		    },
 		    {
 		      breakpoint: 1025,
 		      settings: {
-		        slidesToShow: 3,
+		        slidesToShow: 4,
 		        slidesToScroll: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 900,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        centerMode: true,
+				centerPadding: '10%',
 		      }
 		    },
 		    {
@@ -236,13 +250,21 @@ $(function() {
 		        slidesToScroll: 1,
 		      }
 		    },
+		    {
+		      breakpoint: 374,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: false,
+		      }
+		    },
 		  ]
 	})
 
-	$('.drop-slider .slick-dots').wrapAll('<div class="slick-dots__wrap"></div>')
+	// $('.drop-slider .slick-dots').wrapAll('<div class="slick-dots__wrap"></div>')
 
-	$('.drop-slider .slick-dots__wrap').append('<img class="next" src="img/arrow.svg">');
-	$('.drop-slider .slick-dots__wrap').prepend('<img class="prev" src="img/arrow.svg">');
+	// $('.drop-slider .slick-dots__wrap').append('<img class="next" src="img/arrow.svg">');
+	// $('.drop-slider .slick-dots__wrap').prepend('<img class="prev" src="img/arrow.svg">');
 
 	$('.prev').click(function(){
 	  $('.drop-slider').slick('slickPrev');
