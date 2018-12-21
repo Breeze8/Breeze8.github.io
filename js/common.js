@@ -236,22 +236,24 @@ $(function() {
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 1,
-		        centerMode: true,
-				centerPadding: '10%',
 		      }
 		    },
 		    {
 		      breakpoint: 767,
 		      settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 3,
 		        slidesToScroll: 1,
+		        infinite: false,
+		        variableWidth: true
 		      }
 		    },
 		    {
 		      breakpoint: 479,
 		      settings: {
-		        slidesToShow: 1,
+		        slidesToShow: 2,
 		        slidesToScroll: 1,
+		        infinite: false,
+		        variableWidth: true
 		      }
 		    },
 		    {
@@ -259,7 +261,7 @@ $(function() {
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
-		        centerMode: false,
+		        infinite: false,
 		      }
 		    },
 		  ]
