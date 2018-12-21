@@ -194,11 +194,11 @@
 					<nav class="s-filter-nav" id="grid-filter">
 		                <button type="button" class="h2" data-filter=".category-one">Аксессуары</button>
 		                <button type="button" class="h2" data-filter=".category-two">Одежда</button>
-		                <button type="button" class="h2" data-filter=".category-three">Обувь</button>
+		                <button type="button" class="h2 mixitup-control-active" data-filter=".category-three">Обувь</button>
 		            </nav>
 				</div>
 	            <div class="s-filter-container" id="filter">
-	            	<a href="#" class="card mix category-one">
+	            	<a href="#" class="card mix category-three">
 	            		<div class="card__img">
 	            			<img src="img/goods-1.jpg" alt="alt">
 	            		</div>
@@ -220,7 +220,7 @@
 	            			<div class="btn btn--card btn--gray">58 990 ₽</div>
 	            		</div>
 	            	</a>
-	            	<a href="#" class="card mix category-two">
+	            	<a href="#" class="card mix category-three">
 	            		<div class="card__img">
 	            			<img src="img/goods-3.jpg" alt="alt">
 	            		</div>
@@ -234,6 +234,39 @@
 	            	<a href="#" class="card mix category-three">
 	            		<div class="card__img">
 	            			<img src="img/goods-4.jpg" alt="alt">
+	            		</div>
+	            		<div class="card-content">
+	            			<div class="card__firm">SAINT LAURENT</div>
+	            			<div class="card__head">JIMMY LOGO SLIDES </div>
+	            			<p>Норм шлепки. Хороший выбор. Оверпрайс для стилевых поцаков</p>
+	            			<div class="btn btn--card btn--gray">31 990 ₽</div>
+	            		</div>
+	            	</a>
+	            	<a href="#" class="card mix category-three">
+	            		<div class="card__img">
+	            			<img src="img/goods-2.jpg" alt="alt">
+	            		</div>
+	            		<div class="card-content">
+	            			<div class="card__firm">SAINT LAURENT</div>
+	            			<div class="card__head">JIMMY LOGO SLIDES </div>
+	            			<p>Норм шлепки. Хороший выбор. Оверпрайс для стилевых поцаков</p>
+	            			<div class="btn btn--card btn--gray">31 990 ₽</div>
+	            		</div>
+	            	</a>
+	            	<a href="#" class="card mix category-three">
+	            		<div class="card__img">
+	            			<img src="img/goods-2.jpg" alt="alt">
+	            		</div>
+	            		<div class="card-content">
+	            			<div class="card__firm">SAINT LAURENT</div>
+	            			<div class="card__head">JIMMY LOGO SLIDES </div>
+	            			<p>Норм шлепки. Хороший выбор. Оверпрайс для стилевых поцаков</p>
+	            			<div class="btn btn--card btn--gray">31 990 ₽</div>
+	            		</div>
+	            	</a>
+	            	<a href="#" class="card mix category-two">
+	            		<div class="card__img">
+	            			<img src="img/goods-2.jpg" alt="alt">
 	            		</div>
 	            		<div class="card-content">
 	            			<div class="card__firm">SAINT LAURENT</div>
@@ -449,6 +482,9 @@
 		animation: {
 	        enable: false
 	    },
+	    load: {
+	        filter: '.category-three'
+	    }
 		});
 
 	</script>

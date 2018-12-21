@@ -1,5 +1,9 @@
 $(function() {
 
+	 $(".s-filter-nav button").click(function() {
+        $('button.mixitup-control-active').removeClass('mixitup-control-active')
+        $(this).addClass('mixitup-control-active')
+    });
 
 	$('.goods-images__main').slick({
 		  slidesToShow: 1,
@@ -202,7 +206,7 @@ $(function() {
 
 	$('.drop-slider').slick({
 		rows: false,
-		slidesToShow: 4,
+		slidesToShow: 5,
   		slidesToScroll: 1,
   		dots: true,
   		responsive: [
