@@ -229,6 +229,7 @@ $(function() {
 		      settings: {
 		        slidesToShow: 4,
 		        slidesToScroll: 1,
+		        variableWidth: true
 		      }
 		    },
 		    {
@@ -236,6 +237,7 @@ $(function() {
 		      settings: {
 		        slidesToShow: 3,
 		        slidesToScroll: 1,
+		        variableWidth: true
 		      }
 		    },
 		    {
@@ -279,7 +281,7 @@ $(function() {
 
  	$('#fullpage').fullpage({
 		sectionsColor: [],
-		responsiveWidth: 1010,
+		responsiveWidth: 1025,
 		anchors:['firstPage','secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
 		// navigation: true,
    		 menu: '.main-sidebar__list',
