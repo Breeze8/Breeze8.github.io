@@ -243,7 +243,6 @@ $(function() {
 		      settings: {
 		        slidesToShow: 3,
 		        slidesToScroll: 1,
-		        infinite: false,
 		        variableWidth: true
 		      }
 		    },
@@ -252,7 +251,6 @@ $(function() {
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 1,
-		        infinite: false,
 		        variableWidth: true
 		      }
 		    },
@@ -261,7 +259,6 @@ $(function() {
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
-		        infinite: false,
 		      }
 		    },
 		  ]
