@@ -30,6 +30,10 @@ $(function(){
 
 	})
 
+	$('.mask_header_menu__bottom__talk .talk').click(function(){
+		$('body').toggleClass('body__talkings')
+	})
+
 	
 
 	

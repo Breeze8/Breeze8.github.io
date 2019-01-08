@@ -3734,12 +3734,12 @@ strong {
 
 .menu_bottom li a {
     color: rgba(255, 255, 255, .3);
-    font-family: AvertaRegular, sans-serif;
+    font-family: "AvertaSemiBold";
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
     text-transform: uppercase;
-    letter-spacing: -.625px;
+    letter-spacing: 0.3px;
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s
@@ -4282,7 +4282,7 @@ strong {
 }
 
 .footer {
-    padding: 75px 120px 120px;
+    padding: 75px 100px 100px;
     background-color: #000
 }
 
@@ -4321,7 +4321,8 @@ strong {
 
 .footer_contact li {
     display: block;
-    list-style-type: none
+    list-style-type: none;
+    margin-bottom: 3px;
 }
 
 .footer_contact li a {
@@ -4352,7 +4353,7 @@ strong {
 .footer_menu {
     display: block;
     float: right;
-    width: 251px;
+    width: 255px;
     margin: 0;
     padding: 0
 }
@@ -4360,7 +4361,8 @@ strong {
 .footer_menu li {
     width: 50%;
     float: left;
-    list-style-type: none
+    list-style-type: none;
+    margin-bottom: 3px;
 }
 
 .footer_menu li a {
@@ -4409,13 +4411,13 @@ strong {
     display: block;
     cursor: pointer;
     margin: 0 auto;
-    width: 148px;
-    height: 59px;
+    width: 150px;
+    height: 52px;
     border: 1px solid #fff;
     color: #fff;
     font-family: AvertaRegular, sans-serif;
     text-align: center;
-    line-height: 59px;
+    line-height: 52px;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -5639,12 +5641,35 @@ strong {
     width: 30px;
 }
 
-.choice .burger.active {
-    position: fixed;
-    bottom: 100px;
-    left: 120px;
-    top: auto;
+.choice .mask_header_menu__bottom {
+    left: 0;
+    transform: translateX(0);
+    max-width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
+
+.choice .mask_header_menu__bottom li {
+    margin-right: 100px;
+}
+
+.choice .heder_city li{
+    text-align: left;
+}
+
+.choice .main_menu li {
+    text-align: right;
+}
+
+.choice .mask_header_menu__bottom li:last-child{
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.choice .mask_header_menu__bottom li:last-child a{
+    color: #fff;
+}
+
 
 .mask_header_menu__bottom {
     display: -webkit-flex;
@@ -5652,15 +5677,35 @@ strong {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
     position: fixed;
-    right: 120px;
-    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 98px;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    max-width: 585px;
+    width: 100%;
+}
+
+.mask_header_menu__bottom__talk .talk{
+    color: rgba(255,255,255, .15);
+    font-family: "AvertaSemiBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    position: absolute;
+    right: 120px;
+    bottom: 98px;
+    transition: all .4s ease;
+}
+
+.mask_header_menu__bottom__talk .talk:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .mask_header_menu__bottom a {
@@ -5678,17 +5723,6 @@ strong {
     color: #fff;
 }
 
-.mask_header_menu__bottom li {
-    margin-left: 150px;
-}
-
-.mask_header_menu__bottom li:first-child {
-    margin-left: 0;
-}
-
-.mask_header_menu__bottom li:last-child {
-    margin-left: 210px;
-}
 
 .mask_header_menu__bottom li:last-child a{
     font-family: "AvertaSemiBold";
@@ -5700,25 +5734,18 @@ strong {
 
 @media (max-height:800px) {
 
-    .choice .burger.active {
-
-        bottom: 60px;
-    }
 
     .mask_header_menu__bottom {
-        bottom: 65px;
+        bottom: 98px;
     }
 
 }
 
 @media (max-height:767px) {
 
-    .choice .burger.active {
-        bottom: 40px;
-    }
 
     .mask_header_menu__bottom {
-        bottom: 45px;
+        bottom: 98px;
     }
 
 }
@@ -5812,13 +5839,17 @@ strong {
 	color: #fff;
 }
 
-.choice-content__item:nth-child(4)  .choice-content__item-descr::after {
+.choice-content__item  .choice-content__item-descr::after {
     content: ']';
     position: absolute;
     right: -15px;
     top: 0;
     font-family: "AvertaBold";
     font-size: 10px;
+    color: #000;
+}
+
+.choice-content__item:nth-child(4)  .choice-content__item-descr::after {
     color: #fff;
 }
 
@@ -5879,6 +5910,11 @@ strong {
 	font-size: 24px;
 	font-family: "AvertaLight";
 	cursor: pointer;
+    transition: all .5s ease;
+}
+
+.choice-tab:hover {
+    transform: scale(1.1)
 }
 
 .choice-tab.active {
@@ -5938,6 +5974,15 @@ strong {
 	display: block;
     width: 76px;
     height: 47px;
+}
+
+.body__talkings .active_talk {
+    background-color: #000;
+    z-index: 2;
+}
+
+.body__talkings .bg_header.active_talk {
+    display: none;
 }
 
 .logo-inners img{
@@ -6318,6 +6363,15 @@ strong {
 
 @media (max-width:1200px) {
 
+    .mask_header_menu__bottom__talk .talk {
+        bottom: 78px;
+    }
+
+    .mask_header_menu__bottom {
+        bottom: 78px;
+        max-width: 400px;
+    }
+
 	.choice-tab.active::before {
 		top: 10px;
 	}
@@ -6356,13 +6410,13 @@ strong {
 	}
 
 	.choice .menu_heder {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 
 	.choice-tabs {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 
 	.choice .menu_bottom li:nth-child(2) {
@@ -6372,6 +6426,28 @@ strong {
 }
 
 @media (max-width: 992px) {
+
+    .choice .mask_header_menu__bottom {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .choice .mask_header_menu__bottom li {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .mask_header_menu__bottom__talk .talk {
+        bottom: 42px;
+        font-size: 16px;
+        right: 80px;
+    }
+
+    .mask_header_menu__bottom {
+        bottom: 42px;
+        max-width: 320px;
+        left: 40%;
+    }
 
 	.port-app__item:nth-child(2) {
 		margin-top: 68px;
@@ -6463,19 +6539,37 @@ strong {
 
 }
 
-@media (max-width: 1300px) {
-
-    .mask_header_menu__bottom li {
-        margin-left: 50px;
-    }
-
-    .mask_header_menu__bottom li:last-child {
-        margin-left: 100px;
-    }
-
-}
 
 @media (max-width: 767px) {
+
+    .choice .menu_heder {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .choice .burger {
+        width: 18px;
+        height: 33px;
+    }
+
+    .choice .mask_header_menu__bottom {
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: right;
+    }
+
+    .choice .mask_header_menu__bottom li {
+        display: none;
+    }
+
+    .choice .mask_header_menu__bottom li:last-child {
+        display: block;
+    }
+
+    .choice .mask_header_menu {
+        padding-top: 80px;
+    }
 
 	.choice .menu_bottom li {
 		display: block !important
@@ -6483,6 +6577,8 @@ strong {
 
 	.choice-tabs {
 		padding-top: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
 	}
 
 	.tab_item {
@@ -7124,21 +7220,11 @@ strong {
         font-size: 290px
     }
 
-    .choice .burger.active {
-        left: 73px;
-    }
-
-    .mask_header_menu__bottom {
-        right: 80px;
-    }
 
     .mask_header_menu__bottom a {
         font-size: 16px;
     }
 
-    .mask_header_menu__bottom li:last-child {
-        margin-left: 40px;
-    }
 
     .mask_header_menu__bottom li {
         margin-left: 20px;
@@ -7311,11 +7397,11 @@ strong {
     }
 
     .footer {
-        padding: 50px 40px 40px
+        padding: 50px 30px 40px
     }
 
     .footer_menu {
-        width: 200px
+        width: 250px
     }
 
     .outofstock_section {
@@ -7513,24 +7599,13 @@ strong {
 
 @media (max-width:767.98px) {
 
-    .choice .burger.active {
-        left: 25px;
-    }
-
-    .mask_header_menu__bottom {
-        right: 40px;
-    }
 
     .mask_header_menu__bottom a {
         font-size: 14px;
     }
 
-    .mask_header_menu__bottom li{
+    .mask_header_menu__bottom {
         display: none;
-    }
-
-    .mask_header_menu__bottom li:last-child {
-        display: block;
     }
 
     .mask_header_menu,
@@ -7975,6 +8050,11 @@ strong {
 }
 
 @media (max-width:575.98px) {
+
+    .mask_header_menu__bottom__talk .talk {
+        right: 40px;
+    }
+
     .bg_header {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);

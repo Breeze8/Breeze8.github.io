@@ -149,6 +149,7 @@ $('.talk').click(function (e) {
 	$('.talk_bg').toggleClass('active');
 	$('.main_bg').toggleClass('hidden');
 	$('.main_bg90').toggleClass('hidden');
+	$('body').toggleClass('menu__talking');
 });
 
 $(function () {
