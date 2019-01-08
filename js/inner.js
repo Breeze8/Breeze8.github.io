@@ -16,4 +16,22 @@ $(function(){
 	    }, 500);
 	});
 
+	$('.choice-tab').click(function(){
+		var choice = $('.choice-tab.active').text();
+		$('.choice-tabs__mobile span').text(choice);
+		$('.choice-tabs').removeClass('open');
+		$('.choice-tabs__mobile').removeClass('active');
+	})
+
+	$('.choice-tabs__mobile').click(function(){
+
+		$('.choice-tabs').toggleClass('open');
+		$(this).toggleClass('active')
+
+	})
+
+	
+
+	
+
 })
