@@ -6546,7 +6546,7 @@ strong {
         content: '';
         position: absolute;
         left: -10%;
-        top: 11px;
+        top: 10px;
         height: 4px;
         z-index: -1;
         width: 120%;
