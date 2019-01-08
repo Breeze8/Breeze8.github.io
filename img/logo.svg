@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1027px" height="399px" viewBox="0 0 1027 399" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo_black" transform="translate(-739.000000, -482.000000)" fill="#000000">
+            <g id="logo" transform="translate(717.000000, 461.000000)">
+                <text id="art" stroke="#000000" stroke-width="0.65" font-family="Averta-Light" font-size="527.8" font-weight="300" letter-spacing="-0.65">
+                    <tspan x="378.3" y="414">art</tspan>
+                </text>
+                <text id="d" stroke="#000000" stroke-width="0.65" font-family="Averta-Light" font-size="527.8" font-weight="300" letter-spacing="-1.7593329">
+                    <tspan x="0" y="414">d</tspan>
+                </text>
+                <rect id="Rectangle" x="325" y="23.4" width="32.5" height="169"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
