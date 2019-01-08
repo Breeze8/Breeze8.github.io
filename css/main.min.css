@@ -6546,7 +6546,7 @@ strong {
         content: '';
         position: absolute;
         left: -10%;
-        top: 13px;
+        top: 11px;
         height: 4px;
         z-index: -1;
         width: 120%;
@@ -7712,7 +7712,7 @@ strong {
     }
 
     .footer_block_big {
-        padding: 80px 0
+        padding: 80px 15px;
     }
 
     .outofstock_section {
