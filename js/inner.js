@@ -38,7 +38,7 @@ $(function(){
 	})
 	
 	$('.choice .burger').click(function(){
-		$('body').toggleClass('fix');
+		$('body').toggleClass('bodyHid');
 		$('.choice .mask_header_menu').toggleClass('fixedMenu')
 	})
 

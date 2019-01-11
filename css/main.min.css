@@ -6023,6 +6023,10 @@ strong {
 	z-index: 9999;
 }
 
+.bodyHid {
+    overflow: hidden;
+}
+
 .choice .mask_header_menu.fixedMenu {
     height: 100vh;
 }
