@@ -5911,15 +5911,29 @@ strong {
 	font-family: "AvertaLight";
 	cursor: pointer;
     transition: all .5s ease;
+    position: relative; 
 }
 
-.choice-tab:hover {
-    transform: scale(1.1)
-}
 
 .choice-tab.active {
 	position: relative;
     z-index: 2;
+}
+
+.choice-tab::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 14px;
+    height: 4px;
+    z-index: -1;
+    width: 0;
+    background-color: rgba(241, 188, 105, 0.5);
+    transition: all .5s ease;
+}
+
+.choice-tab:hover::before {
+    width: 120%;
 }
 
 .choice-tab.active::before {
@@ -6549,7 +6563,7 @@ strong {
 
     .choice .burger {
         width: 18px;
-        height: 33px;
+        height: 36px;
     }
 
     .choice .mask_header_menu__bottom {
