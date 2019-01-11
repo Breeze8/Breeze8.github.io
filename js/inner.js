@@ -1,4 +1,7 @@
 $(function(){
+
+	
+
 	$(".tab_item").not(":first").hide();
 	$(".choice-tab").click(function() {
 		$(".choice-tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -33,9 +36,22 @@ $(function(){
 	$('.mask_header_menu__bottom__talk .talk').click(function(){
 		$('body').toggleClass('body__talkings')
 	})
-
 	
-
-	
+	$('.choice .burger').click(function(){
+		$('body').toggleClass('fix');
+		$('.choice .mask_header_menu').toggleClass('fixedMenu')
+	})
 
 })
+
+var menu = new TimelineMax({ paused: true, reversed: true });
+
+	menu
+	  .to(".mask_header_menu", .6, { y: "0", opacity: "1",ease:Back.easeOut })
+	  .staggerFrom(".mask_header_menu__bottom li a", .2, { transform: "translate(0%, -120%)",ease:Power4.easeOut, }, 0.1)
+	  .staggerFrom(".main_menu li", .4, { transform: "translate(0%, -80%)", opacity: "0",ease:Power4.easeOut, }, 0.1);
+
+
+	function menuIn() {
+	  menu.reversed() ? menu.play() : menu.reverse();	
+	}
