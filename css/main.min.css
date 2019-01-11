@@ -6015,7 +6015,7 @@ strong {
     display: block;
 }
 
-.choice .burger {
+c .burger {
 	z-index: 99999;
 }
 
@@ -6025,11 +6025,13 @@ strong {
 
 .bodyHid {
     overflow: hidden;
+    position: static;
 }
 
-.choice .mask_header_menu.fixedMenu {
-    height: 100vh;
+.bodyHid .header {
+    position: static;
 }
+
 
 .port {
 	display: -webkit-flex;
