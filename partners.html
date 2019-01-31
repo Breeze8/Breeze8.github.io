@@ -465,17 +465,20 @@
 												<span class="blue">Объем общей структуры</span>
 											</div>
 										</div>
-										 <ul class="tabs tabs-chart nav nav-tabs" id="myTab" role="tablist">
-										 	<li class="nav-item">
-										 		<a href="#faqTab-1" id="faqTab-1-tab" class="tab nav-link active show" data-toggle="tab" role="tab" aria-controls="faqTab-1" aria-selected="true">месячный объём</a>
+										 <ul class="tabs tabs-chart" role="tablist">
+										 	<li class="tab active">
+										 		<span>Все время</span>
+										 	</li>  
+										 	<li class="tab">
+										 		<span>Месяц</span>
 										 	</li>
-									        <li class="nav-item">
-										 		<a href="#faqTab-2" id="faqTab-2-tab" class="tab nav-link" data-toggle="tab" role="tab" aria-controls="faqTab-2" aria-selected="false">Недельный объём</a>
-										 	</li>    
+										 	<li class="tab">
+										 		<span>3 месяца</span>
+										 	</li>
 									    </ul>
 									</div>
 									<div class="chart__content tab-content">
-										<div class="tab_item tab-pane fade show active" id="faqTab-1" role="tabpanel" aria-labelledby="faqTab-1-tab">
+										<div class="tab_item">
 											<div class="chart__chart mb-20">
 												<canvas id="myLineChart"></canvas>
 											</div>
@@ -541,9 +544,6 @@
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="tab_item tab-pane fade" id="faqTab-2" role="tabpanel" aria-labelledby="faqTab-2-tab">
-											12
 										</div>
 									</div>
 								</div>
