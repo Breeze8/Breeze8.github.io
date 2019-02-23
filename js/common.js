@@ -59,7 +59,7 @@ $(function() {
 		      }
 		    },
 		    {
-		      breakpoint: 400,
+		      breakpoint: 480,
 		      settings: {
 		        arrows: false,
 		        dots: true,
