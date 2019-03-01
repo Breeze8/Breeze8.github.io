@@ -1,23 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
+
 <body>
-	<ul>
-		<li>
-			<a target="_blank" href="about.html">about</a>
-		</li>
-		<li>
-			<a target="_blank" href="home.html">home</a>
-		</li>
-		<li>
-			<a target="_blank" href="wating.html">wating</a>
-		</li>
-		<li>
-			<a target="_blank" href="rating.html">rating</a>
-		</li>
-	</ul>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-flex align-items-center justify-content-between">
+				<a href="#" class="logo logo-header">
+					<span class="logo-text">Money<span>Bot</span></span>
+					<span class="logo-describe">Ваш пассивный доход на валютной бирже</span>
+				</a>
+				<nav class="main-nav">
+					<ul class="main-list">
+						<li><a href="#">Как это работает</a></li>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Планы</a></li>
+						<li><a href="#">Доходы</a></li>
+						<li><a href="#">Ответы на вопросы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger hamburger--collapse">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="main-image">
+					<img src="img/main.jpg" alt="alt">
+				</div>
+				<div class="main-content">
+					<h1 class="h1">Получайте 120% годовых на автоматизированной валютной торговле</h1>
+					<a href="#modal" data-effect="mfp-zoom-out" class="btn btn--orange btn-modal">Узнать подробнее</a>
+					<div class="main-quote">Деньги должны работать всегда.<br> Дж. Рокфеллер.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="features indent">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="features-item">
+						<div class="features-item__img">
+							<img src="img/features-1.svg" alt="alt">
+						</div>
+						<div class="h3">Получение дохода </div>
+						<p>не требует вашего участия и времени</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="features-item">
+						<div class="features-item__img">
+							<img src="img/features-2.svg" alt="alt">
+						</div>
+						<div class="h3">Диверсификация рисков</div>
+						<p>за счет мультивалютной торговли</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="features-item">
+						<div class="features-item__img">
+							<img src="img/features-3.svg" alt="alt">
+						</div>
+						<div class="h3">Деньги лежат на вашем счету</div>
+						<p>вы всегда можете снять их </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="features-item">
+						<div class="features-item__img">
+							<img src="img/features-4.svg" alt="alt">
+						</div>
+						<div class="h3">Деньги в долларах США </div>
+						<p>и вы защищены от падения курса рубля</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="features-sall indent">
+		<div class="container">
+			<h2 class="h2 tl-center">Преимущества заработка <br> на автоматизированной торговле</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="h3">Полностью пассивный доход</div>
+					<p>Воспользуйтесь возможностью мультивалютного трейдинга и получайте ежедневный пассивный доход, создавайте свой капитал либо снимайте деньги в любое время. От вас только размещение средств на вашем личном счете.</p>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="h3">Не нужно разбираться в биржевой торговле</div>
+					<p>Вам не нужно быть трейдером, чтобы зарабатывать на валютном рынке. Автоматизированная торговая система и профессиональные трейдеры делают это за вас. Ваш статус - это инвестор на международном финансовом рынке </p>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="h3">Поддержка профессионалов</div>
+					<p>Команда профессионалов своего дела: трейдеры, аналитики, программисты следят и поддерживают стабильную работу автоматизированной системы, проверяют и внедряют торговые стратегии в робота-трейдера, контролируют ход торговли, помогают вам и себе зарабатывать деньги</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback indent">
+		<div class="container">
+			<div class="indent-head tl-center">
+				<h2 class="h2">Хотите такую прибыль?</h2>
+				<p>Оставьте свои данные и мы с вашим свяжемся</p>
+			</div>
+			<form action="/" class="form">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="form-wrap">
+							<input type="text" class="form-input" placeholder="Имя">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="form-wrap">
+							<input type="text" class="form-input" placeholder="Телефон">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="form-wrap">
+							<input type="text" class="form-input" placeholder="E-mail">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="form-wrap">
+							<button class="btn btn--orange">Отправить</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section class="work indent">
+		<div class="container">
+			<h2 class="h2 tl-center">Как это работает</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="work-item">
+						<div class="work-item__content tl-right">
+							<p><strong>Вы открываете счет у Forex-брокера</strong> и размещаете средства на балансе для торговли</p>
+						</div>
+						<div class="work-item__num">1</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="work-item work-item--right">
+						<div class="work-item__num">2</div>
+						<div class="work-item__content">
+							<p><strong>Мы подключаем торговую систему</strong> к вашему счету и торгуем на 6-и валютных парах 5 дней в неделю</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="work-item">
+						<div class="work-item__content tl-right">
+							<p><strong>Мы обновляем стратегии торговли</strong>, следим за просадками для получения стабильной доходности</p>
+						</div>
+						<div class="work-item__num">3</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="work-item work-item--right">
+						<div class="work-item__num">4</div>
+						<div class="work-item__content">
+							<p><strong>Вы наблюдаете за торговлей Робота</strong>, видите ваш доход и снимаете со счета средства в любое время </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="alert">Важно! Счет с вашими средствами принадлежит лично вам, доступ на снятие денег со счета имеете только вы</div>
+		</div>
+	</section>
+
+	<section class="screen indent">
+		<div class="container">
+			<div class="indent-head tl-center">
+				<h2 class="h2">Посмотрите результаты работы MoneyBot</h2>
+				<p>Скриншоты торговых счетов, подключенных к роботу</p>
+			</div>
+			<div class="screen-image">
+				<img src="img/screenshot.jpg" alt="alt">
+			</div>
+		</div>
+	</section>
+
+	<section class="indent plan">
+		<div class="container">
+			<h2 class="h2 tl-center">Выберите свой план</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="plan-item">
+						<div class="h3 tl-center">Доверительный*</div>
+						<div class="plan-item-content">
+							<div class="plan-item__percent">5-6%</div>
+							<div class="plan-item__text">Доходность в месяц</div>
+							<div class="plan-item__percent">от 60%</div>
+							<div class="plan-item__text">Доходность в год</div>
+							<div class="plan-item__percent">0₽*</div>
+							<div class="plan-item__text">Стоимость робота</div>
+							<div class="plan-item__percent">0₽/мес.</div>
+							<div class="plan-item__text">Тех.обслуживание</div>
+							<div class="plan-item__percent">от 10 000 ₽</div>
+							<div class="plan-item__text">Депозит на счет</div>
+						</div>
+						<div class="tl-center">
+							<a href="#" class="btn btn--white">Узнать подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="plan-item">
+						<div class="h3 tl-center">Доверительный*</div>
+						<div class="plan-item-content">
+							<div class="plan-item__percent">5-6%</div>
+							<div class="plan-item__text">Доходность в месяц</div>
+							<div class="plan-item__percent">от 60%</div>
+							<div class="plan-item__text">Доходность в год</div>
+							<div class="plan-item__percent">0₽*</div>
+							<div class="plan-item__text">Стоимость робота</div>
+							<div class="plan-item__percent">0₽/мес.</div>
+							<div class="plan-item__text">Тех.обслуживание</div>
+							<div class="plan-item__percent">от 10 000 ₽</div>
+							<div class="plan-item__text">Депозит на счет</div>
+						</div>
+						<div class="tl-center">
+							<a href="#" class="btn btn--white">Узнать подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="plan-item">
+						<div class="h3 tl-center">Личный</div>
+						<div class="plan-item-content">
+							<div class="plan-item__percent">10-15%</div>
+							<div class="plan-item__text">Доходность в месяц</div>
+							<div class="plan-item__percent">от 120%</div>
+							<div class="plan-item__text">Доходность в год</div>
+							<div class="plan-item__percent">29 000 ₽</div>
+							<div class="plan-item__text">Стоимость робота</div>
+							<div class="plan-item__percent">1900 ₽/мес.</div>
+							<div class="plan-item__text">Тех.обслуживание</div>
+							<div class="plan-item__percent">от 10 000 ₽</div>
+							<div class="plan-item__text">Депозит на счет</div>
+						</div>
+						<div class="tl-center">
+							<a href="#" class="btn btn--white">Узнать подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback callback-inner indent">
+		<div class="container">
+			<h2 class="h2 tl-center">Получите видеоинструкцию по запуску автоматизированной торговой системы на валютной бирже</h2>
+			<form action="/" class="form">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6">
+						<div class="form-wrap">
+							<input type="text" class="form-input" placeholder="Введите имя">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="form-wrap">
+							<input type="text" class="form-input" placeholder="Введите e-mail">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="form-wrap">
+							<button class="btn btn--orange">Отправить</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="faq">
+		<div class="container">
+			<div class="info tl-center info--faq">
+				<h2 class="h2">Важно знать и понимать</h2>
+				<p>Торговля на финансовом рынке Forex происходит через брокеров. Forex - это международный финансовый рынок, на котором производится обмен валют. Трейдеры извлекают прибыль из разницы курсов валют. Рынок Forex является крупнейшим финансовым рынком в мире, где торгуется более 5 триллионов долларов США ежедневно. Роботизированная торговля на Нью-Йоркской фондовой бирже превысила 65 % в 2018 году. Торговля на рынке Forex связана с существенным риском потери средств</p>
+			</div>
+			<h2 class="h2 tl-center  pt-60">Ответы на частые вопросы</h2>
+			<ul class="accordion">
+				<li>
+					<a href="#">Почему мы отдаем предпочтение международному брокеру Forex4you?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски. Робота обслуживает команда трейдеров-аналитиков, которые сами используют такого же робота в торговле на бирже. Перед внедрением каждой торговой стратегии в вашего робота, стратегия проверяется в течении одного-двух месяцев. Стратегии содержат стоп-лоссы и тэйк-профиты, что исключает большую просадку и потерю средств. Робот-трейдер полностью автоматизирован и убирает человеческий фактор. Торговля на 6-ти валютных парах диверсифицирует ваши риски и увеличивает доходность трейдерами на практике. Работаем с Forex-брокером, имеющим международную лицензию на биржевую торговлю</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Как мы снижаем риски потери средств при торговле на бирже?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Какие торговые стратегии использует ForexBot?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Почему я должен доверять вам?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Куда мне установить робота?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">За что вы берете ежемесячную оплату?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Чем ваш робот лучше других?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Почему ваш робот не сольет депозит?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">Что означает план «Доверительный»?</a>
+					<div class="drop">
+						<p>При торговле используется только 5 % от вашего депозита, что исключает потерю денег. Робот применяет сразу 3 стратегии скальпинга, где каждая страхует другую и снижает риски.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="questions indent">
+		<div class="container">
+			<div class="indent-head tl-center">
+				<h2 class="h2">Остались вопросы?</h2>
+				<p>Задайте их в Телеграмм <a target="_blank" href="tg://resolve?domain=forexinbot">@forexinbot</a>, Whats App/Телефон 8-999-034-43-45 и получите ответы</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews indent">
+		<div class="container">
+			<h2 class="h2 tl-center">Отзывы</h2>
+			<div class="reviews-slider">
+				<div class="info info-reviews">
+					<div class="info-reviews__content">
+						<p>Сначала я долго сомневалась в том, что смогу на этом зарабатывать. Начала с пробного плана и увидела что действительно мои деньги лежат на моем счету и они растут каждый день ) . Сейчас после пяти месяцев мой доход составляет 50000 руб. в месяц причем на моем счету лежит 250 000 руб. а начинала я с 60 т.р. . Очень довольна таким простым дополнительным заработком !</p>
+						<div class="info-reviews__name">Мария, 24 года</div>
+					</div>
+					<div class="info-reviews__quotes">
+						<img src="img/quotes.png" alt="alt">
+					</div>
+				</div>
+				<div class="info info-reviews">
+					<div class="info-reviews__content">
+						<p>Сначала я долго сомневалась в том, что смогу на этом зарабатывать. Начала с пробного плана и увидела что действительно мои деньги лежат на моем счету и они растут каждый день ) . Сейчас после пяти месяцев мой доход составляет 50000 руб. в месяц причем на моем счету лежит 250 000 руб. а начинала я с 60 т.р. . Очень довольна таким простым дополнительным заработком !</p>
+						<div class="info-reviews__name">Мария, 24 года</div>
+					</div>
+					<div class="info-reviews__quotes">
+						<img src="img/quotes.png" alt="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="telegram indent">
+		<div class="container">
+			<h2 class="h2 tl-center">Смотрите еженедельные результаты работы<br> робота-трейдера в Телеграм-канале </h2>
+			<a target="_blank" href="tg://resolve?domain=forexinbot" class="telegram-link">
+				<img src="img/telegram.svg" alt="alt">
+				<span>t.me/MoneyBot</span>
+			</a>
+		</div>
+	</section>
+	
+	<footer class="footer indent">
+		<div class="container">
+			<div class="info info-footer">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-auto">
+						<div class="logo logo-footer">
+							<span class="logo-text">Money<span>Bot</span></span>
+							<span class="logo-describe">Автоматизированный доход на валютной бирже</span>
+						</div>
+						<ul class="socials">
+							<li>
+								<a href="#" target="_blank">
+									<img src="img/vk.svg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="img/youtube.svg" alt="alt">
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<img src="img/fb.svg" alt="alt">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-auto tl-right">
+						<a href="tel:899953716803" class="phone">
+							<img src="img/phone.svg" alt="alt">
+							<span>8 999 537-168-03</span>
+						</a>
+						<a href="mailto:info@moneybot.me" class="mail">info@moneybot.me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- MODAL WINDOW -->
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal">
+		<div class="modal-content">
+			<div class="modal-row">
+				<div class="modal__head">Оставьте ваши данные, чтобы мы могли связаться с вами</div>
+				<img src="img/modal-close.svg" alt="alt" class="modal__close">
+			</div>
+			<form action="/" class="form">
+				<div class="form-row">
+					<input type="text" class="form-input" placeholder="Имя">
+				</div>
+				<div class="form-row">
+					<input type="text" class="form-input" placeholder="Телефон">
+				</div>
+				<div class="form-row">
+					<input type="text" class="form-input" placeholder="E-mail">
+				</div>
+				<button class="btn btn--orange w100">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Custom HTML -->
+
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
