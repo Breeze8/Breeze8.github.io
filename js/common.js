@@ -1,5 +1,20 @@
 $(function() {
 
+    if ($(window).width() > 767) {
+     $('.main-list a').click(function() {
+        $('.main-nav').slideUp();
+        $('.hamburger').removeClass('is-active')
+     }) 
+  }
+
+    $('.main-list a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500, 'linear');
+  });
+
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
     $('.accordion a').click(function(j) {
