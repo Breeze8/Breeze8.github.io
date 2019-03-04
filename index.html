@@ -152,7 +152,8 @@
 	                        <span class="title_sum_inv_calc">Сумма инвестиций:</span>
 	                    </div>
 	                    <div class="flex_center_center flex_end input_sum_div_in marg_place_in">
-	                        <input id="input_sum" value="300 000" class="input_sum_calc" />
+	                        <!-- <input id="input_sum" value="300 000" class="input_sum_calc" /> -->
+                            <span class="show_invest_sum" id="show_sum_text">0</span>
 	                        <span> ₽</span>
 	                    </div>
 	                </div>
@@ -166,7 +167,7 @@
 	                        </div>
 	                    </div>
 	                    <div style="position:relative; margin-top:-12px; width:100%;">
-	                        <input oninput="new_sum()" class="range_all range_calc" id="sum" name="val_sum" type="range" min="25" max="250000" step="1" value="25" />
+	                        <input oninput="new_sum()" class="range_all range_calc" id="sum" name="val_sum" type="range" min="25" max="5000000" step="1" value="25" />
 	                        <input oninput="new_sum()" class="range_all range_calc" id="sum_btc" name="val_sum" type="range" min="0.01" max="499" step="0.01" value="0.01" />
 	                        <div style="position:absolute; left:2px; bottom:-2px; width:100%; background:#d7d8d8; z-index:9;">
 	                            <div class="flex_rowp flex_nowrap">
@@ -176,7 +177,7 @@
 	                    </div>
 	                    <div class="flex_between text_pod_range" id="pod_usd">
 	                        <span>7000 ₽</span>
-	                        <span>50 000 000 ₽</span>
+	                        <span>5 000 000 ₽</span>
 	                    </div>
 	                    <div class="flex_between text_pod_range" id="pod_btc">
 	                        <span>0.01 BTC</span>
@@ -242,8 +243,8 @@
 	            <div class="flex_col right_div_calc">
 	                <div class="flex_col">
 	                    <span class="title_calc">Ваш процент дохода*</span>
-	                    <p class="show_procent show_procent_absolute"><span id="procent">0</span><span>%</span></p>
-	                    <div class="calc-gray">5% в месяц</div>
+	                    <p class="show_procent show_procent_absolute"><span id="procent">0</span><span>% годовых</span></p>
+	                    <div class="calc-gray">0% в месяц</div>
 	                </div>
 	                <div class="flex_col margin_profit">
 	                    <span class="title_calc">Ваша прибыль составит</span>

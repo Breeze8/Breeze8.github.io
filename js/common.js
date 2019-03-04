@@ -71,4 +71,10 @@ $(function() {
           });
       });
 
+    if($(window).width() < 767) {
+      $('.plan-item').click(function(){
+        $(this).toggleClass('active')
+      })
+    }
+
 });
