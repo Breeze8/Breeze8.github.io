@@ -798,7 +798,9 @@ $(function() {
 		$("#sum_go").val(sum);
 		$("#term_go").val(term);	
 		$("#show_term").val(term);
-		
+		var v = parseFloat($("#procent").text());
+		v = v / 12;
+		$(".calc-gray").html(v.toFixed(2) + '% в месяц');
 	}
 
 	function usd_procent_month (sum,term) {
@@ -835,6 +837,9 @@ $(function() {
 			$("#procent").html('10');
 			$("#procent_go").val('10');		
 		}	
+		var v = parseFloat($("#procent").text());
+		v = v / 12;
+		$(".calc-gray").html(v.toFixed(2) + '% в месяц');
 	}
 
 	function btc_procent (sum,term) {
@@ -1178,6 +1183,10 @@ $(function() {
 		$("#sum_go").val(sum);
 		$("#term_go").val(term);	
 		$("#show_term").val(term);
+		
+		var v = parseFloat($("#procent").text());
+		v = v / 12;
+		$(".calc-gray").html(v.toFixed(2) + '% в месяц');
 	}
 
 	function btc_check (){
@@ -1270,6 +1279,7 @@ $(function() {
 	function new_sum(check_out_money){
 		
 		if (check_out_money == 2) {
+			$('.calc-gray').show();
 			$('#out_end').prop('checked', true);
 			$('#out_month').prop('checked', false);
 			$('#out_end').addClass('check_out_money_act');
@@ -1281,7 +1291,10 @@ $(function() {
 			$('#term_out_money_title_2').addClass('term_out_money_title_act');
 			$('#term_out_money_title_2').removeClass('term_out_money_title');
 		}else {
+			
+			
 			if (check_out_money == 1) {
+				$('.calc-gray').hide();
 				$('#out_month').prop('checked', true);
 				$('#out_end').prop('checked', false);
 				$('#out_month').addClass('check_out_money_act');
