@@ -1,12 +1,11 @@
 $(function() {
 
-
-  // if ($(window).width() > 767) {
-  //   $('.main-list a').click(function() {
-  //       $('.main-nav').slideUp();
-  //       $('.hamburger').removeClass('is-active')
-  //    }) 
-  // }
+    if ($(window).width() > 767) {
+     $('.main-list a').click(function() {
+        $('.main-nav').slideUp();
+        $('.hamburger').removeClass('is-active')
+     }) 
+  }
 
     $('.main-list a[href*="#"]').on('click', function (e) {
     e.preventDefault();
