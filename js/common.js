@@ -8,7 +8,7 @@ $(function() {
         $('body').toggleClass('hidden');
     });
 
-    if( $(window).width() > 767 ) {
+    if( $(window).width() < 767 ) {
         $('.main-list a[href*="#"]').click(function() {
             $('.main-nav').removeClass('open');
             $('body').removeClass('hidden');
