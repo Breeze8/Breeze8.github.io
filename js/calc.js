@@ -1,5 +1,13 @@
 $(function(){
 
+	$('#price').change(function() {
+
+		var minPrice = 0;
+
+		minPrice = +$(this).val() / 100 * 30;
+		$('#deposit').val(minPrice);
+	})
+
 	
 
 	$('#form-calculator input').change(function() {
@@ -10,6 +18,10 @@ $(function(){
 		var price = +$('#price').val();
 		var deposit = +$('#deposit').val();
 		var monthResult = 0;
+
+		var minPrice = 0;
+		minPrice = price / 100 * 30;
+		
 
 		monthResult = price - deposit;
 		monthResult = monthResult / 4;
@@ -24,16 +36,15 @@ $(function(){
 			var percent = price / 100 * 14.5;
 		}
 
-		summaryResult = monthResult + percent;
+		summaryResult = price + percent - deposit;
 		markup.html(percent);
 		summary.html(summaryResult);
 
-		var minPrice = 0;
-
-		minPrice = price / 100 * 30;
-
+		
 		if (deposit < minPrice ) {
 			$('.error').show();
+			markup.html('')
+			summary.html('')
 		} else if ( deposit == 0 ) {
 			$('.error').hide();
 		}
@@ -41,6 +52,9 @@ $(function(){
 			$('.error').hide();
 		}
 
+		
+
 	})
+
 
 })
