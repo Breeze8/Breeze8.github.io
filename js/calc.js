@@ -21,12 +21,6 @@ $(function(){
 
 		var minPrice = 0;
 		minPrice = price / 100 * 30;
-		
-
-		monthResult = price - deposit;
-		monthResult = monthResult / 4;
-		month.html(monthResult);
-
 
 		if( price < 15000 || price == 15000 ) {
 			var percent = price / 100 * 16;
@@ -36,7 +30,11 @@ $(function(){
 			var percent = price / 100 * 14.5;
 		}
 
-		summaryResult = price + percent - deposit;
+		monthResult = price + percent - deposit;
+		monthResult = monthResult / 4;
+		month.html(monthResult);
+
+		summaryResult = price + percent;
 		markup.html(percent);
 		summary.html(summaryResult);
 
