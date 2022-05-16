@@ -17,6 +17,8 @@ body {
 	padding: 15px 30px;
 	height: 100%;
 	background-image: linear-gradient(to right, #4DBD67, #27B08B);
+	font-family: "MuseoSansLight";
+	font-size: 16px;
 }
 
 h1 {
@@ -27,25 +29,17 @@ h1 {
 }
 
 ol, li {
-	list-style-type: none;
+	list-style-type: decimal;
 	margin: 0;
 	padding: 0;
+	color: #fff;
+	font-family: "MuseoSansBold";
 }
 
 ol li {
 	margin-bottom: 15px;
 	padding-left: 18px;
 	position: relative;
-}
-
-ol li::before {
-	content: counter(item) ".";
-    counter-increment: item;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    color: #fff;
-    font-family: "MuseoSansBold";
 }
 
 ol a {
@@ -73,7 +67,7 @@ ol a:hover::before {
 
 ol {
 	margin-bottom: 30px;
-	counter-reset: item;
+	padding-left: 15px;
 }
 
 .head {
@@ -81,4 +75,24 @@ ol {
 	font-size: 24px;
 	margin-bottom: 15px;
 	font-family: "MuseoSansBold";
+	margin-bottom: 30px;
+	text-decoration: none;
+	display: inline-block;
+	color: #ffd174;
+	position: relative;
+}
+
+a.head::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	background-color: #ffd174;
+	transform: scale(0);
+	width: 100%;
+	transition: all .4s linear;
+}
+
+a.head:hover::before {
+	transform: scale(1);
 }
