@@ -1,23 +1,1313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="root/css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
-	<h1>Вёрстка Pekin</h1>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="hamburger hamburger--vortex">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <a href="home.html" class="logo">
+                    <img src="img/logo.png" alt="alt">
+                </a>
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <g>
+                            <g>
+                                <path fill="#3E7C7B" d="M14.097 7.046c0 1.71-.612 3.278-1.628 4.5l3.345 3.344a.65.65 0 1 1-.92.92l-3.345-3.345a7.018 7.018 0 0 1-4.5 1.627C3.161 14.092 0 10.932 0 7.046 0 3.161 3.162 0 7.048 0c3.887 0 7.049 3.161 7.049 7.046zm-1.302 0a5.753 5.753 0 0 0-5.747-5.745 5.753 5.753 0 0 0-5.747 5.745 5.753 5.753 0 0 0 5.747 5.746 5.753 5.753 0 0 0 5.747-5.746z" />
+                            </g>
+                        </g>
+                    </svg>
+                    <form action="/" class="search__form">
+                        <input type="text" placeholder="Поиск">
+                    </form>
+                </div>
+                <div class="header-nav">
+                    <a href="#" class="header-nav__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                            <g>
+                                <g>
+                                    <path fill="#167e7c" d="M17 4.814a5.03 5.03 0 0 1-1.176 3.26.34.34 0 0 1-.063.081 2.904 2.904 0 0 1-.171.166l-.07.066-6.77 6.516a.36.36 0 0 1-.5 0L1.699 8.609a.332.332 0 0 1-.056-.07C.597 7.614 0 6.263 0 4.814 0 2.158 1.986-.003 4.427-.003c1.886 0 3.443 1.686 4.073 2.482.63-.796 2.187-2.482 4.073-2.482C15.014-.003 17 2.158 17 4.814zm-.708 0c0-2.28-1.668-4.135-3.72-4.135-2.027 0-3.757 2.547-3.774 2.572-.13.194-.465.194-.596 0C8.185 3.226 6.455.68 4.427.68 2.377.679.708 2.534.708 4.814c0 1.293.543 2.491 1.49 3.287.034.03.062.064.082.102L8.5 14.18l6.602-6.353c.036-.033.073-.065.106-.102a4.36 4.36 0 0 0 1.084-2.91z" />
+                                    <path fill="none" stroke="#177e7c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M17 4.814a5.03 5.03 0 0 1-1.176 3.26.34.34 0 0 1-.063.081 2.904 2.904 0 0 1-.171.166l-.07.066-6.77 6.516a.36.36 0 0 1-.5 0L1.699 8.609a.332.332 0 0 1-.056-.07C.597 7.614 0 6.263 0 4.814 0 2.158 1.986-.003 4.427-.003c1.886 0 3.443 1.686 4.073 2.482.63-.796 2.187-2.482 4.073-2.482C15.014-.003 17 2.158 17 4.814zm-.708 0c0-2.28-1.668-4.135-3.72-4.135-2.027 0-3.757 2.547-3.774 2.572-.13.194-.465.194-.596 0C8.185 3.226 6.455.68 4.427.68 2.377.679.708 2.534.708 4.814c0 1.293.543 2.491 1.49 3.287.034.03.062.064.082.102L8.5 14.18l6.602-6.353c.036-.033.073-.065.106-.102a4.36 4.36 0 0 0 1.084-2.91z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span>избранное</span>
+                    </a>
+                    <a href="#login" data-effect="mfp-zoom-out" class="modal-init header-nav__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                            <g>
+                                <g>
+                                    <path fill="#187e7c" d="M19.348 18H.653c-.442 0-.757-.418-.621-.829l1.955-5.89a.64.64 0 0 1 .306-.361L6.435 8.7a4.12 4.12 0 0 1-.785-2.42V4.228C5.65 1.897 7.6 0 10 0c2.399 0 4.35 1.896 4.35 4.227v2.054c0 .898-.29 1.733-.785 2.42l4.142 2.219a.64.64 0 0 1 .306.36l1.955 5.891c.136.41-.178.829-.62.829zM6.954 6.28c0 1.633 1.367 2.96 3.046 2.96 1.675 0 3.046-1.323 3.046-2.96V4.228c0-1.632-1.366-2.96-3.046-2.96-1.68 0-3.046 1.328-3.046 2.96zm11.498 10.452l-1.601-4.824-4.22-2.26c-.78.577-1.71.86-2.63.86-.934 0-1.862-.29-2.633-.86l-4.219 2.26-1.6 4.824z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Вход</span>
+                    </a>
+                    <a href="#modalCart" data-effect="mfp-zoom-out" class="modal-init header-nav__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20">
+                            <g>
+                                <g>
+                                    <path fill="#187e7c" d="M14.33 19.186a2.594 2.594 0 0 1-1.89.814H2.561a2.594 2.594 0 0 1-1.891-.814 2.468 2.468 0 0 1-.66-1.912L1.102 5.57A.633.633 0 0 1 1.74 5h1.92V3.75C3.66 1.682 5.382 0 7.5 0c1.03 0 1.996.389 2.72 1.095a3.684 3.684 0 0 1 1.12 2.655V5h1.921c.332 0 .608.246.64.569l1.089 11.705a2.472 2.472 0 0 1-.66 1.912zM4.94 5h5.12V3.75c0-.671-.263-1.301-.746-1.771a2.582 2.582 0 0 0-1.814-.73c-1.412 0-2.56 1.122-2.56 2.501zm8.773 12.387L12.676 6.25h-1.335v1.875a.632.632 0 0 1-.64.625.632.632 0 0 1-.64-.625V6.25H4.939v1.875a.632.632 0 0 1-.64.625.632.632 0 0 1-.64-.625V6.25H2.324L1.288 17.386c-.033.355.083.694.33.957.244.262.58.407.944.407h9.876c.365 0 .7-.145.946-.406.246-.262.362-.603.33-.957z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <nav class="main-nav">
+                    <ul class="main-list">
+                        <li class="has-dropdown">
+                            <a href="#">ИПР</a>
+                            <div class="main-dropdown">
+                                <div class="container">
+                                    <div class="main-dropdown__row">
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Комфортная ортопедическая Обувь</a></li>
+                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
+                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Ортопедические подушки</a></li>
+                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
+                                                <li><a href="#">Компрессионный трикотаж</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
+                                                <li><a href="#">Косметика для стопы</a></li>
+                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Трикотажные изделия</a></li>
+                                                <li><a href="#">Аксессуары для обуви</a></li>
+                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">ОБУВЬ</a>
+                            <div class="main-dropdown">
+                                <div class="container">
+                                    <div class="main-dropdown__row">
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Комфортная ортопедическая Обувь 2</a></li>
+                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
+                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Ортопедические подушки</a></li>
+                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
+                                                <li><a href="#">Компрессионный трикотаж</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
+                                                <li><a href="#">Косметика для стопы</a></li>
+                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Трикотажные изделия</a></li>
+                                                <li><a href="#">Аксессуары для обуви</a></li>
+                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">СТЕЛЬКИ</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">комперсионный трикотаж</a>
+                            <div class="main-dropdown">
+                                <div class="container">
+                                    <div class="main-dropdown__row">
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Комфортная ортопедическая Обувь 3</a></li>
+                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
+                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Ортопедические подушки</a></li>
+                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
+                                                <li><a href="#">Компрессионный трикотаж</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
+                                                <li><a href="#">Косметика для стопы</a></li>
+                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-dropdown__item">
+                                            <ul class="main-dropdown__list">
+                                                <li><a href="#">Трикотажные изделия</a></li>
+                                                <li><a href="#">Аксессуары для обуви</a></li>
+                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">ортезы</a></li>
+                        <li><a href="#">корсеты</a></li>
+                        <li><a href="#">бандажи</a></li>
+                        <li><a href="#">ПОДУШКИ И МАТРАСЫ</a></li>
+                        <li><a href="#">РАСПРОДАЖА</a></li>
+                        <li><a href="#">акции</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Магазины</a></li>
+                        <li><a href="#">Кабинет ортопеда</a></li>
+                        <li><a href="#">ОРТОБЛОГ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN CONTENT START -->
+    <main class="main">
+    	<section class="banners">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-lg-5 col-md-6 order-1 order-lg-1">
+    					<a href="#" class="banners-link">
+    						<img src="img/ban-1.jpg" alt="alt">
+    					</a>
+    				</div>
+    				<div class="col-lg-3 order-3 order-lg-2">
+    					<a href="#" class="banners-link">
+    						<img src="img/ban-2.jpg" alt="alt">
+    					</a>
+    					<a href="#" class="banners-link">
+    						<img src="img/ban-3.jpg" alt="alt">
+    					</a>
+    				</div>
+    				<div class="col-lg-4 col-md-6 order-2  order-lg-3">
+    					<a href="#" class="banners-link">
+    						<img src="img/ban-4.jpg" alt="alt">
+    					</a>
+    				</div>
+    				<div class="col-12 order-4  order-lg-4">
+    					<a href="#" class="banners-link">
+    						<img src="img/ban-5.jpg" alt="alt">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="popular">
+    		<div class="container">
+    			<h2 class="h2 tl-center">Популярные категории</h2>
+    			<div class="popular-slider">
+    				<div class="popular-slide">
+    					<a href="#" class="popular-item">
+    						<span class="popular-item__img">
+    							<img src="img/popular-1.png" alt="alt">
+    						</span>
+    						<span class="popular-item__head">Комфортная ортопедическая обувь</span>
+    					</a>
+    				</div>
+    				<div class="popular-slide">
+    					<a href="#" class="popular-item">
+    						<span class="popular-item__img">
+    							<img src="img/popular-2.png" alt="alt">
+    						</span>
+    						<span class="popular-item__head">Стандартные ортопедические стельки</span>
+    					</a>
+    				</div>
+    				<div class="popular-slide">
+    					<a href="#" class="popular-item">
+    						<span class="popular-item__img">
+    							<img src="img/popular-3.png" alt="alt">
+    						</span>
+    						<span class="popular-item__head">Отрезы, корсеты, бандажи и средства реабилитации</span>
+    					</a>
+    				</div>
+    				<div class="popular-slide">
+    					<a href="#" class="popular-item">
+    						<span class="popular-item__img">
+    							<img src="img/popular-4.png" alt="alt">
+    						</span>
+    						<span class="popular-item__head">Индивидуальные ортопедические стельки</span>
+    					</a>
+    				</div>
+    				<div class="popular-slide">
+    					<a href="#" class="popular-item">
+    						<span class="popular-item__img">
+    							<img src="img/popular-1.png" alt="alt">
+    						</span>
+    						<span class="popular-item__head">Комфортная ортопедическая обувь</span>
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+        <section class="category">
+            <div class="container">
+                <div class="d-flex align-items-center category-nav">
+                    <h2 class="h2">Каталог</h2>
+                    <div class="mix-nav">
+                    	<button type="button" data-filter="all">Все</button>
+                    	<button type="button" data-filter=".category-a">Детям</button>
+                    	<button type="button" data-filter=".category-b">Женщинам</button>
+                    	<button type="button" data-filter=".category-c">Мужчинам</button>
+                    </div>
+                </div>
+                <div class="category-container">
+                	<div class="row category-filter">
+                		<div class="mix col-lg-4 col-md-6 category-a">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-1.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">обувь <b>для мальчиков</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-b">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-2.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">Стандартные <b>ортопедические стельки</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-c">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-3.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">индивидуальные <b>ортопедические стельки</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-a">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-4.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">обувь <b>для девочек</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-b">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-5.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">Ортопедические <b>подушки и матрасы</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-c">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-6.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">Гимнастические <b>и массажные изделия</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-a">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-7.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">Индивидуальные ортопедические <b>тутора и аппараты</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-b">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-8.jpg" alt="alt" class="category-box__img">
+	                			<div class="category-box__head">Индивидуальная <b>программа реабилитации</b></div>
+	                		</a>
+                		</div>
+                		<div class="mix col-lg-4 col-md-6 category-c">
+                			<a href="#" class="category-box">
+	                			<img src="img/cat-9.jpg" alt="alt" class="category-box__img">
+	                			<span class="category-box__wrap">
+	                				<span class="category-box__header">Расспродажа</span>
+	                				<span class="category-box__sale">до <b>70</b><span>%</span></span>
+	                				<div class="arrow-right arrow-right--white">
+				                        <span>Перейти</span>
+				                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464467C11.9763 0.269205 11.6597 0.269205 11.4645 0.464467C11.2692 0.659729 11.2692 0.976312 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM-4.37114e-08 4.5L15 4.5L15 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white" />
+				                        </svg>
+				                    </div>
+	                			</span>
+	                		</a>
+                		</div>
+                	</div>
+                </div>
+            </div>
+        </section>
+        <section class="hits hits--sale">
+            <div class="container">
+                <h2 class="h2 tl-center">Рекомендуем вам</h2>
+                <div class="slider-wrapper">
+                    <div class="hits-slider slider-center">
+                        <a href="#" class="card card--banner">
+                        	<img src="img/banner-goods.jpg" alt="alt">
+                        </a>
+                        <div class="card">
+                            <div class="card__label card__label--sale">Скидка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--new">Новинка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические Сабо ортопедические</div>
+                                    <div class="card__price">72 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--sale">Скидка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--new">Новинка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hits">
+            <div class="container">
+                <h2 class="h2 tl-center mb-45">Вас может заинтересовать</h2>
+                <div class="slider-wrapper">
+                    <div class="hits-slider slider-center">
+                        <div class="card">
+                            <div class="card__label card__label--new">Новинка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--sale">Скидка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--new">Новинка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические Сабо ортопедические</div>
+                                    <div class="card__price">72 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--sale">Скидка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__label card__label--new">Новинка</div>
+                            <div class="card__image">
+                                <img src="img/card-image.png" alt="alt">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="card__name">Сабо ортопедические</div>
+                                    <div class="card__price">7 500 Р</div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__category">Женская обувь</div>
+                                    <div class="card__oldprice">10 500 Р</div>
+                                </div>
+                            </div>
+                            <a href="#" class="card__button btn--green">
+                                <span>подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
+                                    <g>
+                                        <g>
+                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="container">
+                <div class="sale-block">
+                	<img src="img/sale-banner.png" alt="alt" class="sale-block__img">
+                    <h2 class="h2 white">Все акции - успей купить!</h2>
+                    <a href="#" class="arrow-right arrow-right--white">
+                        <span>Перейти</span>
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464467C11.9763 0.269205 11.6597 0.269205 11.4645 0.464467C11.2692 0.659729 11.2692 0.976312 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM-4.37114e-08 4.5L15 4.5L15 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="d-ort">
+            <div class="container">
+                <h2 class="h2 tl-center">Ортопедические изделия по назначению</h2>
+                <div class="d-ort-slider">
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-1.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Стабилизирующая обувь</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-2.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Антиварусная обувь</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-3.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Обувь тутор при ДЦП </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-4.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Ортезная обувь</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-5.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Профилактическая обувь</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-ort-slide">
+                        <a href="#" class="d-ort-item">
+                            <div class="d-ort-item__img">
+                                <img src="img/d-ort-2.png" alt="alt">
+                            </div>
+                            <div class="d-ort-item__content">
+                                <div class="d-ort-item__name">Антиварусная обувь</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="h2 tl-center">клиенты говорят о нас</h2>
+                <div class="slider-wrapper">
+                    <div class="reviews-slider">
+                        <div class="reviews-slide">
+                            <div class="reviews-slide__header">
+                                <div class="reviews-slide__img">
+                                    <img src="img/review-img-1.svg" alt="alt">
+                                </div>
+                                <div class="reviews-slide__content">
+                                    <div class="reviews-slide__name">Анна Анатольевна</div>
+                                    <div class="reviews-slide__info">
+                                        <div class="reviews-slide__rating">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_926_233)">
+                                                    <rect width="15" height="15" fill="white" />
+                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_926_233">
+                                                        <rect width="15" height="15" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="reviews-slide__date">6.05.2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__content">
+                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
+                            </div>
+                        </div>
+                        <div class="reviews-slide">
+                            <div class="reviews-slide__header">
+                                <div class="reviews-slide__img">
+                                    <img src="img/review-img-2.svg" alt="alt">
+                                </div>
+                                <div class="reviews-slide__content">
+                                    <div class="reviews-slide__name">Марина Щукина</div>
+                                    <div class="reviews-slide__info">
+                                        <div class="reviews-slide__rating">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_926_233)">
+                                                    <rect width="15" height="15" fill="white" />
+                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_926_233">
+                                                        <rect width="15" height="15" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>5.0</span>
+                                        </div>
+                                        <div class="reviews-slide__date">6.05.2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__content">
+                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
+                            </div>
+                        </div>
+                        <div class="reviews-slide">
+                            <div class="reviews-slide__header">
+                                <div class="reviews-slide__img">
+                                    <img src="img/review-img-3.svg" alt="alt">
+                                </div>
+                                <div class="reviews-slide__content">
+                                    <div class="reviews-slide__name">Андрей Сергеевич</div>
+                                    <div class="reviews-slide__info">
+                                        <div class="reviews-slide__rating">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_926_233)">
+                                                    <rect width="15" height="15" fill="white" />
+                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_926_233">
+                                                        <rect width="15" height="15" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>4.8</span>
+                                        </div>
+                                        <div class="reviews-slide__date">6.05.2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__content">
+                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
+                            </div>
+                        </div>
+                        <div class="reviews-slide">
+                            <div class="reviews-slide__header">
+                                <div class="reviews-slide__img">
+                                    <img src="img/review-img-1.svg" alt="alt">
+                                </div>
+                                <div class="reviews-slide__content">
+                                    <div class="reviews-slide__name">Анна Анатольевна</div>
+                                    <div class="reviews-slide__info">
+                                        <div class="reviews-slide__rating">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_926_233)">
+                                                    <rect width="15" height="15" fill="white" />
+                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_926_233">
+                                                        <rect width="15" height="15" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="reviews-slide__date">6.05.2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__content">
+                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-center">
+                    <a href="#" class="btn btn--transparent black">Все отзывы</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-indent news">
+            <div class="container">
+                <h2 class="h2 tl-center">Новости и акции</h2>
+                <div class="slider-wrapper">
+                    <div class="news-slider slider-center">
+                        <a href="#" class="news-item">
+                            <div class="news-item__img">
+                                <img src="img/news-1.jpg" alt="alt">
+                            </div>
+                            <div class="news-item__content">
+                                <div class="news-item__header">
+                                    <div class="news-item__label news-item__label--green">Новость</div>
+                                    <div class="news-item__date">6.05.2022</div>
+                                </div>
+                                <div class="news-item__head">Открыт новый салон Dr. Sursil Профсоюзная 26/44. Дарим подарки!</div>
+                            </div>
+                        </a>
+                        <a href="#" class="news-item">
+                            <div class="news-item__img">
+                                <img src="img/news-2.jpg" alt="alt">
+                            </div>
+                            <div class="news-item__content">
+                                <div class="news-item__header">
+                                    <div class="news-item__label news-item__label--red">Акция</div>
+                                    <div class="news-item__date">6.05.2022</div>
+                                </div>
+                                <div class="news-item__head">Расспродажа -40% на женскую и мужскую обувь. Успей купить!</div>
+                            </div>
+                        </a>
+                        <a href="#" class="news-item">
+                            <div class="news-item__img">
+                                <img src="img/news-3.jpg" alt="alt">
+                            </div>
+                            <div class="news-item__content">
+                                <div class="news-item__header">
+                                    <div class="news-item__label news-item__label--green">Новость</div>
+                                    <div class="news-item__date">6.05.2022</div>
+                                </div>
+                                <div class="news-item__head">Новая коллекция школьной обуви уже в продаже!</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="container">
+                <div class="h2 h2 tl-center">работаем с Брендами</div>
+                <div class="brands-slider">
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-1.svg" alt="alt">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-2.svg" alt="alt">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-3.svg" alt="alt">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-4.svg" alt="alt">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-5.png" alt="alt" width="153">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-6.png" alt="alt" width="100">
+                        </div>
+                    </div>
+                    <div class="brands-slide">
+                        <div class="brands-item">
+                            <img src="img/brands-1.svg" alt="alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-blog">
+            <div class="container">
+                <h2 class="h2 white tl-center">Ортоблог - статьи и мнение экспертов</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-blog-item">
+                            <div class="d-blog-item__header">
+                                <div class="d-blog-item__img">
+                                    <img src="img/d-blog-1.jpg" alt="alt">
+                                </div>
+                                <div class="d-blog-item__head h3">ПРОЦКО ВИКТОР ГЕННАДИЕВИЧ</div>
+                            </div>
+                            <p>Первый Президент Российской Ассоциации хирургии стопы и голеностопного сустава (RusFAS). Член Азиатского общества хирургии стопы и голеностопного сустава (AFFAS). Член Европейского общества хирургии стопы и голеностопного сустава (EFAS). Доцент кафедры травматологии и ортопедии РУДН.Доктор медицинских наук, врач высшей квалификационной категории по травматологии-ортопедии, стаж 23 года.</p>
+                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-blog-item">
+                            <div class="d-blog-item__header">
+                                <div class="d-blog-item__img">
+                                    <img src="img/d-blog-2.jpg" alt="alt">
+                                </div>
+                                <div class="d-blog-item__head h3">МАЗАЛОВ АЛЕКСЕЙ ВИТАЛЬЕВИЧ</div>
+                            </div>
+                            <p>Президент Российского общества хирургии стопы и голеностопного сустава (RusFAS). Член Азиатского общества хирургии стопы и голеностопного сустава (AFFAS). Член Европейского общества хирургии стопы и голеностопного сустава (EFAS). Врач высшей квалификационной категории по травматологии-ортопедии, стаж 24 года.</p>
+                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-blog-item">
+                            <div class="d-blog-item__header">
+                                <div class="d-blog-item__img">
+                                    <img src="img/d-blog-3.jpg" alt="alt">
+                                </div>
+                                <div class="d-blog-item__head h3">ТАДЖ АРТУР АРТЕМОВИЧ</div>
+                            </div>
+                            <p>Действительный член Российской Ассоциации хирургии стопы и голеностопного сустава (RusFAS). Врач травматолог-ортопед по специализации стопа и голеностопный сустав. Международный спикер. Преподаватель и методист. Главный врач научно-производственного центра "СУРСИЛ-ОРТО", стаж работы 8 лет.</p>
+                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about__img">
+                            <img src="img/about-image.jpg" alt="alt">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content">
+                            <h2 class="h2 mb-45">о компании <span class="green">Dr. Sursil</span></h2>
+                            <p>С 2003 года компания «СУРСИЛ-ОРТО» успешно занимается разработкой, изготовлением и реализацией высококачественной ортопедической обувной продукции, ортопедических стелек и готовых ортопедических изделии для профилактики, реабилитации и лечения патологии стопы тм «SURSIL-ORTHO» и тм «Dr. SURSIL» посредством сайта www.sursil.ru.</p>
+                            <p>За свою историю компания начала реализацию ортопедической обуви, стелек и др. готовых ортопедических изделии для профилактики, реабилитации и лечения патологии стопы во всех городах Российской Федерации, а также на территориях: Казахстана, Белоруссии, Армении, Киргизии и Узбекистана.</p>
+                            <p>Компанией «СУРСИЛ-ОРТО» в 2020 году было принято решение о реализации идеи о создании мульти брендового сайта ортопедических товаров. Сегодня мы рады представить Вам сайт www.dr.sursil.ru где здоровье в виде ортопедических изделий представлено в доступном формате. Мы будем рады если вами будет принято решение оставить отзыв о товаре, по сервису сайта или просто оставить свои пожелания.</p>
+                            <p>Спасибо, что вы всегда с нами с уважением и наилучшими пожеланиями коллектив компании «СУРСИЛ-ОРТО».</p>
+                            <a href="#" class="btn btn--transparent black">Больше о компании</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-indent map">
+            <div class="container">
+                <h2 class="h2 tl-center mb-45">Наши магазины</h2>
+                <div class="map-content">
+                    <div class="map-content__img">
+                        <img src="img/map.png" alt="alt">
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="map-slider slider-top">
+                            <div class="map-slide">
+                                <h3 class="h3">Магазин на Соколе</h3>
+                                <div class="centered mb-30">
+                                    <img src="img/metro.png" alt="alt">
+                                    <span>м. Сокол</span>
+                                </div>
+                                <p>Ленинградский проспект дом 76 А ТЦ Метромаркет 1 этаж (Вход с улицы и дополнительный вход из Метро с минус первого этажа по эскалатору)</p>
+                                <p>
+                                    <a href="#" class="black-link">Проложить маршрут через Яндекс карты</a>
+                                </p>
+                                <a href="tel:84952586158" class="phone">8 (495) 258-61-58</a>
+                                <div class="green semi font-16">Пн-Вс 10:00-22:00</div>
+                                <a href="#" class="btn btn--transparent black">подробнее о магазине</a>
+                            </div>
+                            <div class="map-slide">
+                                <h3 class="h3">Магазин на Соколе</h3>
+                                <div class="centered mb-30">
+                                    <img src="img/metro.png" alt="alt">
+                                    <span>м. Сокол</span>
+                                </div>
+                                <p>Ленинградский проспект дом 76 А ТЦ Метромаркет 1 этаж (Вход с улицы и дополнительный вход из Метро с минус первого этажа по эскалатору)</p>
+                                <p>
+                                    <a href="#" class="black-link">Проложить маршрут через Яндекс карты</a>
+                                </p>
+                                <a href="tel:84952586158" class="map-slide__phone">8 (495) 258-61-58</a>
+                                <div class="green semi font-16">Пн-Вс 10:00-22:00</div>
+                                <a href="#" class="btn btn--transparent black">подробнее о магазине</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-indent gallery">
+            <div class="container">
+                <div class="head-flex">
+                    <div class="head-flex__item">
+                        <h2 class="h2">@DR.SURSIL</h2>
+                    </div>
+                    <div class="head-flex__item">
+                        <a href="#" class="btn btn--transparent black btn--160">перейти в vk</a>
+                    </div>
+                </div>
+                <div class="row mb-45">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__item">
+                            <img src="img/vk-1.png" alt="alt">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gallery__item">
+                                    <img src="img/vk-2.png" alt="alt">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="gallery__item">
+                                    <img src="img/vk-3.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gallery__item">
+                                    <img src="img/vk-4.png" alt="alt">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="gallery__item">
+                                    <img src="img/vk-5.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="gallery__item">
+                            <img src="img/vk-6.png" alt="alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN CONTENT  END -->
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo logo--footer">
+                <img src="img/logo.png" alt="alt">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__item">
+                        <ul class="footer__list">
+                            <li><a href="#">Комфортная ортопедическая обувь</a></li>
+                            <li><a href="#">Ортопедические стельки (стандартные)</a></li>
+                            <li><a href="#">Стельки при пяточной шпоре</a></li>
+                            <li><a href="#">Ортезы, корсеты, бандажи и средства реабилитации</a></li>
+                            <li><a href="#">Индивидуальные ортопедические стельки</a></li>
+                            <li><a href="#">Компрессионный трикотаж</a></li>
+                            <li><a href="#">Ортопедические подушки и матрасы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__item">
+                        <ul class="footer__list">
+                            <li><a href="#">Вкладные приспособления для стопы</a></li>
+                            <li><a href="#">Косметика</a></li>
+                            <li><a href="#">Гимнастические и массажные изделия</a></li>
+                            <li><a href="#">Трикотажные изделия</a></li>
+                            <li><a href="#">Аксессуары для обуви</a></li>
+                            <li><a href="#">ИРП</a></li>
+                            <li><a href="#">Индивидуальные ортопедические тутора и аппараты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__item">
+                        <ul class="footer__list footer__list--bold">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Наши магазины</a></li>
+                            <li><a href="#">Бонусная программа</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                            <li><a href="#">Кабинет ортопеда</a></li>
+                            <li><a href="#">Публикации и статьи</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Ортоблог</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Распродажа</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__item">
+                        <div class="footer__contacts">
+                            <a href="tel:84952586158" class="phone">8 (495) 258 61 58</a>
+                            <a href="tel:88005054814" class="phone">8 (800) 505 48 14</a>
+                        </div>
+                        <a href="#" data-effect="mfp-zoom-out" class="modal-init centered mb-30 centered--green">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                <g>
+                                    <g>
+                                        <path fill="#177e7c" d="M11.816 15.901c0 .614-.509 1.154-1.153 1.154s-1.138-.54-1.138-1.154c0-.629.509-1.153 1.138-1.153.63 0 1.153.524 1.153 1.153zm2.232-7.414c0 1.408-1.273 2.426-1.677 2.741-.824.644-.84 1.093-.84 1.872 0 .285-.149.614-.883.614-.614 0-.824-.225-.824-1.003 0-1.288.57-1.902 1.004-2.277.494-.42 1.333-.883 1.333-1.693 0-.688-.6-1.018-1.348-1.018-1.528 0-1.198 1.153-2.007 1.153-.405 0-.899-.27-.899-.853 0-.809.929-2.007 2.95-2.007 1.918 0 3.191 1.063 3.191 2.471zM22 11c0 6.08-4.92 11-11 11H.86a.86.86 0 0 1-.86-.86V11C0 4.92 4.92 0 11 0s11 4.92 11 11zm-1.719 0A9.277 9.277 0 0 0 11 1.718 9.277 9.277 0 0 0 1.719 11v9.281H11A9.276 9.276 0 0 0 20.281 11z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Задать вопрос ортопеду</span>
+                        </a>
+                        <a href="#" class="btn btn--transparent black">Записаться на прием</a>
+                        <div class="pay">
+                            <div class="pay-item">
+                                <img src="img/pay-1.png" alt="alt" width="281">
+                            </div>
+                            <div class="pay-item">
+                                <img src="img/pay-2.png" alt="alt" width="36">
+                                <img src="img/pay-3.png" alt="alt" width="33">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <div class="footer__bottom-item">
+                            <span>Все права защищены © Sursil 2003-2022 ООО «Ботильон» (ОГРН 1165040054365) </span>
+                            <span>140180 МО, г. Жуковский, ул. Кооперативная, дом 10, стр. 3</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 tl-right">
+                        <a href="#" class="footer__bottom-item footer__bottom-item--link">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- MODAL -->
+    <div class="modal modal-login mfp-hide mfp-with-anim" id="login">
+        <div class="tabs">
+            <div class="tabs__nav">
+                <div class="tabs__nav-item">вход</div>
+                <div class="tabs__nav-item">Регистрация</div>
+            </div>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__content-item">
+                <form action="/" class="form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Логин">
+                    </div>
+                    <div class="form__row mb-30">
+                        <input type="password" class="form__input" placeholder="Пароль">
+                    </div>
+                    <div class="form__row tl-center mb-30">
+                        <a href="#recovery" data-effect="mfp-zoom-out" class="modal-init orange-link">Забыли пароль?</a>
+                    </div>
+                    <div class="form__row tl-center">
+                        <button class="btn btn--orange">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tabs__content-item">
+                <form action="/" class="form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Логин">
+                    </div>
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Телефон">
+                    </div>
+                    <div class="form__row">
+                        <input type="password" class="form__input" placeholder="Пароль">
+                    </div>
+                    <div class="form__row mb-30">
+                        <input type="password" class="form__input" placeholder="Повторите пароль">
+                    </div>
+                    <div class="form__row mb-30">
+                        <div class="form__checkbox">
+                            <input type="checkbox" checked name="policy" id="policy">
+                            <label for="policy">Согласен(а) на обработку данных</label>
+                        </div>
+                    </div>
+                    <div class="form__row tl-center">
+                        <button class="btn btn--orange">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-recovery mfp-hide mfp-with-anim" id="recovery">
+        <div class="modal-login__content">
+            <div class="tl-center">
+                <div class="modal__head">восстановить пароль</div>
+                <div class="modal-login__subtext">В течении 30 сек вам на почту придет пароль для подтвержедения входа</div>
+            </div>
+            <form action="/" class="form">
+                <div class="form__row">
+                    <input type="text" class="form__input" placeholder="Почта">
+                </div>
+                <div class="form__row mb-30">
+                    <input type="password" class="form__input" placeholder="Пароль">
+                </div>
+                <div class="form__row tl-center">
+                    <button class="btn btn--orange">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-cart mfp-hide mfp-with-anim" id="modalCart">
+        <div class="tl-center modal__head mb-30">корзина</div>
+        <div class="modal-cart__block mb-45">
+            <div class="modal-cart__row">
+                <div class="modal-cart__image">
+                    <div class="card__label card__label--new">Новинка</div>
+                    <a href="#">
+                        <img src="img/cart-image.png" alt="alt">
+                    </a>
+                </div>
+                <div class="modal-cart__info">
+                    <a href="#" class="modal-cart__head">Сабо ортопедические Сабо ортопедические</a>
+                    <div class="modal-cart__category">Женская обувь</div>
+                </div>
+                <div class="modal-cart__prices">
+                    <div class="modal-cart__price">75 500 Р</div>
+                    <div class="modal-cart__oldprice">10 500 Р</div>
+                </div>
+                <div class="modal-cart__num">
+                    <div class="quantity">
+                        <input type="number" min="1" max="235" step="1" value="1">
+                    </div>
+                </div>
+                <div class="modal-cart__close">
+                    <img src="img/close.png" alt="alt">
+                </div>
+            </div>
+            <div class="modal-cart__row">
+                <div class="modal-cart__image">
+                    <div class="card__label card__label--sale">Скидка</div>
+                    <a href="#">
+                        <img src="img/cart-image.png" alt="alt">
+                    </a>
+                </div>
+                <div class="modal-cart__info">
+                    <a href="#" class="modal-cart__head">Сабо ортопедические</a>
+                    <div class="modal-cart__category">Женская обувь</div>
+                </div>
+                <div class="modal-cart__prices">
+                    <div class="modal-cart__price">7 500 Р</div>
+                    <div class="modal-cart__oldprice">10 500 Р</div>
+                </div>
+                <div class="modal-cart__num">
+                    <div class="quantity">
+                        <input type="number" min="1" max="235" step="1" value="1">
+                    </div>
+                </div>
+                <div class="modal-cart__close">
+                    <img src="img/close.png" alt="alt">
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__nav">
+            <button class="btn btn--transparent black">продолжить покупки</button>
+            <button class="btn btn--orange">оформить заказ</button>
+        </div>
+    </div>
 
-	<ol>
-		<li><a href="contacts.html" target="_blank">contacts</a></li>
-		<li><a href="aboutus.html" target="_blank">aboutus</a></li>
-		<li><a href="home.html" target="_blank">home</a></li>
-		<li><a href="catalog.html" target="_blank">catalog</a></li>
-		<li><a href="news.html" target="_blank">news</a></li>
-		<li><a href="hr.html" target="_blank">hr</a></li>
-		<li><a href="cart.html" target="_blank">cart</a></li>
-	</ol>
-
+    <script src="js/scripts.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>

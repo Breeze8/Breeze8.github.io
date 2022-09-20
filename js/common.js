@@ -1,390 +1,100 @@
 $(function() {
 
+    // MAGAZINE
 
-    if ($(window).width() < 767) {
-        $('.settings-header').click(function() {
-            $(this).toggleClass('active')
-            $('.settings-header__hidden').slideToggle()
+    $('.contacts__info-item .detailed').click(function(e) {
+        e.preventDefault()
+        $(this).toggleClass('open');
+        $(this).prev().slideToggle()
+        if ($(this).hasClass('open')) {
+            $(this).find('span').text('Скрыть')
+        } else {
+            $(this).find('span').text('Развернуть')
+        }
+    })
+
+    // FILTER
+
+    $('.filter__rating-nav svg').click(function() {
+        $(this).closest('.filter__rating-nav').find('svg.active').removeClass('active')
+        $(this).toggleClass('active')
+    })
+
+    $('.filter__rating-sort button').click(function() {
+        $('.filter__rating-sort button.active').removeClass('active')
+        $(this).toggleClass('active')
+    })
+
+    $('.filter-mobile').click(function() {
+        $('.filter__top').slideToggle()
+        $(this).toggleClass('active')
+    })
+
+    $('.filter__list-toggler').click(function(e) {
+        e.stopPropagation();
+        $(this).next().toggleClass('open')
+        $(this).toggleClass('active')
+
+        $(this).parent().siblings().find('.filter__list-dropdown').removeClass('open')
+        $(this).parent().siblings().find('.filter__list-toggler').removeClass('active')
+    })
+
+    $(document).on('click', function(e) {
+        var container = $(".filter__list-dropdown");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.removeClass('open')
+            $('.filter__list-toggler').removeClass('active')
+        }
+    });
+
+    // INPUT FILE
+
+    var fileInput = $(".form__file");
+
+    $(fileInput).on('change', function() {
+        var val = $(this).val();
+        $(this).parent().find('.form__file-text').text(val);
+    })
+
+    // MAIN-NAV
+
+    if ($(window).width() < 1199) {
+        $('.main-list > li.has-dropdown a').click(function() {
+            $(this).next().slideToggle()
+            $(this).parent().toggleClass('active')
+        })
+        $('.search svg').click(function() {
+            $('.search__form').toggleClass('open')
+            $(this).parent().toggleClass('active')
         })
     }
 
-    $('.change-filter').click(function() {
+    // STAR RATING
 
-        $('.change-box:first-child').toggle()
-        $('.change-box:last-child').toggle()
-
-    })
-
-    // MODAL CALC
-
-    $('#dep-input').on('change, keyup', function() {
-        var depVal = $(this).val();
-        var depPrice = $('.dep-price').data('price');
-        depPrice = parseFloat(depPrice);
-        var depMoney = depVal / depPrice;
-        depMoney = depMoney.toFixed(2)
-        var depGet = depMoney * 300 / 100 / 365 * 7;
-        depGet = depGet.toFixed(2)
-
-        $('.dep-get').text(depMoney)
-        $('.dep-money').text(depGet)
-    })
-
-    // SORT TABLE  
-
-    $(".pull-table").stupidtable();
-
-    // COPY
-
-    var clipboard = new ClipboardJS('.copy-btn');
-
-    if ($('#calc-slider-1').length) {
-        var tapSlider = document.getElementById('calc-slider-1');
-
-        noUiSlider.create(tapSlider, {
-            start: 0,
-            behaviour: 'tap',
-            connect: [false, true],
-            tooltips: [wNumb({ decimals: 0, thousand: ',', })],
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 999999
-            }
-        });
-        // MAIN CALC
-
-        var resultToken = 0,
-            resultUsdt = 0,
-            valueToken = 0,
-            valueUsdt = 0;
-
-        tapSlider.noUiSlider.on('slide', function() {
-
-            var sliderValue = tapSlider.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365
-            resultUsdt = sliderValue * 300 / 100 / 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-1 .calcDay .calc-token').text(resultToken)
-            $('#calc-1 .calcDay .calc-usdt').text(resultUsdt)
-
-            // WEEK
-
-            var sliderValue = tapSlider.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 7
-            resultUsdt = sliderValue * 300 / 100 / 365 * 7
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-1 .calcWeek .calc-token').text(resultToken)
-            $('#calc-1 .calcWeek .calc-usdt').text(resultUsdt)
-
-            // MONTH
-
-            var sliderValue = tapSlider.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 30
-            resultUsdt = sliderValue * 300 / 100 / 365 * 30
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-1 .calcMonth .calc-token').text(resultToken)
-            $('#calc-1 .calcMonth .calc-usdt').text(resultUsdt)
-
-            // YEAR
-
-            var sliderValue = tapSlider.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 365
-            resultUsdt = sliderValue * 300 / 100 / 365 * 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-1 .calcYear .calc-token').text(resultToken)
-            $('#calc-1 .calcYear .calc-usdt').text(resultUsdt)
-
-        });
-    }
-
-
-
-    if ($('#calc-slider-2').length) {
-        var tapSlider2 = document.getElementById('calc-slider-2');
-
-        noUiSlider.create(tapSlider2, {
-            start: 0,
-            behaviour: 'tap',
-            connect: [false, true],
-            tooltips: [wNumb({ decimals: 0, thousand: ',', })],
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 999999
-            }
-        });
-        // MAIN CALC
-
-        var resultToken = 0,
-            resultUsdt = 0,
-            valueToken = 0,
-            valueUsdt = 0;
-
-        tapSlider2.noUiSlider.on('slide', function() {
-
-            var sliderValue = tapSlider2.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365
-            resultUsdt = sliderValue * 300 / 100 / 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-2 .calcDay .calc-token').text(resultToken)
-            $('#calc-2 .calcDay .calc-usdt').text(resultUsdt)
-
-            // WEEK
-
-            var sliderValue = tapSlider2.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 7
-            resultUsdt = sliderValue * 300 / 100 / 365 * 7
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-2 .calcWeek .calc-token').text(resultToken)
-            $('#calc-2 .calcWeek .calc-usdt').text(resultUsdt)
-
-            // MONTH
-
-            var sliderValue = tapSlider2.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 30
-            resultUsdt = sliderValue * 300 / 100 / 365 * 30
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-2 .calcMonth .calc-token').text(resultToken)
-            $('#calc-2 .calcMonth .calc-usdt').text(resultUsdt)
-
-            // YEAR
-
-            var sliderValue = tapSlider2.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 365
-            resultUsdt = sliderValue * 300 / 100 / 365 * 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-2 .calcYear .calc-token').text(resultToken)
-            $('#calc-2 .calcYear .calc-usdt').text(resultUsdt)
-
-        });
-    }
-
-
-
-
-    if ($('#calc-slider-3').length) {
-        var tapSlider3 = document.getElementById('calc-slider-3');
-
-        noUiSlider.create(tapSlider3, {
-            start: 0,
-            behaviour: 'tap',
-            connect: [false, true],
-            tooltips: [wNumb({ decimals: 0, thousand: ',', })],
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 999999
-            }
-        });
-        // MAIN CALC
-
-        var resultToken = 0,
-            resultUsdt = 0,
-            valueToken = 0,
-            valueUsdt = 0;
-
-        tapSlider3.noUiSlider.on('slide', function() {
-
-            var sliderValue = tapSlider3.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365
-            resultUsdt = sliderValue * 300 / 100 / 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-3 .calcDay .calc-token').text(resultToken)
-            $('#calc-3 .calcDay .calc-usdt').text(resultUsdt)
-
-            // WEEK
-
-            var sliderValue = tapSlider3.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 7
-            resultUsdt = sliderValue * 300 / 100 / 365 * 7
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-3 .calcWeek .calc-token').text(resultToken)
-            $('#calc-3 .calcWeek .calc-usdt').text(resultUsdt)
-
-            // MONTH
-
-            var sliderValue = tapSlider3.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 30
-            resultUsdt = sliderValue * 300 / 100 / 365 * 30
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-3 .calcMonth .calc-token').text(resultToken)
-            $('#calc-3 .calcMonth .calc-usdt').text(resultUsdt)
-
-            // YEAR
-
-            var sliderValue = tapSlider3.noUiSlider.get();
-
-            resultToken = sliderValue * 300 / 100 / 365 * 365
-            resultUsdt = sliderValue * 300 / 100 / 365 * 365
-
-            resultToken = Math.round(resultToken * 100) / 100
-            resultToken = resultToken.toLocaleString();
-
-            resultUsdt = resultUsdt * 0.1;
-            resultUsdt = Math.round(resultUsdt * 100) / 100
-            resultUsdt = resultUsdt.toLocaleString();
-
-            $('#calc-3 .calcYear .calc-token').text(resultToken)
-            $('#calc-3 .calcYear .calc-usdt').text(resultUsdt)
-
-        });
-    }
-
-
-
-
-    // ACCORDION JQUERY
-
-    $('.history a').click(function(j) {
-        var dropDown = $(this).closest('li').find('.history-body');
-
-        $(this).closest('.history').find('.history-body').not(dropDown).slideUp();
-
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).closest('.history').find('a.active').removeClass('active');
-            $(this).addClass('active');
-        }
-
-        dropDown.stop(false, true).slideToggle();
-
-        j.preventDefault();
-    });
-
-    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-
-    $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('.accordion-body');
-
-        $(this).closest('.accordion').find('.accordion-body').not(dropDown).slideUp();
-
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
-            $(this).addClass('active');
-        }
-
-        dropDown.stop(false, true).slideToggle();
-
-        j.preventDefault();
+    $('.bar-rating--1').barrating({
+        theme: 'fontawesome-stars'
     });
 
     // CUSTOM SELECT
 
-    $(".js-select").select2();
-
-    $(".select-img").select2({
-        templateResult: formatState,
-        templateSelection: formatState
+    $(".js-select-theme").select2({
+        placeholder: "Тема",
+        allowClear: true,
     });
 
-    function formatState(opt) {
-        if (!opt.id) {
-            return opt.text.toUpperCase();
-        }
+    $(".js-select-price").select2({
+        placeholder: "Цель приема ",
+        allowClear: true,
+    });
 
-        var optimage = $(opt.element).attr('data-image');
-        console.log(optimage)
-        if (!optimage) {
-            return opt.text.toUpperCase();
-        } else {
-            var $opt = $(
-                '<span><img src="' + optimage + '" width="60px" /> ' + opt.text.toUpperCase() + '</span>'
-            );
-            return $opt;
-        }
-    };
+    $(".js-select-director").select2({
+        placeholder: "Оповестить руководство",
+        allowClear: true,
+    });
+
+    $('.modal-cart__close').click(function() {
+        $(this).parent().remove()
+    });
 
     // ADAPTIVE MENU
 
@@ -393,64 +103,6 @@ $(function() {
         $('.main-nav').toggleClass('open');
         $('body').toggleClass('hidden');
     });
-
-    // $('.show-more').click(function() {
-    //     $(this).closest('.tabs-content__item').find('.hidden').show()
-    //     $(this).hide()
-    // });
-
-    // ASTERIKS
-
-    function toggleElementMask(element) {
-        //Regex to find *
-        let reg = /^\*+$/g;
-        //If all * we are masked
-        let isMasked = element.innerText.match(reg);
-        if (!isMasked) {
-            //Store the original text
-            element.dataset.original = element.innerText;
-            //Replace the contente with the same amount of *
-            element.innerText = "*".repeat(element.innerText.length);
-        } else {
-            //Restore the text
-            element.innerText = element.dataset.original;
-        }
-    }
-
-    //Mask on page load
-    $(".lk-nav__vals").each(function() {
-        toggleElementMask(this);
-    });
-
-    //Click event handler
-    $(".lk-nav__as").on("click", function(e) {
-        e.preventDefault();
-        toggleElementMask($($(this).attr("href"))[0]);
-    })
-
-    $(".lk-header .lk-sidebar__nav-toggler").on("click", function(e) {
-        $(this).toggleClass('active')
-        $(this).next().slideToggle()
-    })
-
-    $('.clear-input').on('click', function() {
-        $(this).closest('.form__row').find('input').val('')
-    })
-
-    $('.js-psw').on('click', function() {
-        $(this).toggleClass('active')
-        var passInput = $(this).closest('.form__row').find('.psw')
-        if (passInput.attr('type') === 'password') {
-            passInput.attr('type', 'text');
-        } else {
-            passInput.attr('type', 'password');
-        }
-    })
-
-    $('.pull-accordion tr').on('click', function() {
-        $(this).toggleClass('active')
-        $(this).next('.hids').toggle()
-    })
 
     // SCROLL TO ANY SECTION
 
@@ -462,195 +114,326 @@ $(function() {
         }, 500, 'linear');
     });
 
-    $('.lk-show-more').on('click', function(e) {
-        $(this).toggleClass('active')
-        $(this).closest('.pull-item').find('.pull-item__hids').slideToggle()
-    });
-
     // TABS JQUERY 
 
-    $(".dep-tabs__content-item").not(":first").hide();
-    $(".deposit-radio__item").click(function() {
-        $(".deposit-radio__item").removeClass("active").eq($(this).index()).addClass("active");
-        $(".dep-tabs__content-item").hide().eq($(this).index()).fadeIn()
+    $(".sizes__tabs-item").not(":first").hide();
+    $(".sizes__tabs-nav-item").click(function() {
+        $(".sizes__tabs-nav-item").removeClass("active").eq($(this).index()).addClass("active");
+        $(".sizes__tabs-item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
 
-    $(".calc-info__item").not(":first").hide();
-    $(".calc-tabs__nav").click(function() {
-        $(".calc-tabs__nav").removeClass("active").eq($(this).index()).addClass("active");
-        $(".calc-info__item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
-
-    $(".tabs-content__item").not(":first").hide();
-    $(".pull-tabs__nav").click(function() {
-        $(".pull-tabs__nav").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tabs-content__item").hide().eq($(this).index()).fadeIn()
+    $(".tabs__content-item").not(":first").hide();
+    $(".tabs__nav-item").click(function() {
+        $(".tabs__nav-item").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tabs__content-item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
 
     // MODAL MAGNIFIC POPUP INIT
 
-    $('.modal-close').on("click", function() {
-        $.magnificPopup.close();
-    });
-
-    $('.modal-deposit').magnificPopup({
-        type: 'inline',
-        fixedContentPos: true,
-        midClick: true,
-        callbacks: {
-            beforeOpen: function() {
-                // this.st.mainClass = this.st.el.attr('data-effect');
-            },
-            open: function() {
-                $('body').addClass('dep-modal');
-                $(".deposit-step").slick("getSlick").refresh();
-            },
-            close: function() {
-                $('body').removeClass('dep-modal')
-            }
-        },
-    });
-
     $('.modal-init').magnificPopup({
         type: 'inline',
         fixedContentPos: true,
-        // removalDelay: 500,
+        removalDelay: 500,
         callbacks: {
             beforeOpen: function() {
-                // this.st.mainClass = this.st.el.attr('data-effect');
-            },
-            open: function() {
-                $('body').addClass('full-modal')
-
-            },
-            close: function() {
-                $('body').removeClass('full-modal')
+                this.st.mainClass = this.st.el.attr('data-effect');
             }
         },
         midClick: true
     });
 
+    
+
     // SLICK SLIDER INIT
 
-    $('.deposit-step').slick({
+    $('.hits-slider').slick({
         rows: false,
-        slidesToShow: 1,
-        arrows: false,
         infinite: false,
-        adaptiveHeight: true,
-        swipe: false,
+        slidesToShow: 4,
+        responsive: [{
+            breakpoint: 1050,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }, ]
     })
 
-    $('.slider-next').click(function() {
-        $(".deposit-step").slick('slickNext');
-    });
-
-    $('.slider-prev').click(function() {
-        $(".deposit-step").slick('slickPrev');
-    });
-
-
-    $('.result-slider').slick({
+    $('.reviews-slider').slick({
         rows: false,
+        infinite: false,
         slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        speed: 900,
         responsive: [{
-                breakpoint: 1023,
-                settings: {
-                    dots: true,
-                    arrows: false,
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 620,
-                settings: {
-                    dots: true,
-                    arrows: false,
-                    slidesToShow: 1,
-                }
-            },
+            breakpoint: 1050,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }, ]
+    })
+
+    $('.doctor-slider').slick({
+        rows: false,
+        infinite: false,
+        slidesToShow: 3,
+        responsive: [{
+            breakpoint: 1050,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }, ]
+    })
+
+    $('.services-slider').slick({
+        rows: false,
+        infinite: false,
+        slidesToShow: 2,
+        responsive: [ {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }, ]
+    })
+
+    $('.news-slider').slick({
+        rows: false,
+        infinite: false,
+        slidesToShow: 3,
+        responsive: [{
+            breakpoint: 1050,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }, ]
+    })
+
+    $('.map-slider').slick({
+        rows: false,
+        infinite: false,
+        slidesToShow: 1,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+
+            }
+        }, ]
+    })
+
+    // $('.document-slider').slick({
+    //     rows: false,
+    //     infinite: false,
+    //     slidesToShow: 4,
+    //     responsive: [{
+    //         breakpoint: 1200,
+    //         settings: {
+    //             slidesToShow: 3,
+    //         }
+    //     }, 
+    //     {
+    //         breakpoint: 1023,
+    //         settings: {
+    //             slidesToShow: 2,
+    //         }
+    //     }, 
+    //     {
+    //         breakpoint: 600,
+    //         settings: {
+    //             slidesToShow: 1,
+    //         }
+    //     }, 
+    //     ]
+    // })
+
+    // $('.individ-slider').slick({
+    //     rows: false,
+    //     infinite: false,
+    //     slidesToShow: 4,
+    //     responsive: [{
+    //         breakpoint: 1200,
+    //         settings: {
+    //             slidesToShow: 3,
+    //         }
+    //     }, 
+    //     {
+    //         breakpoint: 1023,
+    //         settings: {
+    //             slidesToShow: 2,
+    //         }
+    //     }, 
+    //     {
+    //         breakpoint: 600,
+    //         settings: {
+    //             slidesToShow: 1,
+    //         }
+    //     }, 
+    //     ]
+    // })
+
+    $('.d-ort-slider').slick({
+        rows: false,
+        slidesToShow: 5,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        }, 
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, 
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        }, 
         ]
     })
 
-    $('.home-info').slick({
+    $('.popular-slider').slick({
         rows: false,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        speed: 900,
+        slidesToShow: 4,
         responsive: [{
-                breakpoint: 1023,
-                settings: {
-                    dots: true,
-                    arrows: false,
-                }
-            },
-            {
-                breakpoint: 620,
-                settings: {
-                    dots: true,
-                    arrows: false,
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, 
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, 
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        }, 
         ]
     })
 
-
-    var slider = $(".lk-label .row");
-
-    slider.not(".slick-initialized").slick({
-        slidesToShow: 1,
-        arrows: false,
+    $('.brands-slider').slick({
         rows: false,
-        draggable: false,
-        focusOnSelect: false,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        speed: 800,
-        dots: true,
-        mobileFirst: true,
+        slidesToShow: 6,
         responsive: [{
-                breakpoint: 2000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 1600,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 1399,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 560,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        }, 
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, 
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        }, 
         ]
+    })
+
+    //  $('.document-slider').each(function() { // the containers for all your galleries
+    //     $(this).magnificPopup({
+    //         delegate: 'a', // the selector for gallery item
+    //         type: 'image',
+    //         gallery: {
+    //           enabled:true
+    //         }
+    //     });
+    // });
+
+    // $('.main-slider').slick({
+    //     rows: false,
+    //     arrows: false,
+    //     dots: true,
+    // })
+
+    // $('.main-slider__nav-item--prev').click(function() {
+    //     $('.main-slider').slick('slickPrev');
+    // })
+    // $('.main-slider__nav-item--next').click(function() {
+    //     $('.main-slider').slick('slickNext');
+    // })
+
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', vh + 'px');
+
+    window.addEventListener('resize', function() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
     });
 
-    $(window).on('resize', function() {
-        slider.slick('resize');
+    $('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+    $('.quantity').each(function() {
+        var spinner = $(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
+
+        btnUp.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
+        btnDown.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
     });
+
+    if($('.category-filter').length) {
+        var mixer = mixitup('.category-filter');
+    }
+
+
+    
 
 });
