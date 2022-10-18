@@ -17,467 +17,155 @@
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER START -->
     <header class="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header-row">
+                <a href="home.html" class="logo">
+                    <img src="img/logo.png" alt="alt" width="84">
+                </a>
                 <div class="hamburger hamburger--vortex">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>
-                <a href="home.html" class="logo">
-                    <img src="img/logo.png" alt="alt">
-                </a>
-                <div class="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <g>
-                            <g>
-                                <path fill="#3E7C7B" d="M14.097 7.046c0 1.71-.612 3.278-1.628 4.5l3.345 3.344a.65.65 0 1 1-.92.92l-3.345-3.345a7.018 7.018 0 0 1-4.5 1.627C3.161 14.092 0 10.932 0 7.046 0 3.161 3.162 0 7.048 0c3.887 0 7.049 3.161 7.049 7.046zm-1.302 0a5.753 5.753 0 0 0-5.747-5.745 5.753 5.753 0 0 0-5.747 5.745 5.753 5.753 0 0 0 5.747 5.746 5.753 5.753 0 0 0 5.747-5.746z" />
-                            </g>
-                        </g>
-                    </svg>
-                    <form action="/" class="search__form">
-                        <input type="text" placeholder="Поиск">
-                    </form>
-                </div>
-                <div class="header-nav">
-                    <a href="#" class="header-nav__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
-                            <g>
-                                <g>
-                                    <path fill="#167e7c" d="M17 4.814a5.03 5.03 0 0 1-1.176 3.26.34.34 0 0 1-.063.081 2.904 2.904 0 0 1-.171.166l-.07.066-6.77 6.516a.36.36 0 0 1-.5 0L1.699 8.609a.332.332 0 0 1-.056-.07C.597 7.614 0 6.263 0 4.814 0 2.158 1.986-.003 4.427-.003c1.886 0 3.443 1.686 4.073 2.482.63-.796 2.187-2.482 4.073-2.482C15.014-.003 17 2.158 17 4.814zm-.708 0c0-2.28-1.668-4.135-3.72-4.135-2.027 0-3.757 2.547-3.774 2.572-.13.194-.465.194-.596 0C8.185 3.226 6.455.68 4.427.68 2.377.679.708 2.534.708 4.814c0 1.293.543 2.491 1.49 3.287.034.03.062.064.082.102L8.5 14.18l6.602-6.353c.036-.033.073-.065.106-.102a4.36 4.36 0 0 0 1.084-2.91z" />
-                                    <path fill="none" stroke="#177e7c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M17 4.814a5.03 5.03 0 0 1-1.176 3.26.34.34 0 0 1-.063.081 2.904 2.904 0 0 1-.171.166l-.07.066-6.77 6.516a.36.36 0 0 1-.5 0L1.699 8.609a.332.332 0 0 1-.056-.07C.597 7.614 0 6.263 0 4.814 0 2.158 1.986-.003 4.427-.003c1.886 0 3.443 1.686 4.073 2.482.63-.796 2.187-2.482 4.073-2.482C15.014-.003 17 2.158 17 4.814zm-.708 0c0-2.28-1.668-4.135-3.72-4.135-2.027 0-3.757 2.547-3.774 2.572-.13.194-.465.194-.596 0C8.185 3.226 6.455.68 4.427.68 2.377.679.708 2.534.708 4.814c0 1.293.543 2.491 1.49 3.287.034.03.062.064.082.102L8.5 14.18l6.602-6.353c.036-.033.073-.065.106-.102a4.36 4.36 0 0 0 1.084-2.91z" />
-                                </g>
-                            </g>
-                        </svg>
-                        <span>избранное</span>
-                    </a>
-                    <a href="#login" data-effect="mfp-zoom-out" class="modal-init header-nav__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                            <g>
-                                <g>
-                                    <path fill="#187e7c" d="M19.348 18H.653c-.442 0-.757-.418-.621-.829l1.955-5.89a.64.64 0 0 1 .306-.361L6.435 8.7a4.12 4.12 0 0 1-.785-2.42V4.228C5.65 1.897 7.6 0 10 0c2.399 0 4.35 1.896 4.35 4.227v2.054c0 .898-.29 1.733-.785 2.42l4.142 2.219a.64.64 0 0 1 .306.36l1.955 5.891c.136.41-.178.829-.62.829zM6.954 6.28c0 1.633 1.367 2.96 3.046 2.96 1.675 0 3.046-1.323 3.046-2.96V4.228c0-1.632-1.366-2.96-3.046-2.96-1.68 0-3.046 1.328-3.046 2.96zm11.498 10.452l-1.601-4.824-4.22-2.26c-.78.577-1.71.86-2.63.86-.934 0-1.862-.29-2.633-.86l-4.219 2.26-1.6 4.824z" />
-                                </g>
-                            </g>
-                        </svg>
-                        <span>Вход</span>
-                    </a>
-                    <a href="#modalCart" data-effect="mfp-zoom-out" class="modal-init header-nav__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20">
-                            <g>
-                                <g>
-                                    <path fill="#187e7c" d="M14.33 19.186a2.594 2.594 0 0 1-1.89.814H2.561a2.594 2.594 0 0 1-1.891-.814 2.468 2.468 0 0 1-.66-1.912L1.102 5.57A.633.633 0 0 1 1.74 5h1.92V3.75C3.66 1.682 5.382 0 7.5 0c1.03 0 1.996.389 2.72 1.095a3.684 3.684 0 0 1 1.12 2.655V5h1.921c.332 0 .608.246.64.569l1.089 11.705a2.472 2.472 0 0 1-.66 1.912zM4.94 5h5.12V3.75c0-.671-.263-1.301-.746-1.771a2.582 2.582 0 0 0-1.814-.73c-1.412 0-2.56 1.122-2.56 2.501zm8.773 12.387L12.676 6.25h-1.335v1.875a.632.632 0 0 1-.64.625.632.632 0 0 1-.64-.625V6.25H4.939v1.875a.632.632 0 0 1-.64.625.632.632 0 0 1-.64-.625V6.25H2.324L1.288 17.386c-.033.355.083.694.33.957.244.262.58.407.944.407h9.876c.365 0 .7-.145.946-.406.246-.262.362-.603.33-.957z" />
-                                </g>
-                            </g>
-                        </svg>
-                        <span>Корзина</span>
-                    </a>
-                </div>
-            </div>
-            <div class="header__bottom">
                 <nav class="main-nav">
                     <ul class="main-list">
-                        <li class="has-dropdown">
-                            <a href="#">ИПР</a>
-                            <div class="main-dropdown">
-                                <div class="container">
-                                    <div class="main-dropdown__row">
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Комфортная ортопедическая Обувь</a></li>
-                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
-                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Ортопедические подушки</a></li>
-                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
-                                                <li><a href="#">Компрессионный трикотаж</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
-                                                <li><a href="#">Косметика для стопы</a></li>
-                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Трикотажные изделия</a></li>
-                                                <li><a href="#">Аксессуары для обуви</a></li>
-                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="has-dropdown">
-                            <a href="#">ОБУВЬ</a>
-                            <div class="main-dropdown">
-                                <div class="container">
-                                    <div class="main-dropdown__row">
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Комфортная ортопедическая Обувь 2</a></li>
-                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
-                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Ортопедические подушки</a></li>
-                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
-                                                <li><a href="#">Компрессионный трикотаж</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
-                                                <li><a href="#">Косметика для стопы</a></li>
-                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Трикотажные изделия</a></li>
-                                                <li><a href="#">Аксессуары для обуви</a></li>
-                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">СТЕЛЬКИ</a>
-                        </li>
-                        <li class="has-dropdown">
-                            <a href="#">комперсионный трикотаж</a>
-                            <div class="main-dropdown">
-                                <div class="container">
-                                    <div class="main-dropdown__row">
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Комфортная ортопедическая Обувь 3</a></li>
-                                                <li><a href="#">Стандартные ортопедические стельки</a></li>
-                                                <li><a href="#">Отрезы, корсеты, бандажи и средства реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Ортопедические подушки</a></li>
-                                                <li><a href="#">Индивидуальные ортопедические стельки</a></li>
-                                                <li><a href="#">Компрессионный трикотаж</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Вкладные приспособления для стопы</a></li>
-                                                <li><a href="#">Косметика для стопы</a></li>
-                                                <li><a href="#">Гимнастические и массажные изделия</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="main-dropdown__item">
-                                            <ul class="main-dropdown__list">
-                                                <li><a href="#">Трикотажные изделия</a></li>
-                                                <li><a href="#">Аксессуары для обуви</a></li>
-                                                <li><a href="#">Индивидуальная программа реабилитации</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="#">ортезы</a></li>
-                        <li><a href="#">корсеты</a></li>
-                        <li><a href="#">бандажи</a></li>
-                        <li><a href="#">ПОДУШКИ И МАТРАСЫ</a></li>
-                        <li><a href="#">РАСПРОДАЖА</a></li>
-                        <li><a href="#">акции</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Магазины</a></li>
-                        <li><a href="#">Кабинет ортопеда</a></li>
-                        <li><a href="#">ОРТОБЛОГ</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Статистика</a></li>
+                        <li><a href="#">Токеномика</a></li>
+                        <li><a href="#">Наши проекты</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
+                    <div class="dropdown btn btn--gradient btn--flex">
+                        <div class="dropdown-toggler">
+                            <span>Connect Wallet</span>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.04052 2.04036C9.43105 1.64983 9.43105 1.01667 9.04052 0.626145C8.65 0.235621 8.01683 0.235621 7.62631 0.626145L9.04052 2.04036ZM5.00008 4.66659L4.29297 5.37369C4.48051 5.56123 4.73486 5.66659 5.00008 5.66659C5.2653 5.66659 5.51965 5.56123 5.70719 5.37369L5.00008 4.66659ZM2.37385 0.626145C1.98333 0.235621 1.35017 0.235621 0.959641 0.626145C0.569117 1.01667 0.569117 1.64983 0.959641 2.04036L2.37385 0.626145ZM7.62631 0.626145L4.29297 3.95948L5.70719 5.37369L9.04052 2.04036L7.62631 0.626145ZM5.70719 3.95948L2.37385 0.626145L0.959641 2.04036L4.29297 5.37369L5.70719 3.95948Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-body">
+                            <a href="#" class="dropdown-body__item">
+                                <span>MetaMask</span>
+                                <img src="img/wallet-1.png" alt="alt" width="20">
+                            </a>
+                            <a href="#" class="dropdown-body__item">
+                                <span>WalletConnect</span>
+                                <img src="img/wallet-2.png" alt="alt" width="20">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--green btn--transparent"> Disconnect wallet</a>
                 </nav>
+                <div class="header-nav">
+                    <div class="lang">
+                        <div class="lang-toggler">
+                            <span>RU</span>
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7905 1.95711C11.181 1.56658 11.181 0.933417 10.7905 0.542893C10.4 0.152369 9.76683 0.152369 9.37631 0.542893L10.7905 1.95711ZM6.00008 5.33333L5.29297 6.04044C5.48051 6.22798 5.73486 6.33333 6.00008 6.33333C6.2653 6.33333 6.51965 6.22798 6.70719 6.04044L6.00008 5.33333ZM2.62385 0.542893C2.23333 0.152369 1.60017 0.152369 1.20964 0.542893C0.819117 0.933417 0.819117 1.56658 1.20964 1.95711L2.62385 0.542893ZM9.37631 0.542893L5.29297 4.62623L6.70719 6.04044L10.7905 1.95711L9.37631 0.542893ZM6.70719 4.62623L2.62385 0.542893L1.20964 1.95711L5.29297 6.04044L6.70719 4.62623Z" fill="white" fill-opacity="0.5" />
+                            </svg>
+                        </div>
+                        <div class="lang-body">
+                            <a href="#" class="lang-body__item">EN</a>
+                            <a href="#" class="lang-body__item">CH</a>
+                        </div>
+                    </div>
+                    <div class="dropdown btn btn--gradient btn--flex">
+                        <div class="dropdown-toggler">
+                            <span>Connect Wallet</span>
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.04052 2.04036C9.43105 1.64983 9.43105 1.01667 9.04052 0.626145C8.65 0.235621 8.01683 0.235621 7.62631 0.626145L9.04052 2.04036ZM5.00008 4.66659L4.29297 5.37369C4.48051 5.56123 4.73486 5.66659 5.00008 5.66659C5.2653 5.66659 5.51965 5.56123 5.70719 5.37369L5.00008 4.66659ZM2.37385 0.626145C1.98333 0.235621 1.35017 0.235621 0.959641 0.626145C0.569117 1.01667 0.569117 1.64983 0.959641 2.04036L2.37385 0.626145ZM7.62631 0.626145L4.29297 3.95948L5.70719 5.37369L9.04052 2.04036L7.62631 0.626145ZM5.70719 3.95948L2.37385 0.626145L0.959641 2.04036L4.29297 5.37369L5.70719 3.95948Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-body">
+                            <a href="#" class="dropdown-body__item">
+                                <span>MetaMask</span>
+                                <img src="img/wallet-1.png" alt="alt" width="20">
+                            </a>
+                            <a href="#" class="dropdown-body__item">
+                                <span>WalletConnect</span>
+                                <img src="img/wallet-2.png" alt="alt" width="20">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--green btn--transparent"> Disconnect wallet</a>
+                </div>
             </div>
         </div>
     </header>
     <!-- HEADER END -->
     <!-- MAIN CONTENT START -->
     <main class="main">
-    	<section class="banners">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-lg-5 col-md-6 order-1 order-lg-1">
-    					<a href="#" class="banners-link">
-    						<img src="img/ban-1.jpg" alt="alt">
-    					</a>
-    				</div>
-    				<div class="col-lg-3 order-3 order-lg-2">
-    					<a href="#" class="banners-link">
-    						<img src="img/ban-2.jpg" alt="alt">
-    					</a>
-    					<a href="#" class="banners-link">
-    						<img src="img/ban-3.jpg" alt="alt">
-    					</a>
-    				</div>
-    				<div class="col-lg-4 col-md-6 order-2  order-lg-3">
-    					<a href="#" class="banners-link">
-    						<img src="img/ban-4.jpg" alt="alt">
-    					</a>
-    				</div>
-    				<div class="col-12 order-4  order-lg-4">
-    					<a href="#" class="banners-link">
-    						<img src="img/ban-5.jpg" alt="alt">
-    					</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<section class="popular">
-    		<div class="container">
-    			<h2 class="h2 tl-center">Популярные категории</h2>
-    			<div class="popular-slider">
-    				<div class="popular-slide">
-    					<a href="#" class="popular-item">
-    						<span class="popular-item__img">
-    							<img src="img/popular-1.png" alt="alt">
-    						</span>
-    						<span class="popular-item__head">Комфортная ортопедическая обувь</span>
-    					</a>
-    				</div>
-    				<div class="popular-slide">
-    					<a href="#" class="popular-item">
-    						<span class="popular-item__img">
-    							<img src="img/popular-2.png" alt="alt">
-    						</span>
-    						<span class="popular-item__head">Стандартные ортопедические стельки</span>
-    					</a>
-    				</div>
-    				<div class="popular-slide">
-    					<a href="#" class="popular-item">
-    						<span class="popular-item__img">
-    							<img src="img/popular-3.png" alt="alt">
-    						</span>
-    						<span class="popular-item__head">Отрезы, корсеты, бандажи и средства реабилитации</span>
-    					</a>
-    				</div>
-    				<div class="popular-slide">
-    					<a href="#" class="popular-item">
-    						<span class="popular-item__img">
-    							<img src="img/popular-4.png" alt="alt">
-    						</span>
-    						<span class="popular-item__head">Индивидуальные ортопедические стельки</span>
-    					</a>
-    				</div>
-    				<div class="popular-slide">
-    					<a href="#" class="popular-item">
-    						<span class="popular-item__img">
-    							<img src="img/popular-1.png" alt="alt">
-    						</span>
-    						<span class="popular-item__head">Комфортная ортопедическая обувь</span>
-    					</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-        <section class="category">
+        <section class="home">
             <div class="container">
-                <div class="d-flex align-items-center category-nav">
-                    <h2 class="h2">Каталог</h2>
-                    <div class="mix-nav">
-                    	<button type="button" data-filter="all">Все</button>
-                    	<button type="button" data-filter=".category-a">Детям</button>
-                    	<button type="button" data-filter=".category-b">Женщинам</button>
-                    	<button type="button" data-filter=".category-c">Мужчинам</button>
+                <div class="home-row">
+                    <div class="home-anim">
+                        <div class="home-anim__box">
+                            <img src="img/lime-anim.png" alt="alt">
+                        </div>
+                        <div class="crypto">
+                            <div class="crypto-item">
+                                <img src="img/crypto-1.svg" alt="alt">
+                            </div>
+                            <div class="crypto-item">
+                                <img src="img/crypto-2.png" alt="alt" width="107">
+                            </div>
+                            <div class="crypto-item">
+                                <img src="img/crypto-3.svg" alt="alt">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="category-container">
-                	<div class="row category-filter">
-                		<div class="mix col-lg-4 col-md-6 category-a">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-1.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">обувь <b>для мальчиков</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-b">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-2.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">Стандартные <b>ортопедические стельки</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-c">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-3.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">индивидуальные <b>ортопедические стельки</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-a">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-4.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">обувь <b>для девочек</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-b">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-5.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">Ортопедические <b>подушки и матрасы</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-c">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-6.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">Гимнастические <b>и массажные изделия</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-a">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-7.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">Индивидуальные ортопедические <b>тутора и аппараты</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-b">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-8.jpg" alt="alt" class="category-box__img">
-	                			<div class="category-box__head">Индивидуальная <b>программа реабилитации</b></div>
-	                		</a>
-                		</div>
-                		<div class="mix col-lg-4 col-md-6 category-c">
-                			<a href="#" class="category-box">
-	                			<img src="img/cat-9.jpg" alt="alt" class="category-box__img">
-	                			<span class="category-box__wrap">
-	                				<span class="category-box__header">Расспродажа</span>
-	                				<span class="category-box__sale">до <b>70</b><span>%</span></span>
-	                				<div class="arrow-right arrow-right--white">
-				                        <span>Перейти</span>
-				                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-				                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464467C11.9763 0.269205 11.6597 0.269205 11.4645 0.464467C11.2692 0.659729 11.2692 0.976312 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM-4.37114e-08 4.5L15 4.5L15 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white" />
-				                        </svg>
-				                    </div>
-	                			</span>
-	                		</a>
-                		</div>
-                	</div>
-                </div>
-            </div>
-        </section>
-        <section class="hits hits--sale">
-            <div class="container">
-                <h2 class="h2 tl-center">Рекомендуем вам</h2>
-                <div class="slider-wrapper">
-                    <div class="hits-slider slider-center">
-                        <a href="#" class="card card--banner">
-                        	<img src="img/banner-goods.jpg" alt="alt">
+                    <div class="home-content">
+                        <div class="home-subhead" data-aos="fade-up">NO BOUNDARIES... NO BORDERS...</div>
+                        <h1 class="h1" data-aos="fade-up">Готовые решения по наращиванию <br> капитала с помощью <br>  <span>Lime Technologies</span> </h1>
+                        <div class="home-prehead" data-aos="fade-up"><span>LIME</span> — это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</div>
+                        <a href="#" class="read-more">
+                            <span>Читать дальше</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.10885 11.1846C0.913587 11.3799 0.913587 11.6965 1.10885 11.8917C1.30411 12.087 1.62069 12.087 1.81596 11.8917L1.10885 11.1846ZM11.5387 1.46191L12.0387 1.46194C12.0387 1.32933 11.986 1.20214 11.8922 1.10837C11.7985 1.0146 11.6713 0.961914 11.5387 0.961914V1.46191ZM5.94104 0.961914C5.6649 0.961914 5.44104 1.18577 5.44104 1.46191C5.44104 1.73806 5.6649 1.96191 5.94104 1.96191V0.961914ZM11.0384 7.05982C11.0384 7.33596 11.2622 7.55983 11.5383 7.55984C11.8145 7.55986 12.0384 7.33601 12.0384 7.05987L11.0384 7.05982ZM1.81596 11.8917L11.8922 1.81547L11.1851 1.10836L1.10885 11.1846L1.81596 11.8917ZM11.5387 0.961914H5.94104V1.96191H11.5387V0.961914ZM11.0387 1.46189L11.0384 7.05982L12.0384 7.05987L12.0387 1.46194L11.0387 1.46189Z" fill="#FDFDFD" fill-opacity="0.5" />
+                            </svg>
                         </a>
-                        <div class="card">
-                            <div class="card__label card__label--sale">Скидка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
+                        <div class="home-nav">
+                            <a href="#" class="btn btn--gradient">Стать участником</a>
+                            <a href="https://www.youtube.com/watch?v=v6EbBGsf3uw" class="video-play">
+                                <svg width="136" height="135" viewBox="0 0 136 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M64.8006 27.5971C90.7133 31.625 108.443 56.1196 104.376 82.3252C100.308 108.531 75.9905 126.489 50.0778 122.461C24.1651 118.433 6.43583 93.9389 10.5029 67.7333C14.57 41.5276 38.888 23.5691 64.8006 27.5971Z" fill="#131811" fill-opacity="0.8" stroke="#01A50D" stroke-width="2" />
+                                    <path d="M70.4216 22.7512C69.3991 22.4929 68.6337 21.9385 68.1253 21.0881C67.6193 20.2286 67.4923 19.2964 67.7444 18.2916C67.9965 17.2867 68.5471 16.5306 69.3961 16.0231C70.2474 15.5065 71.1843 15.3774 72.2069 15.6358C72.8765 15.8049 73.4374 16.1199 73.8895 16.5807C74.3439 17.0324 74.6251 17.5607 74.7331 18.1656L73.8946 18.4014C73.8158 17.9483 73.6023 17.5526 73.2542 17.2144C72.9173 16.8694 72.4956 16.6328 71.9888 16.5048C71.2377 16.3151 70.5384 16.4176 69.8909 16.8123C69.2457 17.198 68.8288 17.7665 68.6403 18.5179C68.4518 19.2693 68.5495 19.9727 68.9336 20.628C69.3199 21.2744 69.8886 21.6924 70.6397 21.8822C71.1464 22.0102 71.6284 22.0068 72.0856 21.872C72.5451 21.7282 72.939 21.4812 73.2675 21.1309L73.905 21.7541C73.4882 22.2264 72.9686 22.5524 72.3462 22.732C71.7237 22.9117 71.0822 22.9181 70.4216 22.7512Z" fill="#01A50D" />
+                                    <path d="M86.5183 21.6613L83.4464 27.9512L82.618 27.5419L85.0693 22.5226L81.1279 25.0101L81.0275 24.9605L80.5758 20.3026L78.1244 25.322L77.296 24.9127L80.3679 18.6227L81.3218 19.094L81.7597 23.5889L85.5643 21.19L86.5183 21.6613Z" fill="#01A50D" />
+                                    <path d="M92.5202 33.3422C91.5322 33.4434 90.639 33.1713 89.8407 32.5257C89.0424 31.8801 88.5821 31.0578 88.4597 30.0586C88.3505 29.058 88.6188 28.1528 89.2648 27.3428C89.9108 26.5329 90.7278 26.0773 91.7158 25.9761C92.7169 25.8734 93.6166 26.1449 94.4149 26.7904C95.2132 27.436 95.667 28.2591 95.7763 29.2597C95.8986 30.2588 95.6368 31.1634 94.9908 31.9733C94.3448 32.7832 93.5213 33.2395 92.5202 33.3422ZM89.3729 29.9689C89.4549 30.7193 89.797 31.3381 90.3994 31.8252C91.0017 32.3123 91.6756 32.5152 92.421 32.4338C93.1722 32.3451 93.7893 31.9979 94.2723 31.3923C94.7554 30.7867 94.9559 30.1086 94.874 29.3582C94.7978 28.6004 94.4586 27.978 93.8562 27.4909C93.2539 27.0038 92.5771 26.8046 91.8259 26.8933C91.0805 26.9747 90.4663 27.3182 89.9833 27.9238C89.5003 28.5295 89.2968 29.2111 89.3729 29.9689Z" fill="#01A50D" />
+                                    <path d="M104.765 37.797L104.082 38.3771L102.492 36.4763L97.8403 40.4281L97.2475 39.7193L101.9 35.7675L100.31 33.8667L100.993 33.2867L104.765 37.797Z" fill="#01A50D" />
+                                    <path d="M110.426 44.9596C110.905 45.8358 111.002 46.7535 110.718 47.7125C110.439 48.6798 109.85 49.4129 108.953 49.9121C108.056 50.4112 107.127 50.522 106.167 50.2444C105.211 49.9751 104.494 49.4023 104.015 48.526C103.42 47.4368 103.416 46.3601 104.004 45.2959L100.358 47.3242L99.9152 46.5134L108.479 41.7491L108.922 42.5599L107.723 43.2269C108.93 43.2928 109.83 43.8704 110.426 44.9596ZM104.522 45.9213C104.312 46.6467 104.393 47.3493 104.764 48.029C105.136 48.7087 105.682 49.1526 106.402 49.3608C107.13 49.5644 107.833 49.4779 108.51 49.1013C109.187 48.7247 109.63 48.1737 109.84 47.4483C110.058 46.7183 109.981 46.0135 109.609 45.3337C109.238 44.654 108.688 44.2124 107.959 44.0087C107.239 43.8006 106.541 43.8848 105.864 44.2614C105.187 44.638 104.739 45.1913 104.522 45.9213Z" fill="#01A50D" />
+                                    <path d="M115.676 57.2841C115.967 58.2785 115.848 59.1858 115.319 60.0058C114.802 60.8321 114.065 61.388 113.108 61.6735C113.01 61.7028 112.868 61.7352 112.684 61.7707L110.961 55.8712C110.308 56.1635 109.85 56.6117 109.589 57.2155C109.339 57.8257 109.319 58.4891 109.529 59.2058C109.678 59.7165 109.909 60.1248 110.222 60.4308C110.546 60.743 110.906 60.9425 111.301 61.0292L111.072 61.9448C110.512 61.7905 110.019 61.4994 109.592 61.0715C109.166 60.6435 108.857 60.1026 108.666 59.4485C108.357 58.3914 108.437 57.4326 108.905 56.5722C109.373 55.7117 110.117 55.1294 111.137 54.8252C112.139 54.5264 113.07 54.6039 113.932 55.0578C114.794 55.5117 115.375 56.2538 115.676 57.2841ZM114.818 57.5402C114.614 56.8414 114.232 56.3173 113.673 55.9679C113.125 55.6248 112.508 55.5071 111.82 55.615L113.284 60.6276C113.964 60.3272 114.434 59.8898 114.694 59.3155C114.955 58.7412 114.996 58.1495 114.818 57.5402Z" fill="#01A50D" />
+                                    <path d="M117.55 71.7123L116.657 71.7924L116.444 69.3235L110.365 69.8688L110.285 68.9482L116.365 68.403L116.152 65.9341L117.044 65.8541L117.55 71.7123Z" fill="#01A50D" />
+                                    <path d="M115.064 79.9538C115.011 80.6049 114.762 81.1373 114.316 81.5509C113.879 81.9745 113.344 82.1608 112.712 82.1099C112.079 82.0589 111.576 81.7891 111.204 81.3003C110.841 80.8215 110.685 80.2566 110.738 79.6054L110.969 76.7728L117.946 77.3346L117.871 78.2556L115.22 78.0421L115.064 79.9538ZM111.631 79.6773C111.6 80.068 111.689 80.4076 111.9 80.6961C112.109 80.9939 112.405 81.1582 112.787 81.1889C113.168 81.2196 113.486 81.1048 113.742 80.8445C113.996 80.5934 114.139 80.2726 114.171 79.8818L114.327 77.9702L111.787 77.7657L111.631 79.6773Z" fill="#01A50D" />
+                                    <path d="M110.436 96.1281C109.91 96.7489 109.266 96.918 108.505 96.6353C107.971 96.437 107.595 96.0933 107.377 95.6042C107.165 95.1271 107.181 94.5556 107.426 93.8899L108.6 90.697L115.162 93.1343L114.085 96.0644C113.85 96.7039 113.501 97.137 113.04 97.3639C112.587 97.5941 112.103 97.6133 111.587 97.4216C110.931 97.1778 110.547 96.7467 110.436 96.1281ZM113.245 95.7524L114.003 93.6895L112.009 92.9486L111.25 95.0115C110.97 95.7736 111.171 96.2814 111.853 96.5349C112.159 96.6486 112.433 96.6356 112.673 96.4959C112.919 96.3682 113.109 96.1203 113.245 95.7524ZM108.266 94.2019C108.124 94.5873 108.108 94.9149 108.218 95.1846C108.324 95.4631 108.544 95.6641 108.876 95.7875C109.182 95.9013 109.462 95.8855 109.714 95.7403C109.972 95.6071 110.172 95.3477 110.313 94.9623L111.169 92.6366L109.121 91.8762L108.266 94.2019Z" fill="#01A50D" />
+                                    <path d="M109.045 107.133L108.647 107.808L102.637 104.219L103.106 103.423L107.734 106.187L105.225 99.8296L105.623 99.1543L111.634 102.743L111.164 103.539L106.536 100.776L109.045 107.133Z" fill="#01A50D" />
+                                    <path d="M96.0238 113.494L95.3636 114.218L93.3285 112.336L93.951 111.653L95.3283 112.927L99.1763 108.705L97.799 107.432L98.4214 106.749L100.457 108.631L99.8812 109.262C100.02 110.038 100.507 110.813 101.343 111.586L103.882 113.934L100.505 117.638L96.0238 113.494ZM99.1267 110.09L96.6463 112.811L100.47 116.347L102.601 114.009L100.72 112.269C99.9324 111.54 99.4012 110.814 99.1267 110.09Z" fill="#01A50D" />
+                                    <path d="M93.0952 124.987C92.248 125.583 91.355 125.761 90.4163 125.52C89.4752 125.292 88.7203 124.768 88.1518 123.947C88.0933 123.862 88.0186 123.738 87.9276 123.574L92.9534 120.036C92.4732 119.507 91.9075 119.214 91.2563 119.159C90.6027 119.117 89.9706 119.311 89.36 119.741C88.925 120.047 88.6121 120.398 88.4214 120.795C88.2284 121.205 88.1527 121.612 88.1944 122.016L87.2594 122.092C87.2296 121.509 87.3499 120.945 87.6202 120.4C87.8905 119.856 88.3042 119.388 88.8614 118.996C89.762 118.362 90.6913 118.13 91.6493 118.301C92.6072 118.471 93.3891 118.993 93.9949 119.868C94.59 120.727 94.8083 121.641 94.6496 122.609C94.491 123.576 93.9729 124.369 93.0952 124.987ZM92.585 124.25C93.1804 123.831 93.5554 123.299 93.7101 122.654C93.8626 122.021 93.7804 121.394 93.4635 120.773L89.1933 123.779C89.6894 124.331 90.249 124.639 90.872 124.703C91.495 124.766 92.0661 124.615 92.585 124.25Z" fill="#01A50D" />
+                                    <path d="M76.3474 126.554C76.7381 125.634 77.4075 124.977 78.3556 124.583C79.3036 124.189 80.2416 124.178 81.1696 124.55C82.0924 124.935 82.7494 125.607 83.1406 126.566C83.5318 127.526 83.532 128.465 83.1413 129.386C82.7455 130.318 82.0736 130.982 81.1256 131.376C80.1775 131.77 79.242 131.774 78.3192 131.39C77.3912 131.018 76.7317 130.352 76.3405 129.392C75.9493 128.433 75.9516 127.487 76.3474 126.554ZM80.8051 125.399C80.113 125.111 79.4092 125.115 78.6939 125.412C77.9785 125.71 77.4757 126.207 77.1853 126.904C76.8984 127.609 76.9012 128.32 77.1937 129.038C77.4863 129.755 77.9786 130.258 78.6707 130.546C79.3664 130.843 80.0719 130.843 80.7872 130.546C81.5026 130.249 82.0037 129.747 82.2905 129.042C82.5809 128.345 82.5799 127.638 82.2874 126.921C81.9949 126.204 81.5008 125.696 80.8051 125.399Z" fill="#01A50D" />
+                                    <g filter="url(#filter0_d_1_426)">
+                                        <path d="M77.5 72.4019C79.5 73.5566 79.5 76.4434 77.5 77.5981L50.5 93.1865C48.5 94.3412 46 92.8979 46 90.5885L46 59.4115C46 57.1021 48.5 55.6588 50.5 56.8135L77.5 72.4019Z" fill="#D9D9D9" />
                                     </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--new">Новинка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические Сабо ортопедические</div>
-                                    <div class="card__price">72 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--sale">Скидка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--new">Новинка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
+                                    <path d="M66.5 74.134C67.1667 74.5189 67.1667 75.4811 66.5 75.866L54.5 82.7942C53.8333 83.1791 53 82.698 53 81.9282L53 68.0718C53 67.302 53.8333 66.8209 54.5 67.2058L66.5 74.134Z" fill="#01A50D" />
+                                    <path d="M66.25 74.567C66.5833 74.7594 66.5833 75.2406 66.25 75.433L54.25 82.3612C53.9167 82.5537 53.5 82.3131 53.5 81.9282L53.5 68.0718C53.5 67.6869 53.9167 67.4463 54.25 67.6388L66.25 74.567Z" stroke="black" stroke-opacity="0.05" />
+                                    <defs>
+                                        <filter id="filter0_d_1_426" x="6" y="16.4071" width="113" height="117.186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset />
+                                            <feGaussianBlur stdDeviation="20" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.529412 0 0 0 0 0.87451 0 0 0 0 0.0745098 0 0 0 0.45 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_426" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_426" result="shape" />
+                                        </filter>
+                                    </defs>
                                 </svg>
                             </a>
                         </div>
@@ -485,595 +173,339 @@
                 </div>
             </div>
         </section>
-        <section class="hits">
+        <section class="use">
             <div class="container">
-                <h2 class="h2 tl-center mb-45">Вас может заинтересовать</h2>
-                <div class="slider-wrapper">
-                    <div class="hits-slider slider-center">
-                        <div class="card">
-                            <div class="card__label card__label--new">Новинка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--sale">Скидка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--new">Новинка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические Сабо ортопедические</div>
-                                    <div class="card__price">72 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--sale">Скидка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card__label card__label--new">Новинка</div>
-                            <div class="card__image">
-                                <img src="img/card-image.png" alt="alt">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <div class="card__name">Сабо ортопедические</div>
-                                    <div class="card__price">7 500 Р</div>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="card__category">Женская обувь</div>
-                                    <div class="card__oldprice">10 500 Р</div>
-                                </div>
-                            </div>
-                            <a href="#" class="card__button btn--green">
-                                <span>подробнее</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 30 9">
-                                    <g>
-                                        <g>
-                                            <path fill="#fff" d="M29.816 4.07L25.805.178a.642.642 0 0 0-.887 0 .596.596 0 0 0 0 .86l2.942 2.854H.627A.618.618 0 0 0 0 4.5c0 .336.28.608.627.608H27.86l-2.941 2.854a.595.595 0 0 0 0 .86.636.636 0 0 0 .443.178c.16 0 .32-.06.443-.178l4.011-3.892a.595.595 0 0 0 0-.86z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sale">
-            <div class="container">
-                <div class="sale-block">
-                	<img src="img/sale-banner.png" alt="alt" class="sale-block__img">
-                    <h2 class="h2 white">Все акции - успей купить!</h2>
-                    <a href="#" class="arrow-right arrow-right--white">
-                        <span>Перейти</span>
-                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464467C11.9763 0.269205 11.6597 0.269205 11.4645 0.464467C11.2692 0.659729 11.2692 0.976312 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM-4.37114e-08 4.5L15 4.5L15 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white" />
+                <h2 class="h2 tl-center" data-aos="fade-up">Воспользуйтесь всеми преимуществами децентрализованной <br><span>автономной организации</span></h2>
+                <div class="tl-center use-read">
+                    <a href="#" class="read-more font-18 read-more--white">
+                        <span>White paper</span>
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.10885 11.1846C0.913587 11.3799 0.913587 11.6965 1.10885 11.8917C1.30411 12.087 1.62069 12.087 1.81596 11.8917L1.10885 11.1846ZM11.5387 1.46191L12.0387 1.46194C12.0387 1.32933 11.986 1.20214 11.8922 1.10837C11.7985 1.0146 11.6713 0.961914 11.5387 0.961914V1.46191ZM5.94104 0.961914C5.6649 0.961914 5.44104 1.18577 5.44104 1.46191C5.44104 1.73806 5.6649 1.96191 5.94104 1.96191V0.961914ZM11.0384 7.05982C11.0384 7.33596 11.2622 7.55983 11.5383 7.55984C11.8145 7.55986 12.0384 7.33601 12.0384 7.05987L11.0384 7.05982ZM1.81596 11.8917L11.8922 1.81547L11.1851 1.10836L1.10885 11.1846L1.81596 11.8917ZM11.5387 0.961914H5.94104V1.96191H11.5387V0.961914ZM11.0387 1.46189L11.0384 7.05982L12.0384 7.05987L12.0387 1.46194L11.0387 1.46189Z" fill="#FAFAFA" />
                         </svg>
                     </a>
                 </div>
-            </div>
-        </section>
-        <section class="d-ort">
-            <div class="container">
-                <h2 class="h2 tl-center">Ортопедические изделия по назначению</h2>
-                <div class="d-ort-slider">
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-1.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Стабилизирующая обувь</div>
-                            </div>
-                        </a>
+                <div class="use-row">
+                    <div class="use-chart" data-aos="fade-right">
+                        <img src="img/chart.png" alt="alt">
                     </div>
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-2.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Антиварусная обувь</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-3.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Обувь тутор при ДЦП </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-4.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Ортезная обувь</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-5.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Профилактическая обувь</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-ort-slide">
-                        <a href="#" class="d-ort-item">
-                            <div class="d-ort-item__img">
-                                <img src="img/d-ort-2.png" alt="alt">
-                            </div>
-                            <div class="d-ort-item__content">
-                                <div class="d-ort-item__name">Антиварусная обувь</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <h2 class="h2 tl-center">клиенты говорят о нас</h2>
-                <div class="slider-wrapper">
-                    <div class="reviews-slider">
-                        <div class="reviews-slide">
-                            <div class="reviews-slide__header">
-                                <div class="reviews-slide__img">
-                                    <img src="img/review-img-1.svg" alt="alt">
-                                </div>
-                                <div class="reviews-slide__content">
-                                    <div class="reviews-slide__name">Анна Анатольевна</div>
-                                    <div class="reviews-slide__info">
-                                        <div class="reviews-slide__rating">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_926_233)">
-                                                    <rect width="15" height="15" fill="white" />
-                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_926_233">
-                                                        <rect width="15" height="15" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span>4.5</span>
-                                        </div>
-                                        <div class="reviews-slide__date">6.05.2022</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reviews-slide__content">
-                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
-                            </div>
+                    <div class="use-info"  data-aos="fade-left">
+                        <div class="use-info__item">
+                            <div class="use-info__num">81,456,456</div>
+                            <div class="use-info__text">Trasactions</div>
                         </div>
-                        <div class="reviews-slide">
-                            <div class="reviews-slide__header">
-                                <div class="reviews-slide__img">
-                                    <img src="img/review-img-2.svg" alt="alt">
-                                </div>
-                                <div class="reviews-slide__content">
-                                    <div class="reviews-slide__name">Марина Щукина</div>
-                                    <div class="reviews-slide__info">
-                                        <div class="reviews-slide__rating">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_926_233)">
-                                                    <rect width="15" height="15" fill="white" />
-                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_926_233">
-                                                        <rect width="15" height="15" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span>5.0</span>
-                                        </div>
-                                        <div class="reviews-slide__date">6.05.2022</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reviews-slide__content">
-                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
-                            </div>
+                        <div class="use-info__item">
+                            <div class="use-info__num">1,232,512</div>
+                            <div class="use-info__text">Accounts</div>
                         </div>
-                        <div class="reviews-slide">
-                            <div class="reviews-slide__header">
-                                <div class="reviews-slide__img">
-                                    <img src="img/review-img-3.svg" alt="alt">
-                                </div>
-                                <div class="reviews-slide__content">
-                                    <div class="reviews-slide__name">Андрей Сергеевич</div>
-                                    <div class="reviews-slide__info">
-                                        <div class="reviews-slide__rating">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_926_233)">
-                                                    <rect width="15" height="15" fill="white" />
-                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_926_233">
-                                                        <rect width="15" height="15" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span>4.8</span>
-                                        </div>
-                                        <div class="reviews-slide__date">6.05.2022</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reviews-slide__content">
-                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой!</p>
-                            </div>
-                        </div>
-                        <div class="reviews-slide">
-                            <div class="reviews-slide__header">
-                                <div class="reviews-slide__img">
-                                    <img src="img/review-img-1.svg" alt="alt">
-                                </div>
-                                <div class="reviews-slide__content">
-                                    <div class="reviews-slide__name">Анна Анатольевна</div>
-                                    <div class="reviews-slide__info">
-                                        <div class="reviews-slide__rating">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_926_233)">
-                                                    <rect width="15" height="15" fill="white" />
-                                                    <path d="M7.76522 11.5906L7.49999 11.4246L7.23476 11.5906L3.20432 14.1127L4.35741 9.49979L4.4328 9.1982L4.19569 8.99716L0.591767 5.94157L5.29294 5.61328L5.6049 5.5915L5.72184 5.30146L7.49999 0.890992L9.27815 5.30146L9.39508 5.5915L9.70705 5.61328L14.4082 5.94157L10.8043 8.99723L10.5672 9.19827L10.6425 9.49985L11.7956 14.1127L7.76522 11.5906ZM0.443852 5.9519L0.443897 5.95189L0.443852 5.9519Z" stroke="#3E7C7B" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_926_233">
-                                                        <rect width="15" height="15" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span>4.5</span>
-                                        </div>
-                                        <div class="reviews-slide__date">6.05.2022</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reviews-slide__content">
-                                <p>Спасибо большое сотрудникам сайта, быстро организовали отправку, всегда были на связи, очень внимательны. Качество сандаликов тоже радует. каждый шовчик аккуратный, носим с удовольствием! Хочу выразить огромную благодарность сотрудникам магазина на Долгоруковской! Были в салоне 21 февраля. Очень внимательные и грамотные консультанты, подобрали то что нужно ребёнку, моего размера не было в наличии - предложили оформить доставку домой! </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tl-center">
-                    <a href="#" class="btn btn--transparent black">Все отзывы</a>
-                </div>
-            </div>
-        </section>
-        <section class="section-indent news">
-            <div class="container">
-                <h2 class="h2 tl-center">Новости и акции</h2>
-                <div class="slider-wrapper">
-                    <div class="news-slider slider-center">
-                        <a href="#" class="news-item">
-                            <div class="news-item__img">
-                                <img src="img/news-1.jpg" alt="alt">
-                            </div>
-                            <div class="news-item__content">
-                                <div class="news-item__header">
-                                    <div class="news-item__label news-item__label--green">Новость</div>
-                                    <div class="news-item__date">6.05.2022</div>
-                                </div>
-                                <div class="news-item__head">Открыт новый салон Dr. Sursil Профсоюзная 26/44. Дарим подарки!</div>
-                            </div>
-                        </a>
-                        <a href="#" class="news-item">
-                            <div class="news-item__img">
-                                <img src="img/news-2.jpg" alt="alt">
-                            </div>
-                            <div class="news-item__content">
-                                <div class="news-item__header">
-                                    <div class="news-item__label news-item__label--red">Акция</div>
-                                    <div class="news-item__date">6.05.2022</div>
-                                </div>
-                                <div class="news-item__head">Расспродажа -40% на женскую и мужскую обувь. Успей купить!</div>
-                            </div>
-                        </a>
-                        <a href="#" class="news-item">
-                            <div class="news-item__img">
-                                <img src="img/news-3.jpg" alt="alt">
-                            </div>
-                            <div class="news-item__content">
-                                <div class="news-item__header">
-                                    <div class="news-item__label news-item__label--green">Новость</div>
-                                    <div class="news-item__date">6.05.2022</div>
-                                </div>
-                                <div class="news-item__head">Новая коллекция школьной обуви уже в продаже!</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="brands">
-            <div class="container">
-                <div class="h2 h2 tl-center">работаем с Брендами</div>
-                <div class="brands-slider">
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-1.svg" alt="alt">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-2.svg" alt="alt">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-3.svg" alt="alt">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-4.svg" alt="alt">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-5.png" alt="alt" width="153">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-6.png" alt="alt" width="100">
-                        </div>
-                    </div>
-                    <div class="brands-slide">
-                        <div class="brands-item">
-                            <img src="img/brands-1.svg" alt="alt">
+                        <div class="use-info__item">
+                            <div class="use-info__num">217</div>
+                            <div class="use-info__text">Validators</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="d-blog">
+        <section class="why">
             <div class="container">
-                <h2 class="h2 white tl-center">Ортоблог - статьи и мнение экспертов</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="d-blog-item">
-                            <div class="d-blog-item__header">
-                                <div class="d-blog-item__img">
-                                    <img src="img/d-blog-1.jpg" alt="alt">
+            	<h2 class="h2"  data-aos="fade-up">почему стоит  выбрать  <br><span>Lime Token</span></h2>
+                <div class="why-row">
+                    <div class="why-content">
+                        <h2 class="h2" data-aos="fade-up">почему стоит <br> выбрать  <br><span>Lime Token</span></h2>
+                        <div class="why-info">
+                            <div class="why-info__row">
+                                <div class="why-info__item"  data-aos="fade-up">
+                                    <div class="why-info__num">1 851 833 333</div>
+                                    <div class="why-info__text">Ежемесячное сжигание</div>
                                 </div>
-                                <div class="d-blog-item__head h3">ПРОЦКО ВИКТОР ГЕННАДИЕВИЧ</div>
+                                <div class="why-info__item"  data-aos="fade-up">
+                                    <div class="why-info__num">за 3 года + 700%</div>
+                                    <div class="why-info__text">Прирост к стоимости</div>
+                                </div>
+                                <div class="why-info__item"  data-aos="fade-up">
+                                    <div class="why-info__num">77 777 000 000</div>
+                                    <div class="why-info__text">Эмиссия</div>
+                                </div>
+                                <div class="why-info__item"  data-aos="fade-up">
+                                    <div class="why-info__num">11 111 000 000  Lime Tokens</div>
+                                    <div class="why-info__text">Автосжигание</div>
+                                </div>
                             </div>
-                            <p>Первый Президент Российской Ассоциации хирургии стопы и голеностопного сустава (RusFAS). Член Азиатского общества хирургии стопы и голеностопного сустава (AFFAS). Член Европейского общества хирургии стопы и голеностопного сустава (EFAS). Доцент кафедры травматологии и ортопедии РУДН.Доктор медицинских наук, врач высшей квалификационной категории по травматологии-ортопедии, стаж 23 года.</p>
-                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="d-blog-item">
-                            <div class="d-blog-item__header">
-                                <div class="d-blog-item__img">
-                                    <img src="img/d-blog-2.jpg" alt="alt">
-                                </div>
-                                <div class="d-blog-item__head h3">МАЗАЛОВ АЛЕКСЕЙ ВИТАЛЬЕВИЧ</div>
-                            </div>
-                            <p>Президент Российского общества хирургии стопы и голеностопного сустава (RusFAS). Член Азиатского общества хирургии стопы и голеностопного сустава (AFFAS). Член Европейского общества хирургии стопы и голеностопного сустава (EFAS). Врач высшей квалификационной категории по травматологии-ортопедии, стаж 24 года.</p>
-                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
+                    <div class="why-image">
+                        <div class="why-img">
+                            <img src="img/coin.png" alt="alt">
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="d-blog-item">
-                            <div class="d-blog-item__header">
-                                <div class="d-blog-item__img">
-                                    <img src="img/d-blog-3.jpg" alt="alt">
-                                </div>
-                                <div class="d-blog-item__head h3">ТАДЖ АРТУР АРТЕМОВИЧ</div>
-                            </div>
-                            <p>Действительный член Российской Ассоциации хирургии стопы и голеностопного сустава (RusFAS). Врач травматолог-ортопед по специализации стопа и голеностопный сустав. Международный спикер. Преподаватель и методист. Главный врач научно-производственного центра "СУРСИЛ-ОРТО", стаж работы 8 лет.</p>
-                            <a href="#" class="btn btn--transparent black">Читать статьи</a>
-                        </div>
+                        <div class="why-image__text">Создан на: Binance Smart Chain, ETH, Relictum</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="projects">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about__img">
-                            <img src="img/about-image.jpg" alt="alt">
+            	<h2 class="h2">Наши проекты</h2>
+                <div class="projects-box">
+                    <div class="projects-round">
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint0_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint0_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Комплекс по переработке отходов</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-1.png" alt="alt">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about__content">
-                            <h2 class="h2 mb-45">о компании <span class="green">Dr. Sursil</span></h2>
-                            <p>С 2003 года компания «СУРСИЛ-ОРТО» успешно занимается разработкой, изготовлением и реализацией высококачественной ортопедической обувной продукции, ортопедических стелек и готовых ортопедических изделии для профилактики, реабилитации и лечения патологии стопы тм «SURSIL-ORTHO» и тм «Dr. SURSIL» посредством сайта www.sursil.ru.</p>
-                            <p>За свою историю компания начала реализацию ортопедической обуви, стелек и др. готовых ортопедических изделии для профилактики, реабилитации и лечения патологии стопы во всех городах Российской Федерации, а также на территориях: Казахстана, Белоруссии, Армении, Киргизии и Узбекистана.</p>
-                            <p>Компанией «СУРСИЛ-ОРТО» в 2020 году было принято решение о реализации идеи о создании мульти брендового сайта ортопедических товаров. Сегодня мы рады представить Вам сайт www.dr.sursil.ru где здоровье в виде ортопедических изделий представлено в доступном формате. Мы будем рады если вами будет принято решение оставить отзыв о товаре, по сервису сайта или просто оставить свои пожелания.</p>
-                            <p>Спасибо, что вы всегда с нами с уважением и наилучшими пожеланиями коллектив компании «СУРСИЛ-ОРТО».</p>
-                            <a href="#" class="btn btn--transparent black">Больше о компании</a>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint1_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint1_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Баги, мотоциклы</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-2.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint2_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint2_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Автономное зарядное устройство</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-3.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint3_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint3_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Инверторный стабилизатор</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-4.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint4_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint4_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Щёточный генератор</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-5.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint5_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint5_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Мессенджер</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-6.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint6_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint6_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Светодиодные лампы</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-7.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-round__item">
+                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
+                            </svg>
+                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint7_radial_101_425)" />
+                                <defs>
+                                    <radialGradient id="paint7_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
+                                        <stop stop-color="#22B416" />
+                                        <stop offset="0.933214" stop-color="#87DF13" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                            <div class="projects-round__row">
+                                <div class="projects-round__head">Премиальный бренд лимитированной продукции</div>
+                                <div class="projects-round__img">
+                                    <img src="img/proj-round-8.png" alt="alt">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-indent map">
-            <div class="container">
-                <h2 class="h2 tl-center mb-45">Наши магазины</h2>
-                <div class="map-content">
-                    <div class="map-content__img">
-                        <img src="img/map.png" alt="alt">
-                    </div>
-                    <div class="slider-wrapper">
-                        <div class="map-slider slider-top">
-                            <div class="map-slide">
-                                <h3 class="h3">Магазин на Соколе</h3>
-                                <div class="centered mb-30">
-                                    <img src="img/metro.png" alt="alt">
-                                    <span>м. Сокол</span>
+                <div class="projects-content">
+                    <h2 class="h2" data-aos="fade-up">Наши проекты</h2>
+                    <div class="projects-tabs__content">
+                        <div class="projects-tabs__item">
+                            <div class="projects-item" data-aos="fade-up">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-1.png" alt="alt">
                                 </div>
-                                <p>Ленинградский проспект дом 76 А ТЦ Метромаркет 1 этаж (Вход с улицы и дополнительный вход из Метро с минус первого этажа по эскалатору)</p>
-                                <p>
-                                    <a href="#" class="black-link">Проложить маршрут через Яндекс карты</a>
-                                </p>
-                                <a href="tel:84952586158" class="phone">8 (495) 258-61-58</a>
-                                <div class="green semi font-16">Пн-Вс 10:00-22:00</div>
-                                <a href="#" class="btn btn--transparent black">подробнее о магазине</a>
-                            </div>
-                            <div class="map-slide">
-                                <h3 class="h3">Магазин на Соколе</h3>
-                                <div class="centered mb-30">
-                                    <img src="img/metro.png" alt="alt">
-                                    <span>м. Сокол</span>
-                                </div>
-                                <p>Ленинградский проспект дом 76 А ТЦ Метромаркет 1 этаж (Вход с улицы и дополнительный вход из Метро с минус первого этажа по эскалатору)</p>
-                                <p>
-                                    <a href="#" class="black-link">Проложить маршрут через Яндекс карты</a>
-                                </p>
-                                <a href="tel:84952586158" class="map-slide__phone">8 (495) 258-61-58</a>
-                                <div class="green semi font-16">Пн-Вс 10:00-22:00</div>
-                                <a href="#" class="btn btn--transparent black">подробнее о магазине</a>
+                                <div class="projects-item__head" data-aos="fade-up">Комплекс по переработке отходов</div>
+                                <p data-aos="fade-up">КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p data-aos="fade-up">Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p data-aos="fade-up">Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-indent gallery">
-            <div class="container">
-                <div class="head-flex">
-                    <div class="head-flex__item">
-                        <h2 class="h2">@DR.SURSIL</h2>
-                    </div>
-                    <div class="head-flex__item">
-                        <a href="#" class="btn btn--transparent black btn--160">перейти в vk</a>
-                    </div>
-                </div>
-                <div class="row mb-45">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="gallery__item">
-                            <img src="img/vk-1.png" alt="alt">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="gallery__item">
-                                    <img src="img/vk-2.png" alt="alt">
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-2.png" alt="alt">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="gallery__item">
-                                    <img src="img/vk-3.png" alt="alt">
-                                </div>
+                                <div class="projects-item__head">Баги, мотоциклы</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="gallery__item">
-                                    <img src="img/vk-4.png" alt="alt">
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-3.png" alt="alt">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="gallery__item">
-                                    <img src="img/vk-5.png" alt="alt">
-                                </div>
+                                <div class="projects-item__head">Автономное зарядное устройство</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="gallery__item">
-                            <img src="img/vk-6.png" alt="alt">
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-4.png" alt="alt">
+                                </div>
+                                <div class="projects-item__head">Инверторный стабилизатор</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
+                        </div>
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-5.png" alt="alt">
+                                </div>
+                                <div class="projects-item__head">Щёточный генератор</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
+                        </div>
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-6.png" alt="alt">
+                                </div>
+                                <div class="projects-item__head">Мессенджер</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
+                        </div>
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-7.png" alt="alt">
+                                </div>
+                                <div class="projects-item__head">Светодиодные лампы</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
+                        </div>
+                        <div class="projects-tabs__item">
+                            <div class="projects-item">
+                                <div class="projects-item__img">
+                                    <img src="img/proj-8.png" alt="alt">
+                                </div>
+                                <div class="projects-item__head">Премиальный бренд лимитированной продукции</div>
+                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
+                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
+                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
+                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1084,228 +516,56 @@
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
-            <div class="logo logo--footer">
-                <img src="img/logo.png" alt="alt">
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__item">
-                        <ul class="footer__list">
-                            <li><a href="#">Комфортная ортопедическая обувь</a></li>
-                            <li><a href="#">Ортопедические стельки (стандартные)</a></li>
-                            <li><a href="#">Стельки при пяточной шпоре</a></li>
-                            <li><a href="#">Ортезы, корсеты, бандажи и средства реабилитации</a></li>
-                            <li><a href="#">Индивидуальные ортопедические стельки</a></li>
-                            <li><a href="#">Компрессионный трикотаж</a></li>
-                            <li><a href="#">Ортопедические подушки и матрасы</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__item">
-                        <ul class="footer__list">
-                            <li><a href="#">Вкладные приспособления для стопы</a></li>
-                            <li><a href="#">Косметика</a></li>
-                            <li><a href="#">Гимнастические и массажные изделия</a></li>
-                            <li><a href="#">Трикотажные изделия</a></li>
-                            <li><a href="#">Аксессуары для обуви</a></li>
-                            <li><a href="#">ИРП</a></li>
-                            <li><a href="#">Индивидуальные ортопедические тутора и аппараты</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__item">
-                        <ul class="footer__list footer__list--bold">
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Оплата и доставка</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Наши магазины</a></li>
-                            <li><a href="#">Бонусная программа</a></li>
-                            <li><a href="#">Сотрудничество и обучение</a></li>
-                            <li><a href="#">Кабинет ортопеда</a></li>
-                            <li><a href="#">Публикации и статьи</a></li>
-                            <li><a href="#">Новости</a></li>
-                            <li><a href="#">Ортоблог</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">Распродажа</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__item">
-                        <div class="footer__contacts">
-                            <a href="tel:84952586158" class="phone">8 (495) 258 61 58</a>
-                            <a href="tel:88005054814" class="phone">8 (800) 505 48 14</a>
+            <div class="footer-row">
+                <div class="footer-content">
+                    <h2 class="h2">Контакты</h2>
+                    <div class="footer-info">
+                        <div class="footer-info__item">
+                            <div class="footer-info__head">E-mail:</div>
+                            <a href="mailto:" class="footer-info__mail">infovodosnab@mail.ru</a>
                         </div>
-                        <a href="#" data-effect="mfp-zoom-out" class="modal-init centered mb-30 centered--green">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                                <g>
-                                    <g>
-                                        <path fill="#177e7c" d="M11.816 15.901c0 .614-.509 1.154-1.153 1.154s-1.138-.54-1.138-1.154c0-.629.509-1.153 1.138-1.153.63 0 1.153.524 1.153 1.153zm2.232-7.414c0 1.408-1.273 2.426-1.677 2.741-.824.644-.84 1.093-.84 1.872 0 .285-.149.614-.883.614-.614 0-.824-.225-.824-1.003 0-1.288.57-1.902 1.004-2.277.494-.42 1.333-.883 1.333-1.693 0-.688-.6-1.018-1.348-1.018-1.528 0-1.198 1.153-2.007 1.153-.405 0-.899-.27-.899-.853 0-.809.929-2.007 2.95-2.007 1.918 0 3.191 1.063 3.191 2.471zM22 11c0 6.08-4.92 11-11 11H.86a.86.86 0 0 1-.86-.86V11C0 4.92 4.92 0 11 0s11 4.92 11 11zm-1.719 0A9.277 9.277 0 0 0 11 1.718 9.277 9.277 0 0 0 1.719 11v9.281H11A9.276 9.276 0 0 0 20.281 11z" />
-                                    </g>
-                                </g>
-                            </svg>
-                            <span>Задать вопрос ортопеду</span>
-                        </a>
-                        <a href="#" class="btn btn--transparent black">Записаться на прием</a>
-                        <div class="pay">
-                            <div class="pay-item">
-                                <img src="img/pay-1.png" alt="alt" width="281">
-                            </div>
-                            <div class="pay-item">
-                                <img src="img/pay-2.png" alt="alt" width="36">
-                                <img src="img/pay-3.png" alt="alt" width="33">
-                            </div>
+                        <div class="footer-info__item">
+                            <div class="footer-info__head">Подпишитесь на нас:</div>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.9492 7.87829C21.9023 6.81516 21.7304 6.08427 21.4841 5.45094C21.23 4.77868 20.8392 4.1768 20.3271 3.67646C19.8267 3.16833 19.2209 2.77349 18.5564 2.5234C17.9194 2.27712 17.1923 2.1052 16.1292 2.05833C15.0581 2.00748 14.7181 1.99573 12.0016 1.99573C9.28505 1.99573 8.94502 2.00748 7.87792 2.05436C6.81479 2.10123 6.0839 2.2733 5.45073 2.51943C4.77831 2.77349 4.17643 3.16436 3.67609 3.67646C3.16797 4.1768 2.77328 4.78265 2.52303 5.44712C2.27676 6.08427 2.10483 6.81119 2.05796 7.87432C2.00712 8.94539 1.99536 9.28542 1.99536 12.0019C1.99536 14.7185 2.00712 15.0585 2.05399 16.1256C2.10087 17.1887 2.27294 17.9196 2.51922 18.553C2.77328 19.2252 3.16797 19.8271 3.67609 20.3274C4.17643 20.8356 4.78228 21.2304 5.44676 21.4805C6.0839 21.7268 6.81082 21.8987 7.87411 21.9456C8.94105 21.9926 9.28123 22.0042 11.9978 22.0042C14.7143 22.0042 15.0543 21.9926 16.1214 21.9456C17.1846 21.8987 17.9154 21.7268 18.5486 21.4805C19.8933 20.9606 20.9564 19.8975 21.4763 18.553C21.7224 17.9158 21.8945 17.1887 21.9414 16.1256C21.9883 15.0585 22 14.7185 22 12.0019C22 9.28542 21.996 8.94539 21.9492 7.87829ZM20.1474 16.0474C20.1043 17.0246 19.9402 17.5523 19.8034 17.9041C19.4672 18.7757 18.7754 19.4675 17.9037 19.8037C17.5519 19.9405 17.0204 20.1047 16.0471 20.1476C14.9917 20.1946 14.6752 20.2062 12.0056 20.2062C9.33589 20.2062 9.01541 20.1946 7.96388 20.1476C6.98671 20.1047 6.45904 19.9405 6.10726 19.8037C5.67349 19.6434 5.27865 19.3894 4.95817 19.0571C4.62593 18.7327 4.37187 18.3418 4.21155 17.908C4.07475 17.5562 3.91061 17.0246 3.86771 16.0514C3.82068 14.9961 3.80908 14.6794 3.80908 12.0097C3.80908 9.34008 3.82068 9.01959 3.86771 7.96822C3.91061 6.99105 4.07475 6.46338 4.21155 6.1116C4.37187 5.67767 4.62593 5.28299 4.96214 4.96235C5.28644 4.63012 5.67731 4.37605 6.11123 4.21589C6.46301 4.07908 6.99465 3.91495 7.96785 3.87189C9.0232 3.82502 9.33986 3.81326 12.0094 3.81326C14.683 3.81326 14.9995 3.82502 16.051 3.87189C17.0282 3.91495 17.5559 4.07908 17.9077 4.21589C18.3414 4.37605 18.7363 4.63012 19.0567 4.96235C19.389 5.28681 19.643 5.67767 19.8034 6.1116C19.9402 6.46338 20.1043 6.99487 20.1474 7.96822C20.1942 9.02356 20.206 9.34008 20.206 12.0097C20.206 14.6794 20.1942 14.9921 20.1474 16.0474Z" fill="white" />
+                                            <path d="M12.0005 6.86194C9.1629 6.86194 6.8606 9.16409 6.8606 12.0019C6.8606 14.8396 9.1629 17.1418 12.0005 17.1418C14.8383 17.1418 17.1404 14.8396 17.1404 12.0019C17.1404 9.16409 14.8383 6.86194 12.0005 6.86194ZM12.0005 15.336C10.1596 15.336 8.66638 13.8429 8.66638 12.0019C8.66638 10.1608 10.1596 8.66772 12.0005 8.66772C13.8416 8.66772 15.3346 10.1608 15.3346 12.0019C15.3346 13.8429 13.8416 15.336 12.0005 15.336Z" fill="white" />
+                                            <path d="M18.5436 6.65868C18.5436 7.32132 18.0063 7.85861 17.3435 7.85861C16.6808 7.85861 16.1436 7.32132 16.1436 6.65868C16.1436 5.99588 16.6808 5.45874 17.3435 5.45874C18.0063 5.45874 18.5436 5.99588 18.5436 6.65868Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.7747 6.37619C22.5154 5.41228 21.7554 4.65243 20.7916 4.39288C19.0309 3.91113 11.988 3.91113 11.988 3.91113C11.988 3.91113 4.94536 3.91113 3.18466 4.37462C2.23943 4.6339 1.46091 5.41241 1.20163 6.37619C0.738281 8.13675 0.738281 11.7879 0.738281 11.7879C0.738281 11.7879 0.738281 15.4575 1.20163 17.1996C1.46118 18.1634 2.22089 18.9233 3.1848 19.1828C4.9639 19.6647 11.9883 19.6647 11.9883 19.6647C11.9883 19.6647 19.0309 19.6647 20.7916 19.2012C21.7555 18.9418 22.5154 18.182 22.7749 17.2182C23.2381 15.4575 23.2381 11.8065 23.2381 11.8065C23.2381 11.8065 23.2567 8.13675 22.7747 6.37619ZM9.7457 15.161V8.41484L15.6022 11.7879L9.7457 15.161Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="row justify-content-between">
-                    <div class="col-md-6">
-                        <div class="footer__bottom-item">
-                            <span>Все права защищены © Sursil 2003-2022 ООО «Ботильон» (ОГРН 1165040054365) </span>
-                            <span>140180 МО, г. Жуковский, ул. Кооперативная, дом 10, стр. 3</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 tl-right">
-                        <a href="#" class="footer__bottom-item footer__bottom-item--link">Пользовательское соглашение</a>
-                    </div>
+                <div class="footer-img">
+                    <img src="img/footer-coin.png" alt="alt">
                 </div>
             </div>
+            <div class="copyright">Copyright © 2022 All Rights Reserved.</div>
         </div>
     </footer>
     <!-- FOOTER END -->
     <!-- MODAL -->
-    <div class="modal modal-login mfp-hide mfp-with-anim" id="login">
-        <div class="tabs">
-            <div class="tabs__nav">
-                <div class="tabs__nav-item">вход</div>
-                <div class="tabs__nav-item">Регистрация</div>
-            </div>
-        </div>
-        <div class="tabs__content">
-            <div class="tabs__content-item">
-                <form action="/" class="form">
-                    <div class="form__row">
-                        <input type="text" class="form__input" placeholder="Логин">
-                    </div>
-                    <div class="form__row mb-30">
-                        <input type="password" class="form__input" placeholder="Пароль">
-                    </div>
-                    <div class="form__row tl-center mb-30">
-                        <a href="#recovery" data-effect="mfp-zoom-out" class="modal-init orange-link">Забыли пароль?</a>
-                    </div>
-                    <div class="form__row tl-center">
-                        <button class="btn btn--orange">Войти</button>
-                    </div>
-                </form>
-            </div>
-            <div class="tabs__content-item">
-                <form action="/" class="form">
-                    <div class="form__row">
-                        <input type="text" class="form__input" placeholder="Логин">
-                    </div>
-                    <div class="form__row">
-                        <input type="text" class="form__input" placeholder="Телефон">
-                    </div>
-                    <div class="form__row">
-                        <input type="password" class="form__input" placeholder="Пароль">
-                    </div>
-                    <div class="form__row mb-30">
-                        <input type="password" class="form__input" placeholder="Повторите пароль">
-                    </div>
-                    <div class="form__row mb-30">
-                        <div class="form__checkbox">
-                            <input type="checkbox" checked name="policy" id="policy">
-                            <label for="policy">Согласен(а) на обработку данных</label>
-                        </div>
-                    </div>
-                    <div class="form__row tl-center">
-                        <button class="btn btn--orange">Зарегистрироваться</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <div class="modal mfp-hide mfp-with-anim" id="modal" data-effect="mfp-zoom-out">
     </div>
-    <div class="modal modal-recovery mfp-hide mfp-with-anim" id="recovery">
-        <div class="modal-login__content">
-            <div class="tl-center">
-                <div class="modal__head">восстановить пароль</div>
-                <div class="modal-login__subtext">В течении 30 сек вам на почту придет пароль для подтвержедения входа</div>
-            </div>
-            <form action="/" class="form">
-                <div class="form__row">
-                    <input type="text" class="form__input" placeholder="Почта">
-                </div>
-                <div class="form__row mb-30">
-                    <input type="password" class="form__input" placeholder="Пароль">
-                </div>
-                <div class="form__row tl-center">
-                    <button class="btn btn--orange">Войти</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="modal modal-cart mfp-hide mfp-with-anim" id="modalCart">
-        <div class="tl-center modal__head mb-30">корзина</div>
-        <div class="modal-cart__block mb-45">
-            <div class="modal-cart__row">
-                <div class="modal-cart__image">
-                    <div class="card__label card__label--new">Новинка</div>
-                    <a href="#">
-                        <img src="img/cart-image.png" alt="alt">
-                    </a>
-                </div>
-                <div class="modal-cart__info">
-                    <a href="#" class="modal-cart__head">Сабо ортопедические Сабо ортопедические</a>
-                    <div class="modal-cart__category">Женская обувь</div>
-                </div>
-                <div class="modal-cart__prices">
-                    <div class="modal-cart__price">75 500 Р</div>
-                    <div class="modal-cart__oldprice">10 500 Р</div>
-                </div>
-                <div class="modal-cart__num">
-                    <div class="quantity">
-                        <input type="number" min="1" max="235" step="1" value="1">
-                    </div>
-                </div>
-                <div class="modal-cart__close">
-                    <img src="img/close.png" alt="alt">
-                </div>
-            </div>
-            <div class="modal-cart__row">
-                <div class="modal-cart__image">
-                    <div class="card__label card__label--sale">Скидка</div>
-                    <a href="#">
-                        <img src="img/cart-image.png" alt="alt">
-                    </a>
-                </div>
-                <div class="modal-cart__info">
-                    <a href="#" class="modal-cart__head">Сабо ортопедические</a>
-                    <div class="modal-cart__category">Женская обувь</div>
-                </div>
-                <div class="modal-cart__prices">
-                    <div class="modal-cart__price">7 500 Р</div>
-                    <div class="modal-cart__oldprice">10 500 Р</div>
-                </div>
-                <div class="modal-cart__num">
-                    <div class="quantity">
-                        <input type="number" min="1" max="235" step="1" value="1">
-                    </div>
-                </div>
-                <div class="modal-cart__close">
-                    <img src="img/close.png" alt="alt">
-                </div>
-            </div>
-        </div>
-        <div class="modal-cart__nav">
-            <button class="btn btn--transparent black">продолжить покупки</button>
-            <button class="btn btn--orange">оформить заказ</button>
-        </div>
-    </div>
-
+    <!-- COMPONENTS -->
+    <!-- <nav aria-label="breadcrumb">
+	    <ol class="breadcrumb">
+	        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+	        <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+	        <li class="breadcrumb-item active" aria-current="page">Солнечные панели</li>
+	    </ol>
+	</nav> -->
     <script src="js/scripts.min.js"></script>
     <script src="js/common.js"></script>
 </body>
