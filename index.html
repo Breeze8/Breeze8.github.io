@@ -19,187 +19,589 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- HEADER START -->
-    <header class="header">
-        <div class="container">
-            <div class="header-row">
-                <a href="home.html" class="logo">
-                    <img src="img/logo.png" alt="alt" width="84">
-                </a>
-                <div class="hamburger hamburger--vortex">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
-                <nav class="main-nav">
-                    <ul class="main-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Статистика</a></li>
-                        <li><a href="#">Токеномика</a></li>
-                        <li><a href="#">Наши проекты</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                    <div class="dropdown btn btn--gradient btn--flex">
-                        <div class="dropdown-toggler">
-                            <span>Connect Wallet</span>
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.04052 2.04036C9.43105 1.64983 9.43105 1.01667 9.04052 0.626145C8.65 0.235621 8.01683 0.235621 7.62631 0.626145L9.04052 2.04036ZM5.00008 4.66659L4.29297 5.37369C4.48051 5.56123 4.73486 5.66659 5.00008 5.66659C5.2653 5.66659 5.51965 5.56123 5.70719 5.37369L5.00008 4.66659ZM2.37385 0.626145C1.98333 0.235621 1.35017 0.235621 0.959641 0.626145C0.569117 1.01667 0.569117 1.64983 0.959641 2.04036L2.37385 0.626145ZM7.62631 0.626145L4.29297 3.95948L5.70719 5.37369L9.04052 2.04036L7.62631 0.626145ZM5.70719 3.95948L2.37385 0.626145L0.959641 2.04036L4.29297 5.37369L5.70719 3.95948Z" fill="white" />
-                            </svg>
-                        </div>
-                        <div class="dropdown-body">
-                            <a href="#" class="dropdown-body__item">
-                                <span>MetaMask</span>
-                                <img src="img/wallet-1.png" alt="alt" width="20">
-                            </a>
-                            <a href="#" class="dropdown-body__item">
-                                <span>WalletConnect</span>
-                                <img src="img/wallet-2.png" alt="alt" width="20">
-                            </a>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn--green btn--transparent"> Disconnect wallet</a>
-                </nav>
-                <div class="header-nav">
-                    <div class="lang">
-                        <div class="lang-toggler">
-                            <span>RU</span>
-                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.7905 1.95711C11.181 1.56658 11.181 0.933417 10.7905 0.542893C10.4 0.152369 9.76683 0.152369 9.37631 0.542893L10.7905 1.95711ZM6.00008 5.33333L5.29297 6.04044C5.48051 6.22798 5.73486 6.33333 6.00008 6.33333C6.2653 6.33333 6.51965 6.22798 6.70719 6.04044L6.00008 5.33333ZM2.62385 0.542893C2.23333 0.152369 1.60017 0.152369 1.20964 0.542893C0.819117 0.933417 0.819117 1.56658 1.20964 1.95711L2.62385 0.542893ZM9.37631 0.542893L5.29297 4.62623L6.70719 6.04044L10.7905 1.95711L9.37631 0.542893ZM6.70719 4.62623L2.62385 0.542893L1.20964 1.95711L5.29297 6.04044L6.70719 4.62623Z" fill="white" fill-opacity="0.5" />
-                            </svg>
-                        </div>
-                        <div class="lang-body">
-                            <a href="#" class="lang-body__item">EN</a>
-                            <a href="#" class="lang-body__item">CH</a>
-                        </div>
-                    </div>
-                    <div class="dropdown btn btn--gradient btn--flex">
-                        <div class="dropdown-toggler">
-                            <span>Connect Wallet</span>
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.04052 2.04036C9.43105 1.64983 9.43105 1.01667 9.04052 0.626145C8.65 0.235621 8.01683 0.235621 7.62631 0.626145L9.04052 2.04036ZM5.00008 4.66659L4.29297 5.37369C4.48051 5.56123 4.73486 5.66659 5.00008 5.66659C5.2653 5.66659 5.51965 5.56123 5.70719 5.37369L5.00008 4.66659ZM2.37385 0.626145C1.98333 0.235621 1.35017 0.235621 0.959641 0.626145C0.569117 1.01667 0.569117 1.64983 0.959641 2.04036L2.37385 0.626145ZM7.62631 0.626145L4.29297 3.95948L5.70719 5.37369L9.04052 2.04036L7.62631 0.626145ZM5.70719 3.95948L2.37385 0.626145L0.959641 2.04036L4.29297 5.37369L5.70719 3.95948Z" fill="white" />
-                            </svg>
-                        </div>
-                        <div class="dropdown-body">
-                            <a href="#" class="dropdown-body__item">
-                                <span>MetaMask</span>
-                                <img src="img/wallet-1.png" alt="alt" width="20">
-                            </a>
-                            <a href="#" class="dropdown-body__item">
-                                <span>WalletConnect</span>
-                                <img src="img/wallet-2.png" alt="alt" width="20">
-                            </a>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn--green btn--transparent"> Disconnect wallet</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- HEADER END -->
     <!-- MAIN CONTENT START -->
     <main class="main">
         <section class="home">
             <div class="container">
-                <div class="home-row">
-                    <div class="home-anim">
-                        <div class="home-anim__box">
-                            <img src="img/lime-anim.png" alt="alt">
-                        </div>
-                        <div class="crypto">
-                            <div class="crypto-item">
-                                <img src="img/crypto-1.svg" alt="alt">
-                            </div>
-                            <div class="crypto-item">
-                                <img src="img/crypto-2.png" alt="alt" width="107">
-                            </div>
-                            <div class="crypto-item">
-                                <img src="img/crypto-3.svg" alt="alt">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-content">
-                        <div class="home-subhead" data-aos="fade-up">NO BOUNDARIES... NO BORDERS...</div>
-                        <h1 class="h1" data-aos="fade-up">Готовые решения по наращиванию <br> капитала с помощью <br>  <span>Lime Technologies</span> </h1>
-                        <div class="home-prehead" data-aos="fade-up"><span>LIME</span> — это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</div>
-                        <a href="#" class="read-more">
-                            <span>Читать дальше</span>
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.10885 11.1846C0.913587 11.3799 0.913587 11.6965 1.10885 11.8917C1.30411 12.087 1.62069 12.087 1.81596 11.8917L1.10885 11.1846ZM11.5387 1.46191L12.0387 1.46194C12.0387 1.32933 11.986 1.20214 11.8922 1.10837C11.7985 1.0146 11.6713 0.961914 11.5387 0.961914V1.46191ZM5.94104 0.961914C5.6649 0.961914 5.44104 1.18577 5.44104 1.46191C5.44104 1.73806 5.6649 1.96191 5.94104 1.96191V0.961914ZM11.0384 7.05982C11.0384 7.33596 11.2622 7.55983 11.5383 7.55984C11.8145 7.55986 12.0384 7.33601 12.0384 7.05987L11.0384 7.05982ZM1.81596 11.8917L11.8922 1.81547L11.1851 1.10836L1.10885 11.1846L1.81596 11.8917ZM11.5387 0.961914H5.94104V1.96191H11.5387V0.961914ZM11.0387 1.46189L11.0384 7.05982L12.0384 7.05987L12.0387 1.46194L11.0387 1.46189Z" fill="#FDFDFD" fill-opacity="0.5" />
-                            </svg>
+                <div class="home-block">
+                    <div class="home-date">23 марта</div>
+                    <h1 class="h1">PRO E-COMMERCE’23</h1>
+                    <div class="home-nav">
+                        <a href="#" class="btn btn--black btn--flex">
+                            <img src="img/bumb.png" alt="alt" width="63">
+                            <span>Хочу с вами</span>
                         </a>
-                        <div class="home-nav">
-                            <a href="#" class="btn btn--gradient">Стать участником</a>
-                            <a href="https://www.youtube.com/watch?v=v6EbBGsf3uw" class="video-play">
-                                <svg width="136" height="135" viewBox="0 0 136 135" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M64.8006 27.5971C90.7133 31.625 108.443 56.1196 104.376 82.3252C100.308 108.531 75.9905 126.489 50.0778 122.461C24.1651 118.433 6.43583 93.9389 10.5029 67.7333C14.57 41.5276 38.888 23.5691 64.8006 27.5971Z" fill="#131811" fill-opacity="0.8" stroke="#01A50D" stroke-width="2" />
-                                    <path d="M70.4216 22.7512C69.3991 22.4929 68.6337 21.9385 68.1253 21.0881C67.6193 20.2286 67.4923 19.2964 67.7444 18.2916C67.9965 17.2867 68.5471 16.5306 69.3961 16.0231C70.2474 15.5065 71.1843 15.3774 72.2069 15.6358C72.8765 15.8049 73.4374 16.1199 73.8895 16.5807C74.3439 17.0324 74.6251 17.5607 74.7331 18.1656L73.8946 18.4014C73.8158 17.9483 73.6023 17.5526 73.2542 17.2144C72.9173 16.8694 72.4956 16.6328 71.9888 16.5048C71.2377 16.3151 70.5384 16.4176 69.8909 16.8123C69.2457 17.198 68.8288 17.7665 68.6403 18.5179C68.4518 19.2693 68.5495 19.9727 68.9336 20.628C69.3199 21.2744 69.8886 21.6924 70.6397 21.8822C71.1464 22.0102 71.6284 22.0068 72.0856 21.872C72.5451 21.7282 72.939 21.4812 73.2675 21.1309L73.905 21.7541C73.4882 22.2264 72.9686 22.5524 72.3462 22.732C71.7237 22.9117 71.0822 22.9181 70.4216 22.7512Z" fill="#01A50D" />
-                                    <path d="M86.5183 21.6613L83.4464 27.9512L82.618 27.5419L85.0693 22.5226L81.1279 25.0101L81.0275 24.9605L80.5758 20.3026L78.1244 25.322L77.296 24.9127L80.3679 18.6227L81.3218 19.094L81.7597 23.5889L85.5643 21.19L86.5183 21.6613Z" fill="#01A50D" />
-                                    <path d="M92.5202 33.3422C91.5322 33.4434 90.639 33.1713 89.8407 32.5257C89.0424 31.8801 88.5821 31.0578 88.4597 30.0586C88.3505 29.058 88.6188 28.1528 89.2648 27.3428C89.9108 26.5329 90.7278 26.0773 91.7158 25.9761C92.7169 25.8734 93.6166 26.1449 94.4149 26.7904C95.2132 27.436 95.667 28.2591 95.7763 29.2597C95.8986 30.2588 95.6368 31.1634 94.9908 31.9733C94.3448 32.7832 93.5213 33.2395 92.5202 33.3422ZM89.3729 29.9689C89.4549 30.7193 89.797 31.3381 90.3994 31.8252C91.0017 32.3123 91.6756 32.5152 92.421 32.4338C93.1722 32.3451 93.7893 31.9979 94.2723 31.3923C94.7554 30.7867 94.9559 30.1086 94.874 29.3582C94.7978 28.6004 94.4586 27.978 93.8562 27.4909C93.2539 27.0038 92.5771 26.8046 91.8259 26.8933C91.0805 26.9747 90.4663 27.3182 89.9833 27.9238C89.5003 28.5295 89.2968 29.2111 89.3729 29.9689Z" fill="#01A50D" />
-                                    <path d="M104.765 37.797L104.082 38.3771L102.492 36.4763L97.8403 40.4281L97.2475 39.7193L101.9 35.7675L100.31 33.8667L100.993 33.2867L104.765 37.797Z" fill="#01A50D" />
-                                    <path d="M110.426 44.9596C110.905 45.8358 111.002 46.7535 110.718 47.7125C110.439 48.6798 109.85 49.4129 108.953 49.9121C108.056 50.4112 107.127 50.522 106.167 50.2444C105.211 49.9751 104.494 49.4023 104.015 48.526C103.42 47.4368 103.416 46.3601 104.004 45.2959L100.358 47.3242L99.9152 46.5134L108.479 41.7491L108.922 42.5599L107.723 43.2269C108.93 43.2928 109.83 43.8704 110.426 44.9596ZM104.522 45.9213C104.312 46.6467 104.393 47.3493 104.764 48.029C105.136 48.7087 105.682 49.1526 106.402 49.3608C107.13 49.5644 107.833 49.4779 108.51 49.1013C109.187 48.7247 109.63 48.1737 109.84 47.4483C110.058 46.7183 109.981 46.0135 109.609 45.3337C109.238 44.654 108.688 44.2124 107.959 44.0087C107.239 43.8006 106.541 43.8848 105.864 44.2614C105.187 44.638 104.739 45.1913 104.522 45.9213Z" fill="#01A50D" />
-                                    <path d="M115.676 57.2841C115.967 58.2785 115.848 59.1858 115.319 60.0058C114.802 60.8321 114.065 61.388 113.108 61.6735C113.01 61.7028 112.868 61.7352 112.684 61.7707L110.961 55.8712C110.308 56.1635 109.85 56.6117 109.589 57.2155C109.339 57.8257 109.319 58.4891 109.529 59.2058C109.678 59.7165 109.909 60.1248 110.222 60.4308C110.546 60.743 110.906 60.9425 111.301 61.0292L111.072 61.9448C110.512 61.7905 110.019 61.4994 109.592 61.0715C109.166 60.6435 108.857 60.1026 108.666 59.4485C108.357 58.3914 108.437 57.4326 108.905 56.5722C109.373 55.7117 110.117 55.1294 111.137 54.8252C112.139 54.5264 113.07 54.6039 113.932 55.0578C114.794 55.5117 115.375 56.2538 115.676 57.2841ZM114.818 57.5402C114.614 56.8414 114.232 56.3173 113.673 55.9679C113.125 55.6248 112.508 55.5071 111.82 55.615L113.284 60.6276C113.964 60.3272 114.434 59.8898 114.694 59.3155C114.955 58.7412 114.996 58.1495 114.818 57.5402Z" fill="#01A50D" />
-                                    <path d="M117.55 71.7123L116.657 71.7924L116.444 69.3235L110.365 69.8688L110.285 68.9482L116.365 68.403L116.152 65.9341L117.044 65.8541L117.55 71.7123Z" fill="#01A50D" />
-                                    <path d="M115.064 79.9538C115.011 80.6049 114.762 81.1373 114.316 81.5509C113.879 81.9745 113.344 82.1608 112.712 82.1099C112.079 82.0589 111.576 81.7891 111.204 81.3003C110.841 80.8215 110.685 80.2566 110.738 79.6054L110.969 76.7728L117.946 77.3346L117.871 78.2556L115.22 78.0421L115.064 79.9538ZM111.631 79.6773C111.6 80.068 111.689 80.4076 111.9 80.6961C112.109 80.9939 112.405 81.1582 112.787 81.1889C113.168 81.2196 113.486 81.1048 113.742 80.8445C113.996 80.5934 114.139 80.2726 114.171 79.8818L114.327 77.9702L111.787 77.7657L111.631 79.6773Z" fill="#01A50D" />
-                                    <path d="M110.436 96.1281C109.91 96.7489 109.266 96.918 108.505 96.6353C107.971 96.437 107.595 96.0933 107.377 95.6042C107.165 95.1271 107.181 94.5556 107.426 93.8899L108.6 90.697L115.162 93.1343L114.085 96.0644C113.85 96.7039 113.501 97.137 113.04 97.3639C112.587 97.5941 112.103 97.6133 111.587 97.4216C110.931 97.1778 110.547 96.7467 110.436 96.1281ZM113.245 95.7524L114.003 93.6895L112.009 92.9486L111.25 95.0115C110.97 95.7736 111.171 96.2814 111.853 96.5349C112.159 96.6486 112.433 96.6356 112.673 96.4959C112.919 96.3682 113.109 96.1203 113.245 95.7524ZM108.266 94.2019C108.124 94.5873 108.108 94.9149 108.218 95.1846C108.324 95.4631 108.544 95.6641 108.876 95.7875C109.182 95.9013 109.462 95.8855 109.714 95.7403C109.972 95.6071 110.172 95.3477 110.313 94.9623L111.169 92.6366L109.121 91.8762L108.266 94.2019Z" fill="#01A50D" />
-                                    <path d="M109.045 107.133L108.647 107.808L102.637 104.219L103.106 103.423L107.734 106.187L105.225 99.8296L105.623 99.1543L111.634 102.743L111.164 103.539L106.536 100.776L109.045 107.133Z" fill="#01A50D" />
-                                    <path d="M96.0238 113.494L95.3636 114.218L93.3285 112.336L93.951 111.653L95.3283 112.927L99.1763 108.705L97.799 107.432L98.4214 106.749L100.457 108.631L99.8812 109.262C100.02 110.038 100.507 110.813 101.343 111.586L103.882 113.934L100.505 117.638L96.0238 113.494ZM99.1267 110.09L96.6463 112.811L100.47 116.347L102.601 114.009L100.72 112.269C99.9324 111.54 99.4012 110.814 99.1267 110.09Z" fill="#01A50D" />
-                                    <path d="M93.0952 124.987C92.248 125.583 91.355 125.761 90.4163 125.52C89.4752 125.292 88.7203 124.768 88.1518 123.947C88.0933 123.862 88.0186 123.738 87.9276 123.574L92.9534 120.036C92.4732 119.507 91.9075 119.214 91.2563 119.159C90.6027 119.117 89.9706 119.311 89.36 119.741C88.925 120.047 88.6121 120.398 88.4214 120.795C88.2284 121.205 88.1527 121.612 88.1944 122.016L87.2594 122.092C87.2296 121.509 87.3499 120.945 87.6202 120.4C87.8905 119.856 88.3042 119.388 88.8614 118.996C89.762 118.362 90.6913 118.13 91.6493 118.301C92.6072 118.471 93.3891 118.993 93.9949 119.868C94.59 120.727 94.8083 121.641 94.6496 122.609C94.491 123.576 93.9729 124.369 93.0952 124.987ZM92.585 124.25C93.1804 123.831 93.5554 123.299 93.7101 122.654C93.8626 122.021 93.7804 121.394 93.4635 120.773L89.1933 123.779C89.6894 124.331 90.249 124.639 90.872 124.703C91.495 124.766 92.0661 124.615 92.585 124.25Z" fill="#01A50D" />
-                                    <path d="M76.3474 126.554C76.7381 125.634 77.4075 124.977 78.3556 124.583C79.3036 124.189 80.2416 124.178 81.1696 124.55C82.0924 124.935 82.7494 125.607 83.1406 126.566C83.5318 127.526 83.532 128.465 83.1413 129.386C82.7455 130.318 82.0736 130.982 81.1256 131.376C80.1775 131.77 79.242 131.774 78.3192 131.39C77.3912 131.018 76.7317 130.352 76.3405 129.392C75.9493 128.433 75.9516 127.487 76.3474 126.554ZM80.8051 125.399C80.113 125.111 79.4092 125.115 78.6939 125.412C77.9785 125.71 77.4757 126.207 77.1853 126.904C76.8984 127.609 76.9012 128.32 77.1937 129.038C77.4863 129.755 77.9786 130.258 78.6707 130.546C79.3664 130.843 80.0719 130.843 80.7872 130.546C81.5026 130.249 82.0037 129.747 82.2905 129.042C82.5809 128.345 82.5799 127.638 82.2874 126.921C81.9949 126.204 81.5008 125.696 80.8051 125.399Z" fill="#01A50D" />
-                                    <g filter="url(#filter0_d_1_426)">
-                                        <path d="M77.5 72.4019C79.5 73.5566 79.5 76.4434 77.5 77.5981L50.5 93.1865C48.5 94.3412 46 92.8979 46 90.5885L46 59.4115C46 57.1021 48.5 55.6588 50.5 56.8135L77.5 72.4019Z" fill="#D9D9D9" />
-                                    </g>
-                                    <path d="M66.5 74.134C67.1667 74.5189 67.1667 75.4811 66.5 75.866L54.5 82.7942C53.8333 83.1791 53 82.698 53 81.9282L53 68.0718C53 67.302 53.8333 66.8209 54.5 67.2058L66.5 74.134Z" fill="#01A50D" />
-                                    <path d="M66.25 74.567C66.5833 74.7594 66.5833 75.2406 66.25 75.433L54.25 82.3612C53.9167 82.5537 53.5 82.3131 53.5 81.9282L53.5 68.0718C53.5 67.6869 53.9167 67.4463 54.25 67.6388L66.25 74.567Z" stroke="black" stroke-opacity="0.05" />
-                                    <defs>
-                                        <filter id="filter0_d_1_426" x="6" y="16.4071" width="113" height="117.186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                            <feOffset />
-                                            <feGaussianBlur stdDeviation="20" />
-                                            <feComposite in2="hardAlpha" operator="out" />
-                                            <feColorMatrix type="matrix" values="0 0 0 0 0.529412 0 0 0 0 0.87451 0 0 0 0 0.0745098 0 0 0 0.45 0" />
-                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_426" />
-                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_426" result="shape" />
-                                        </filter>
-                                    </defs>
+                        <a href="#program" class="scroll-down btn btn--white">Изучить программу</a>
+                    </div>
+                    <div class="home-sub"><span>Более 1000 фабрик</span> поставщиков ждут тебя на выставке</div>
+                    <div class="home-down">
+                        <a href="#whome" class="scroll-down home-down__link">
+                            <span class="home-down__mouse">
+                                <svg width="24" height="38" viewBox="0 0 24 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0.875C8.85167 0.878639 5.83333 2.13092 3.60713 4.35713C1.38092 6.58333 0.128639 9.60167 0.125 12.75V25.25C0.125 28.3994 1.37611 31.4199 3.60311 33.6469C5.8301 35.8739 8.85055 37.125 12 37.125C15.1494 37.125 18.1699 35.8739 20.3969 33.6469C22.6239 31.4199 23.875 28.3994 23.875 25.25V12.75C23.8714 9.60167 22.6191 6.58333 20.3929 4.35713C18.1667 2.13092 15.1483 0.878639 12 0.875ZM22.625 25.25C22.625 28.0679 21.5056 30.7704 19.513 32.763C17.5204 34.7556 14.8179 35.875 12 35.875C9.18207 35.875 6.47956 34.7556 4.48699 32.763C2.49442 30.7704 1.375 28.0679 1.375 25.25V12.75C1.375 9.93207 2.49442 7.22956 4.48699 5.23699C6.47956 3.24442 9.18207 2.125 12 2.125C14.8179 2.125 17.5204 3.24442 19.513 5.23699C21.5056 7.22956 22.625 9.93207 22.625 12.75V25.25Z" fill="black" />
+                                    <path d="M12 5.875C11.8342 5.875 11.6753 5.94085 11.5581 6.05806C11.4408 6.17527 11.375 6.33424 11.375 6.5V16.5C11.375 16.6658 11.4408 16.8247 11.5581 16.9419C11.6753 17.0592 11.8342 17.125 12 17.125C12.1658 17.125 12.3247 17.0592 12.4419 16.9419C12.5592 16.8247 12.625 16.6658 12.625 16.5V6.5C12.625 6.33424 12.5592 6.17527 12.4419 6.05806C12.3247 5.94085 12.1658 5.875 12 5.875Z" fill="black" />
                                 </svg>
-                            </a>
+                            </span>
+                            <span class="home-down__arrow">
+                                <svg width="10" height="26" viewBox="0 0 10 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.57573 25.4243C4.81005 25.6586 5.18995 25.6586 5.42426 25.4243L9.24264 21.6059C9.47695 21.3716 9.47695 20.9917 9.24264 20.7574C9.00833 20.523 8.62843 20.523 8.39411 20.7574L5 24.1515L1.60589 20.7574C1.37157 20.523 0.991673 20.523 0.757358 20.7574C0.523044 20.9917 0.523044 21.3716 0.757358 21.6059L4.57573 25.4243ZM4.4 -2.62268e-08L4.4 25L5.6 25L5.6 2.62268e-08L4.4 -2.62268e-08Z" fill="#272727" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whome" id="whome">
+            <div class="container">
+                <h2 class="h2 tl-center">Кому подойдет мероприятие?</h2>
+                <div class="whome-block">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="whome-item">
+                                <div class="whome-item__img">
+                                    <img src="img/whome-1.png" alt="alt">
+                                </div>
+                                <div class="whome-item__content">
+                                    <div class="whome-item__head">Начинающим селлерам</div>
+                                    <div class="whome-item__text">Которые хотят войти в нишу одежды и выйти на высокие обороты</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="whome-item">
+                                <div class="whome-item__img">
+                                    <img src="img/whome-2.png" alt="alt">
+                                </div>
+                                <div class="whome-item__content">
+                                    <div class="whome-item__head">Действующим продавцам </div>
+                                    <div class="whome-item__text">На маркетплейсах, одностраничниках и телемагазинах, которые хотят расширить ассортимент новыми актуальными востребованными товарами из Турции и/или повысить качество своих товаров</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="whome-item">
+                                <div class="whome-item__img">
+                                    <img src="img/whome-3.png" alt="alt">
+                                </div>
+                                <div class="whome-item__content">
+                                    <div class="whome-item__head">Владельцам онлайн/оффлайн магазинов</div>
+                                    <div class="whome-item__text">Т.к. данные товары также подходят для крупной и мелкой розницы</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="use">
+        <section class="event">
             <div class="container">
-                <h2 class="h2 tl-center" data-aos="fade-up">Воспользуйтесь всеми преимуществами децентрализованной <br><span>автономной организации</span></h2>
-                <div class="tl-center use-read">
-                    <a href="#" class="read-more font-18 read-more--white">
-                        <span>White paper</span>
-                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.10885 11.1846C0.913587 11.3799 0.913587 11.6965 1.10885 11.8917C1.30411 12.087 1.62069 12.087 1.81596 11.8917L1.10885 11.1846ZM11.5387 1.46191L12.0387 1.46194C12.0387 1.32933 11.986 1.20214 11.8922 1.10837C11.7985 1.0146 11.6713 0.961914 11.5387 0.961914V1.46191ZM5.94104 0.961914C5.6649 0.961914 5.44104 1.18577 5.44104 1.46191C5.44104 1.73806 5.6649 1.96191 5.94104 1.96191V0.961914ZM11.0384 7.05982C11.0384 7.33596 11.2622 7.55983 11.5383 7.55984C11.8145 7.55986 12.0384 7.33601 12.0384 7.05987L11.0384 7.05982ZM1.81596 11.8917L11.8922 1.81547L11.1851 1.10836L1.10885 11.1846L1.81596 11.8917ZM11.5387 0.961914H5.94104V1.96191H11.5387V0.961914ZM11.0387 1.46189L11.0384 7.05982L12.0384 7.05987L12.0387 1.46194L11.0387 1.46189Z" fill="#FAFAFA" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="use-row">
-                    <div class="use-chart" data-aos="fade-right">
-                        <img src="img/chart.png" alt="alt">
+                <div class="event-block">
+                    <h2 class="tl-center h2">Цифры мероприятия</h2>
+                    <div class="event-row">
+                        <div class="event-box">
+                            <div class="event-item">
+                                <div class="event-item__head">3 дня</div>
+                                <div class="event-item__text">в Стамбуле</div>
+                            </div>
+                        </div>
+                        <div class="event-box">
+                            <div class="event-item">
+                                <div class="event-item__head">Нетворкинг</div>
+                                <div class="event-item__text">без всяких посредников напрямую с производителем у него на рабочем месте</div>
+                            </div>
+                        </div>
+                        <div class="event-box">
+                            <div class="event-item">
+                                <div class="event-item__head">Более 4000</div>
+                                <div class="event-item__text">фабрик домашней кухонной утвари, мебели, косметики и бытовой химии</div>
+                            </div>
+                        </div>
+                        <div class="event-box">
+                            <div class="event-item">
+                                <div class="event-item__head">Более 1000</div>
+                                <div class="event-item__text">фабрик одежды</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="use-info"  data-aos="fade-left">
-                        <div class="use-info__item">
-                            <div class="use-info__num">81,456,456</div>
-                            <div class="use-info__text">Trasactions</div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <h2 class="h2 tl-center">Партнеры</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-1.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Биби house</div>
+                                <div class="partners-item__text">Федеральная сеть товаров для дома с огромным ассортиментом.</div>
+                            </div>
                         </div>
-                        <div class="use-info__item">
-                            <div class="use-info__num">1,232,512</div>
-                            <div class="use-info__text">Accounts</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-2.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Yanikov</div>
+                                <div class="partners-item__text">Сеть магазинов мужской одежды с уникальным брендом и 11 торговыми точками в 4 городах.</div>
+                            </div>
                         </div>
-                        <div class="use-info__item">
-                            <div class="use-info__num">217</div>
-                            <div class="use-info__text">Validators</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-3.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Дом фарфора</div>
+                                <div class="partners-item__text">Эксклюзивные сервизы, дизайнерские предметы, уникальные фигурки, столовое серебро и пр.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-4.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Prohotel textil</div>
+                                <div class="partners-item__text">Текстильное оснощение всего сегмента рынка HORECA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-5.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Borz</div>
+                                <div class="partners-item__text">Дерзкий бренд одежды в формате instagram-магазина с 101К подписчиками от Сергея Романовича.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-6.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">СанТехСнаб</div>
+                                <div class="partners-item__text">Одна из первых коммерческо-сбытовых организаций в г. Махачкала, торгующих запорной арматурой, сантехникой, инструментом и др.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-7.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">Merle Blanc</div>
+                                <div class="partners-item__text">Сеть магазинов мужской одежды с уникальным брендом.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="partners-item">
+                            <div class="partners-item__img">
+                                <img src="img/partner-8.jpg" alt="alt">
+                            </div>
+                            <div class="partners-item__content">
+                                <div class="partners-item__head">inStreet</div>
+                                <div class="partners-item__text">Модная марка, принадлежащая российской компании Zender, которая занимается выпуском обуви с 1997 года</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tour">
+            <div class="container">
+                <h2 class="h2 tl-center">Что вы получите, поехав с нами в бизнес тур</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-1.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Построение стратегии продаж и бренд-стратегии</div>
+                                <div class="tour-item__text">Мы подскажем вам, как на основе наших практических знаний можете построить стратегию продажи выбранных товаров через разные каналы и бренд-стратегию</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-2.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Помощь с заключением сделок с фабриками и настройкой логистики</div>
+                                <div class="tour-item__text">Узнаете, как правильно и выгодно заключить сделку, чтобы исключить любые риски. Также мы расскажем вам, как организовать безопасную и быструю доставку из Турции</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-3.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Помощь в выборе товаров</div>
+                                <div class="tour-item__text">Мы знаем, какие товары сейчас актуальны и пользуются спросом, мы знаем, какие ниши растут, и на основе этих знаний мы поможем вам подобрать товары, с которыми вы сможете сделать настоящий прорыв и хорошие чеки на маркетплейсах</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-4.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Контакты фабрик и партнёров в Турции</div>
+                                <div class="tour-item__text">Получите контакты фабрик с выставки и надёжных партнеров для проверки качества, организации упаковки, доставки и растаможи груза, а также помощи в оплате</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-5.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Проживание в 5* звёздочном отеле</div>
+                                <div class="tour-item__text">Вы будете жить в комнате ещё с одним участником поездки. Трансфер от аэропорта до отеля и обратно, завтраки и ужины включены в стоимость</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tour-item">
+                            <div class="tour-item__img">
+                                <img src="img/tour-6.jpg" alt="alt">
+                            </div>
+                            <div class="tour-item__content">
+                                <div class="tour-item__head">Коммьюнити единомышленников</div>
+                                <div class="tour-item__text">Познакомитесь с другими селлерами, обменяетесь с ними контактами и получите сильное успешное окружение</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="program" id="program">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-lg-5">
+        				<h2 class="h2">Программа мероприятия</h2>
+        				<div class="tabs-nav">
+        					<div class="tabs-nav__item">1 день</div>
+        					<div class="tabs-nav__item">2 день</div>
+        					<div class="tabs-nav__item">3 день</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-7">
+        				<div class="tabs-content">
+        					<div class="tabs-content__item">
+        						<div class="program-item">
+        							<div class="program-date">14 февраля</div>
+        							<div class="program-box">
+        								<div class="program-row">
+        									<div class="program-time">11:00</div>
+        									<div class="program-info">
+        										<span>- Регистрация участников</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">12:00</div>
+        									<div class="program-info">
+        										<span>- Открытие форума: слово организаторов</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">12:10</div>
+        									<div class="program-info">
+        										<span>- Слово партнерам</span>
+        										<span>1) Иван Городилов</span>
+        										<span>2) Гала Голдберг</span>
+        										<span>3) Орхан или Омер</span>
+        										<span>4) Хуга</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">12:25</div>
+        									<div class="program-info">
+        										<span>- Спикер Иван Городилов</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">12:55</div>
+        									<div class="program-info">
+        										<span>- Спикер Полина</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">13:25</div>
+        									<div class="program-info">
+        										<span>- Спикер Артур и Юра</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">13:55</div>
+        									<div class="program-info">
+        										<span>- Хан и Юра</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">14:30</div>
+        									<div class="program-info">
+        										<span>- Мансур Амаев</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">15:00</div>
+        									<div class="program-info">
+        										<span>- Кофе брейк</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">15:45</div>
+        									<div class="program-info">
+        										<span>- Руслан Гамзатов</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">16:15</div>
+        									<div class="program-info">
+        										<span>- Мансур Амаев</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">16:45</div>
+        									<div class="program-info">
+        										<span>- Презентация Дадабазар</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">17:45</div>
+        									<div class="program-info">
+        										<span>- Презентация Хуга</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">18:30</div>
+        									<div class="program-info">
+        										<span>- Закрытие 1 части</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">19:30</div>
+        									<div class="program-info">
+        										<span>- Встреча турецких гостей и их представление участникам форума</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:30</div>
+        									<div class="program-info">
+        										<span>- Слово президенту Маиб Марат вазихович Кабаев</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:35</div>
+        									<div class="program-info">
+        										<span>- Слово торгово промышленной палат Стамбула или Турции</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:40</div>
+        									<div class="program-info">
+        										<span>- Слово администрации оптово торгового центра ИСТОЧ</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:45</div>
+        									<div class="program-info">
+        										<span>- Слово руководителю ассоциации ИСТОЧ</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:50</div>
+        									<div class="program-info">
+        										<span>- Слово руководителю ассоциации производителей домашней кухонной утвари</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">20:55</div>
+        									<div class="program-info">
+        										<span>- Слово вновь мне и презентация моих проектов карго чуть истории обо мне и дадабазар</span>
+        									</div>
+        								</div>
+        								<div class="program-row">
+        									<div class="program-time">21:45</div>
+        									<div class="program-info">
+        										<span>- Закрытие и нетворкинг</span>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section class="rate">
+        	<div class="container">
+        		<div class="rate-head">
+        			<h2 class="h2">Мы подготовили для вас 4 тарифа</h2>
+        			<p>Выберите, который из них подходит вам больше всего</p>
+        		</div>
+        		<div class="row justify-content-center">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="rate-item red">
+        					<img src="img/tarif-1.png" alt="alt" class="rate-item__bg">
+        					<div class="rate-item__content">
+        						<div class="rate-item__head">Cтандарт</div>
+        						<ul class="rate-item__list">
+        							<li>Посещение форума</li>
+        							<li>1 мес подписка к б2б платформе маркетплейс с выходом напрямую свыше 100 производителей</li>
+        						</ul>
+        						<div class="rate-item__footer">
+        							<div class="rate-item__price red">17 500 руб.</div>
+        							<a href="#c-form" class="rate-btn red">Купить этот тариф</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="rate-item yellow">
+        					<img src="img/tarif-2.png" alt="alt" class="rate-item__bg">
+        					<div class="rate-item__content">
+        						<div class="rate-item__head">Голд</div>
+        						<ul class="rate-item__list">
+        							<li>Посещение форума</li>
+        							<li>Присутствие на Гала ужине,</li>
+        							<li>Личное знакомство с гостями и спикерами.</li>
+        							<li>3 мес подписка к б2б платформе маркетплейс с выходом напрямую свыше 100 производителей</li>
+        						</ul>
+        						<div class="rate-item__footer">
+        							<div class="rate-item__price yellow">31 500 руб.</div>
+        							<a href="#c-form" class="rate-btn yellow">Купить этот тариф</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- <div class="col-md-6">
+        				<div class="rate-item blue">
+        					<img src="img/tarif-3.png" alt="alt" class="rate-item__bg">
+        					<div class="rate-item__content">
+        						<div class="rate-item__head">Платина</div>
+        						<ul class="rate-item__list">
+        							<li>Прилет и заселение в 5* звёздочный</li>
+        							<li>Посещение форума</li>
+        							<li>Гала ужин</li>
+        							<li>знакомство</li>
+        							<li>Трансфер с аэропорта в отель и обратно</li>
+        							<li>6 мес подписка к б2б платформе маркетплейс с выходом напрямую свыше 100 производителей</li>
+        						</ul>
+        						<div class="rate-item__footer">
+        							<div class="rate-item__price blue">56 000 руб.</div>
+        							<a href="#c-form" class="rate-btn blue">Купить этот тариф</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div> -->
+        			<div class="col-lg-4 col-md-6">
+        				<div class="rate-item blue2">
+        					<img src="img/tarif-4.png" alt="alt" class="rate-item__bg">
+        					<div class="rate-item__content">
+        						<div class="rate-item__head">Бриллиант</div>
+        						<ul class="rate-item__list">
+        							<li>Прилет и заселение в 5* звёздочный</li>
+        							<li>Посещение форума</li>
+        							<li>Гала ужин</li>
+        							<li>знакомство</li>
+        							<li>трансферы</li>
+        							<li>9 мес подписка к б2б платформе маркетплейс с выходом напрямую свыше 100 производителей.</li>
+        						</ul>
+        						<div class="rate-item__footer">
+        							<div class="rate-item__price blue2">105 000 руб.</div>
+        							<a href="#c-form" class="rate-btn blue2">Купить этот тариф</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="tl-center">
+        			<a href="#" class="btn btn--orange">
+        				<span>Сделать прорыв в своем бизнесе и записаться на мероприятие</span>
+        			</a>
+        		</div>
+        	</div>
+        </section>
+        <section class="present">
+            <img src="img/table.png" alt="alt" class="present-bg">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-6">
+                        <div class="present-head">На мероприятии будет презентован проект <span>Dadabazar</span>-оптовый маркетплейс товаров из Китая и Турции для онлайн-торговли</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">1</div>
+                            <div class="features-item__text">Прямой выход  <br> на поставщиков</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">2</div>
+                            <div class="features-item__text">100% гарантия<br> доставки</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">3</div>
+                            <div class="features-item__text">Цены на товар ниже<br> рынка на 20%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">4</div>
+                            <div class="features-item__text">Комплексный<br> контроль качества</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">5</div>
+                            <div class="features-item__text">Аналитика<br> ликвидности товара</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">6</div>
+                            <div class="features-item__text">100.000+ товаров от надежных<br> заводов-производителей из Китая<br> и Турции</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__num">7</div>
+                            <div class="features-item__text">Закрывающие<br> документы</div>
                         </div>
                     </div>
                 </div>
@@ -207,305 +609,233 @@
         </section>
         <section class="why">
             <div class="container">
-            	<h2 class="h2"  data-aos="fade-up">почему стоит  выбрать  <br><span>Lime Token</span></h2>
-                <div class="why-row">
-                    <div class="why-content">
-                        <h2 class="h2" data-aos="fade-up">почему стоит <br> выбрать  <br><span>Lime Token</span></h2>
-                        <div class="why-info">
-                            <div class="why-info__row">
-                                <div class="why-info__item"  data-aos="fade-up">
-                                    <div class="why-info__num">1 851 833 333</div>
-                                    <div class="why-info__text">Ежемесячное сжигание</div>
-                                </div>
-                                <div class="why-info__item"  data-aos="fade-up">
-                                    <div class="why-info__num">за 3 года + 700%</div>
-                                    <div class="why-info__text">Прирост к стоимости</div>
-                                </div>
-                                <div class="why-info__item"  data-aos="fade-up">
-                                    <div class="why-info__num">77 777 000 000</div>
-                                    <div class="why-info__text">Эмиссия</div>
-                                </div>
-                                <div class="why-info__item"  data-aos="fade-up">
-                                    <div class="why-info__num">11 111 000 000  Lime Tokens</div>
-                                    <div class="why-info__text">Автосжигание</div>
-                                </div>
+                <h2 class="h2 tl-center">Почему выбирают Dadabazar?</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-item">
+                            <div class="why-item__img">
+                                <img src="img/why-1.svg" alt="alt">
                             </div>
+                            <div class="why-item__text">Оперативная доставка вашего товара до покупателя</div>
                         </div>
                     </div>
-                    <div class="why-image">
-                        <div class="why-img">
-                            <!-- <img src="img/coin.png" alt="alt"> -->
-                            <video src="video/video-coin.mp4" autoplay loop playsinline muted></video>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-item">
+                            <div class="why-item__img">
+                                <img src="img/why-2.svg" alt="alt">
+                            </div>
+                            <div class="why-item__text">Оплата на расчётный счёт или любой другой способ оплаты для физ. и юр. лиц</div>
                         </div>
-                        <div class="why-image__text">Создан на: Binance Smart Chain, ETH, Relictum</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-item">
+                            <div class="why-item__img">
+                                <img src="img/why-3.svg" alt="alt">
+                            </div>
+                            <div class="why-item__text">Своя логистическая компания. Полный контроль качества доставки груза без лишней комиссии</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-item">
+                            <div class="why-item__img">
+                                <img src="img/why-4.svg" alt="alt">
+                            </div>
+                            <div class="why-item__text">Удобный онлайн-кабинет для управления товарами и продажами</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="speaker">
             <div class="container">
-            	<h2 class="h2">Наши проекты</h2>
-                <div class="projects-box">
-                    <div class="projects-round">
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint0_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint0_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Комплекс по переработке отходов</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-1.png" alt="alt">
-                                </div>
+                <h2 class="h2 tl-center">Спикеры мероприятия</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker-item">
+                            <div class="speaker-item__img">
+                                <img src="img/speaker-1.jpg" alt="alt">
+                            </div>
+                            <div class="speaker-item__content">
+                                <div class="speaker-item__head">Полина Иванова</div>
+                                <div class="speaker-item__text">Founder & CEO QUICK, Технологический партнер Ozon и Яндекс Маркет</div>
+                                <div class="speaker-item__label"><span>Тема:</span> Как продвигать товары в 2023 году</div>
                             </div>
                         </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint1_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint1_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Баги, мотоциклы</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-2.png" alt="alt">
-                                </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker-item">
+                            <div class="speaker-item__img">
+                                <img src="img/speaker-2.jpg" alt="alt">
+                            </div>
+                            <div class="speaker-item__content">
+                                <div class="speaker-item__head speaker-item__head--custom">Фаик Дадашев</div>
+                                <div class="speaker-item__text italic">Предприниматель международного уровня</div>
+                                <ul class="speaker-item__list">
+                                    <li>Экспортируемый оборот Карго №1 35 000 000 $ в год</li>
+                                    <li>10 лет экспертизы в закупке и грузоперевозках товаров из Китая и Турции</li>
+                                    <li>Основатель Карго №1 и dadabazar</li>
+                                    <li>Резидент клуба MPSellers</li>
+                                    <li>Резидент международной ассоциации исламского бизнеса(МАИБ)</li>
+                                </ul>
+                                <div class="speaker-item__label"><span>Тема:</span> Как продвигать товары в 2023 году</div>
                             </div>
                         </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint2_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint2_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Автономное зарядное устройство</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-3.png" alt="alt">
-                                </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker-item">
+                            <div class="speaker-item__img">
+                                <img src="img/speaker-3.jpg" alt="alt">
+                            </div>
+                            <div class="speaker-item__content">
+                                <div class="speaker-item__head">Артур Кариев</div>
+                                <div class="speaker-item__text">Основатель сервиса WBPROD.RU. Команда WBPROD вывела более 50 тысяч артикулов в ТОП</div>
+                                <div class="speaker-item__label"><span>Тема:</span> Как продвигать товары в 2023 году</div>
                             </div>
                         </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint3_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint3_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Инверторный стабилизатор</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-4.png" alt="alt">
-                                </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker-item">
+                            <div class="speaker-item__img">
+                                <img src="img/speaker-4.jpg" alt="alt">
+                            </div>
+                            <div class="speaker-item__content">
+                                <div class="speaker-item__head">Руслан</div>
+                                <div class="speaker-item__text">12 лет практики стратегического маркетинга и организационного менеджмента. Учредитель маркетингового агентства Smart Performance. Учредитель консалтинговой группы RoimanCapital. Автор специализированной образовательной программы по цифровому маркетингу Digital Star</div>
+                                <div class="speaker-item__label"><span>Тема:</span> Как продвигать товары в 2023 году</div>
                             </div>
                         </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint4_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint4_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Щёточный генератор</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-5.png" alt="alt">
-                                </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker-item">
+                            <div class="speaker-item__img">
+                                <img src="img/speaker-5.jpg" alt="alt">
                             </div>
-                        </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint5_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint5_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Мессенджер</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-6.png" alt="alt">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint6_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint6_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Светодиодные лампы</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-7.png" alt="alt">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projects-round__item">
-                            <svg class="projects-round__normal" width="260" height="221" viewBox="0 0 260 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M243.489 212.625C241.403 218.935 234.334 222.011 228.139 219.513L8.57774 130.96C3.20744 128.794 0.338005 123.082 0.623781 117.332C0.783195 114.125 0.674668 110.885 0.285275 107.645C-0.438301 101.625 2.32238 95.4072 7.94597 93.0479L225.331 1.84798C231.436 -0.713279 238.493 2.1931 240.732 8.38859C265.34 76.4967 264.818 148.101 243.489 212.625Z" fill="#9BBC71" />
-                            </svg>
-                            <svg class="projects-round__active" width="373" height="316" viewBox="0 0 373 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.406 304.368C346.413 313.424 336.266 317.84 327.374 314.254L12.2331 187.152C4.52498 184.044 0.406418 175.845 0.8166 167.592C1.04541 162.988 0.889639 158.338 0.330734 153.688C-0.707831 145.047 3.25464 136.123 11.3263 132.736L323.344 1.83487C332.107 -1.84137 342.236 2.33022 345.449 11.2227C380.77 108.98 380.021 211.754 349.406 304.368Z" fill="url(#paint7_radial_101_425)" />
-                                <defs>
-                                    <radialGradient id="paint7_radial_101_425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-83.0855 163.54) rotate(66.9605) scale(452.372 454.592)">
-                                        <stop stop-color="#22B416" />
-                                        <stop offset="0.933214" stop-color="#87DF13" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
-                            <div class="projects-round__row">
-                                <div class="projects-round__head">Премиальный бренд лимитированной продукции</div>
-                                <div class="projects-round__img">
-                                    <img src="img/proj-round-8.png" alt="alt">
-                                </div>
+                            <div class="speaker-item__content">
+                                <div class="speaker-item__head">Хан</div>
+                                <div class="speaker-item__text">Я и моя команда 5 лет занимаемся маркетплейсами. Торгуем в разных нишах (оборот 21 млн в нише БАДы и правильное питание), а также помогаем другим зарабатывать на маркетплейсах</div>
+                                <div class="speaker-item__label"><span>Тема:</span> Как продвигать товары в 2023 году</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="projects-content">
-                    <h2 class="h2" data-aos="fade-up">Наши проекты</h2>
-                    <div class="projects-tabs__content">
-                        <div class="projects-tabs__item">
-                            <div class="projects-item" data-aos="fade-up">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-1.png" alt="alt">
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-block">
+                    <div class="contact-head">Можно тратить месяцы и даже годы на поиск и тестирование новых товаров самому, а можно посетить форум с успешнымы предпринимателями в сфере торговли и выбрать высокомаржинальные товары и сделать бомбический результат на маркетплейсах уже через месяц после поездки!</div>
+                    <form action="/" class="form">
+                        <div class="form-row form-block">
+                            <div class="form-item">
+                                <div class="form-box">
+                                    <div class="form-box__icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0653 12.8512 14.2174 12.5 13.3334 12.5H6.66671C5.78265 12.5 4.93481 12.8512 4.30968 13.4763C3.68456 14.1014 3.33337 14.9493 3.33337 15.8333V17.5" stroke="#272727" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z" stroke="#272727" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="form-input" placeholder="ваше имя" name="name" required>
                                 </div>
-                                <div class="projects-item__head" data-aos="fade-up">Комплекс по переработке отходов</div>
-                                <p data-aos="fade-up">КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p data-aos="fade-up">Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p data-aos="fade-up">Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-box">
+                                    <div class="form-box__icon">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.3334 13.1004V15.6004C17.3344 15.8325 17.2868 16.0622 17.1939 16.2749C17.1009 16.4875 16.9645 16.6784 16.7935 16.8353C16.6225 16.9922 16.4206 17.1116 16.2007 17.186C15.9809 17.2603 15.7479 17.288 15.5168 17.2671C12.9525 16.9884 10.4893 16.1122 8.32511 14.7087C6.31163 13.4293 4.60455 11.7222 3.32511 9.70874C1.91676 7.53474 1.04031 5.05957 0.766774 2.48374C0.745949 2.2533 0.773336 2.02104 0.847191 1.80176C0.921045 1.58248 1.03975 1.38098 1.19575 1.21009C1.35174 1.0392 1.54161 0.902664 1.75327 0.809175C1.96492 0.715685 2.19372 0.667291 2.42511 0.667073H4.92511C5.32953 0.663093 5.7216 0.806305 6.02824 1.07002C6.33488 1.33373 6.53517 1.69995 6.59177 2.10041C6.69729 2.90046 6.89298 3.68601 7.17511 4.44207C7.28723 4.74034 7.31149 5.0645 7.24503 5.37614C7.17857 5.68778 7.02416 5.97383 6.80011 6.20041L5.74177 7.25874C6.92807 9.34503 8.65549 11.0724 10.7418 12.2587L11.8001 11.2004C12.0267 10.9764 12.3127 10.8219 12.6244 10.7555C12.936 10.689 13.2602 10.7133 13.5584 10.8254C14.3145 11.1075 15.1001 11.3032 15.9001 11.4087C16.3049 11.4658 16.6746 11.6697 16.9389 11.9817C17.2032 12.2936 17.3436 12.6917 17.3334 13.1004Z" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <input type="tel" class="form-input" placeholder="телефон" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-box">
+                                    <select required name="plan" class="js-select" data-placeholder="тарифный план">
+                                        <option value=""></option>
+                                        <option value="test 1">test 1</option>
+                                        <option value="test 2">test 2</option>
+                                        <option value="test 3">test 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-box">
+                                    <div class="form-box__icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_969_124)">
+                                                <path d="M15.8534 0.146624C15.6579 -0.0488746 15.3419 -0.0488746 15.1464 0.146624L0.152483 15.1405C-0.0430152 15.336 -0.0430152 15.652 0.152483 15.8475C0.249982 15.945 0.377981 15.994 0.50598 15.994C0.633979 15.994 0.761478 15.9455 0.859478 15.8475L15.8534 0.853618C16.0489 0.65812 16.0489 0.342122 15.8534 0.146624Z" fill="#272727" />
+                                                <path d="M3.50447 0.00585938C1.57249 0.00585938 0 1.57735 0 3.50883C0 5.44082 1.57249 7.0128 3.50447 7.0128C5.43596 7.0128 7.00794 5.44132 7.00794 3.50883C7.00794 1.57735 5.43596 0.00585938 3.50447 0.00585938ZM3.50447 6.01331C2.12348 6.01331 0.999992 4.89032 0.999992 3.50933C0.999992 2.12934 2.12348 1.00635 3.50447 1.00635C4.88496 1.00635 6.00795 2.12934 6.00795 3.50933C6.00795 4.89032 4.88496 6.01331 3.50447 6.01331Z" fill="#272727" />
+                                                <path d="M12.4903 8.99219C10.5588 8.99219 8.98682 10.5642 8.98682 12.4957C8.98682 14.4276 10.5588 16.0001 12.4903 16.0001C14.4223 16.0001 15.9938 14.4276 15.9938 12.4957C15.9938 10.5642 14.4218 8.99219 12.4903 8.99219ZM12.4903 15.0001C11.1098 15.0001 9.98681 13.8766 9.98681 12.4957C9.98681 11.1152 11.1098 9.99218 12.4903 9.99218C13.8708 9.99218 14.9938 11.1152 14.9938 12.4957C14.9938 13.8766 13.8708 15.0001 12.4903 15.0001Z" fill="#272727" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_969_124">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="form-input" name="promo" placeholder="промокод">
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-2.png" alt="alt">
-                                </div>
-                                <div class="projects-item__head">Баги, мотоциклы</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
+                        <div class="form-block">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="ch-1" checked="">
+                                <label for="ch-1">Даю согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности</label>
                             </div>
                         </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-3.png" alt="alt">
+                        <div class="form-block tl-center">
+                            <button class="btn btn--orange">
+                                <span>Стать успешным селлером</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="h2 tl-center">Контакты</h2>
+                <div class="contacts-block">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contacts-item">
+                                <div class="contacts-item__head">Россия </div>
+                                <ul class="contacts-item__list">
+                                    <li>Московская область, г. Дзержинский, Денисьевский проезд, 7</li>
+                                    <li>г. Дербент, ул. Гагарина,31</li>
+                                    <li>г. Махачкала, степной поселок, ул. Мухтара Азизова 5</li>
+                                    <li>г. Хасавюрт, ул. Махачкалинское шоссе, д.27 (ул. Шахтаманова)</li>
+                                </ul>
+                                <div class="contacts-item__nums">
+                                    <a href="tel:78003025001" class="contacts-item__num">+7 800 302 50 01</a>
+                                    <a href="tel:74993420101" class="contacts-item__num">+7 499 342 01 01</a>
+                                    <a href="tel:74999910101" class="contacts-item__num">+7 499 991 01 01</a>
                                 </div>
-                                <div class="projects-item__head">Автономное зарядное устройство</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-4.png" alt="alt">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contacts-item">
+                                <div class="contacts-item__head">Турция</div>
+                                <ul class="contacts-item__list">
+                                    <li>Московская область, г. Дзержинский, Денисьевский проезд, 7</li>
+                                    <li>г. Дербент, ул. Гагарина,31</li>
+                                </ul>
+                                <div class="contacts-item__nums">
+                                    <a href="tel:905222811111" class="contacts-item__num">+90 522 281 11 11</a>
+                                    <a href="tel:905225119111" class="contacts-item__num">+90 522 511 91 11</a>
+                                    <a href="tel:902126930101" class="contacts-item__num">+90 212 693 01 01</a>
                                 </div>
-                                <div class="projects-item__head">Инверторный стабилизатор</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-5.png" alt="alt">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contacts-item">
+                                <div class="contacts-item__head">Китай</div>
+                                <ul class="contacts-item__list">
+                                    <li>Московская область, г. Дзержинский, Денисьевский проезд, 7</li>
+                                </ul>
+                                <div class="contacts-item__nums">
+                                    <a href="tel:8619802090101" class="contacts-item__num">+86 198 0209 0101</a>
                                 </div>
-                                <div class="projects-item__head">Щёточный генератор</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
-                            </div>
-                        </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-6.png" alt="alt">
-                                </div>
-                                <div class="projects-item__head">Мессенджер</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
-                            </div>
-                        </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-7.png" alt="alt">
-                                </div>
-                                <div class="projects-item__head">Светодиодные лампы</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
-                            </div>
-                        </div>
-                        <div class="projects-tabs__item">
-                            <div class="projects-item">
-                                <div class="projects-item__img">
-                                    <img src="img/proj-8.png" alt="alt">
-                                </div>
-                                <div class="projects-item__head">Премиальный бренд лимитированной продукции</div>
-                                <p>КLime - это реальный финансовый инструмент за которым стоят ведущие инновационные, отраслевые и технологические компании.</p>
-                                <p>Лайм призван вывести жизнь человека на новый уровень, улучшая и облегчая её с помощью новых технологий в сферах: здоровья, питания, утилизации отходов, альтернативной энергетики, электромашиностроения, эко стройматериалов и других инновационных, промышленных и IT секторах.</p>
-                                <p>Приобретая Lime, вы становитесь не просто держателем токена - вы становитесь акционером компании и частью экосистемы Lime.</p>
-                                <a href="#" class="btn btn--green btn--transparent">Подробнее </a>
                             </div>
                         </div>
                     </div>
@@ -517,42 +847,7 @@
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-row">
-                <div class="footer-content">
-                    <h2 class="h2">Контакты</h2>
-                    <div class="footer-info">
-                        <div class="footer-info__item">
-                            <div class="footer-info__head">E-mail:</div>
-                            <a href="mailto:" class="footer-info__mail">infovodosnab@mail.ru</a>
-                        </div>
-                        <div class="footer-info__item">
-                            <div class="footer-info__head">Подпишитесь на нас:</div>
-                            <ul class="socials">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.9492 7.87829C21.9023 6.81516 21.7304 6.08427 21.4841 5.45094C21.23 4.77868 20.8392 4.1768 20.3271 3.67646C19.8267 3.16833 19.2209 2.77349 18.5564 2.5234C17.9194 2.27712 17.1923 2.1052 16.1292 2.05833C15.0581 2.00748 14.7181 1.99573 12.0016 1.99573C9.28505 1.99573 8.94502 2.00748 7.87792 2.05436C6.81479 2.10123 6.0839 2.2733 5.45073 2.51943C4.77831 2.77349 4.17643 3.16436 3.67609 3.67646C3.16797 4.1768 2.77328 4.78265 2.52303 5.44712C2.27676 6.08427 2.10483 6.81119 2.05796 7.87432C2.00712 8.94539 1.99536 9.28542 1.99536 12.0019C1.99536 14.7185 2.00712 15.0585 2.05399 16.1256C2.10087 17.1887 2.27294 17.9196 2.51922 18.553C2.77328 19.2252 3.16797 19.8271 3.67609 20.3274C4.17643 20.8356 4.78228 21.2304 5.44676 21.4805C6.0839 21.7268 6.81082 21.8987 7.87411 21.9456C8.94105 21.9926 9.28123 22.0042 11.9978 22.0042C14.7143 22.0042 15.0543 21.9926 16.1214 21.9456C17.1846 21.8987 17.9154 21.7268 18.5486 21.4805C19.8933 20.9606 20.9564 19.8975 21.4763 18.553C21.7224 17.9158 21.8945 17.1887 21.9414 16.1256C21.9883 15.0585 22 14.7185 22 12.0019C22 9.28542 21.996 8.94539 21.9492 7.87829ZM20.1474 16.0474C20.1043 17.0246 19.9402 17.5523 19.8034 17.9041C19.4672 18.7757 18.7754 19.4675 17.9037 19.8037C17.5519 19.9405 17.0204 20.1047 16.0471 20.1476C14.9917 20.1946 14.6752 20.2062 12.0056 20.2062C9.33589 20.2062 9.01541 20.1946 7.96388 20.1476C6.98671 20.1047 6.45904 19.9405 6.10726 19.8037C5.67349 19.6434 5.27865 19.3894 4.95817 19.0571C4.62593 18.7327 4.37187 18.3418 4.21155 17.908C4.07475 17.5562 3.91061 17.0246 3.86771 16.0514C3.82068 14.9961 3.80908 14.6794 3.80908 12.0097C3.80908 9.34008 3.82068 9.01959 3.86771 7.96822C3.91061 6.99105 4.07475 6.46338 4.21155 6.1116C4.37187 5.67767 4.62593 5.28299 4.96214 4.96235C5.28644 4.63012 5.67731 4.37605 6.11123 4.21589C6.46301 4.07908 6.99465 3.91495 7.96785 3.87189C9.0232 3.82502 9.33986 3.81326 12.0094 3.81326C14.683 3.81326 14.9995 3.82502 16.051 3.87189C17.0282 3.91495 17.5559 4.07908 17.9077 4.21589C18.3414 4.37605 18.7363 4.63012 19.0567 4.96235C19.389 5.28681 19.643 5.67767 19.8034 6.1116C19.9402 6.46338 20.1043 6.99487 20.1474 7.96822C20.1942 9.02356 20.206 9.34008 20.206 12.0097C20.206 14.6794 20.1942 14.9921 20.1474 16.0474Z" fill="white" />
-                                            <path d="M12.0005 6.86194C9.1629 6.86194 6.8606 9.16409 6.8606 12.0019C6.8606 14.8396 9.1629 17.1418 12.0005 17.1418C14.8383 17.1418 17.1404 14.8396 17.1404 12.0019C17.1404 9.16409 14.8383 6.86194 12.0005 6.86194ZM12.0005 15.336C10.1596 15.336 8.66638 13.8429 8.66638 12.0019C8.66638 10.1608 10.1596 8.66772 12.0005 8.66772C13.8416 8.66772 15.3346 10.1608 15.3346 12.0019C15.3346 13.8429 13.8416 15.336 12.0005 15.336Z" fill="white" />
-                                            <path d="M18.5436 6.65868C18.5436 7.32132 18.0063 7.85861 17.3435 7.85861C16.6808 7.85861 16.1436 7.32132 16.1436 6.65868C16.1436 5.99588 16.6808 5.45874 17.3435 5.45874C18.0063 5.45874 18.5436 5.99588 18.5436 6.65868Z" fill="white" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M22.7747 6.37619C22.5154 5.41228 21.7554 4.65243 20.7916 4.39288C19.0309 3.91113 11.988 3.91113 11.988 3.91113C11.988 3.91113 4.94536 3.91113 3.18466 4.37462C2.23943 4.6339 1.46091 5.41241 1.20163 6.37619C0.738281 8.13675 0.738281 11.7879 0.738281 11.7879C0.738281 11.7879 0.738281 15.4575 1.20163 17.1996C1.46118 18.1634 2.22089 18.9233 3.1848 19.1828C4.9639 19.6647 11.9883 19.6647 11.9883 19.6647C11.9883 19.6647 19.0309 19.6647 20.7916 19.2012C21.7555 18.9418 22.5154 18.182 22.7749 17.2182C23.2381 15.4575 23.2381 11.8065 23.2381 11.8065C23.2381 11.8065 23.2567 8.13675 22.7747 6.37619ZM9.7457 15.161V8.41484L15.6022 11.7879L9.7457 15.161Z" fill="white" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-img">
-                    <img src="img/footer-coin.png" alt="alt">
-                </div>
-            </div>
-            <div class="copyright">Copyright © 2022 All Rights Reserved.</div>
+            <div class="copyright">© 2021 DadaBazar Все права защищены</div>
         </div>
     </footer>
     <!-- FOOTER END -->
@@ -567,6 +862,18 @@
 	        <li class="breadcrumb-item active" aria-current="page">Солнечные панели</li>
 	    </ol>
 	</nav> -->
+    <!-- <ul class="socials">
+		<li>
+			<a href="#" target="_blank">
+				<img src="img/soc-1.svg" alt="alt">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="img/soc-2.svg" alt="alt">
+			</a>
+		</li>
+	</ul> -->
     <script src="js/scripts.min.js"></script>
     <script src="js/common.js"></script>
 </body>
