@@ -1,59 +1,22 @@
 $(function() {
 
-    // CUSTOM SELECT
+    // ACCORDION
 
-     $(".js-select").select2();
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('.accordion-hidden');
 
-    // ADAPTIVE MENU
+        $(this).closest('.accordion').find('.accordion-hidden').not(dropDown).slideUp();
 
-    $('.hamburger').click(function() {
-        $(this).toggleClass('is-active');
-        $('.main-nav').toggleClass('open');
-        $('body').toggleClass('hidden');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
     });
-
-    // SCROLL TO ANY SECTION
-
-    $('.scroll-down[href*="#"]').on('click', function(e) {
-        e.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 50
-        }, 500, 'linear');
-    });
-
-    // TABS JQUERY 
-
-    $(".tabs-content__item").not(":first").hide();
-    $(".tabs-nav__item").click(function() {
-        $(".tabs-nav__item").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tabs-content__item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
-
-    // MODAL MAGNIFIC POPUP INIT
-
-    $('.modal-init').magnificPopup({
-        type: 'inline',
-        fixedContentPos: true,
-        removalDelay: 500,
-        callbacks: {
-            beforeOpen: function() {
-                this.st.mainClass = this.st.el.attr('data-effect');
-            }
-        },
-        midClick: true
-    });
-
-    // SLICK SLIDER INIT
-
-    $('.slider').slick({
-        rows: false,
-        responsive: [{
-            breakpoint: 767,
-            settings: {
-
-            }
-        }, ]
-    })
 
 });
