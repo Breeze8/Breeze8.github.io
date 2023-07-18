@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>OptimizedHTML 4</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://atlantic.com",
+        "logo": "http://www.atlantic.com/img/logo.svg"
+    }
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="menu">
+            <div class="container">
+                <span class="menu__close" onclick="menuIn()">
+					<img src="img/menu-close.svg" alt="alt">
+				</span>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="row menu-left">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Команда</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Технологии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="#">Стратегии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Новости</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-content">
+                            <p>Войдите в свой аккаунт или зарегистрируйтесь</p>
+                            <div class="header-nav">
+                                <a href="#" class="btn btn-icon">
+									<span class="btn-icon__image">
+										<span class="icon-user-ok"></span>
+									</span>
+									<span class="btn-icon__text">Личный кабинет</span>
+								</a>
+                                <a href="#" class="btn btn-icon">
+									<span class="btn-icon__image">
+										<span class="icon-user-add"></span>
+									</span>
+									<span class="btn-icon__text">Создать аккаунт</span>
+								</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER START -->
+
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="header__left">
+                        <div class="hamburger" onclick="menuIn()">
+                            <span class="icon-Menu"></span>
+                        </div>
+                        <a href="#" class="logo logo--header">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+                        <div class="language dropdown-toggle dropdown-toggle--none">
+                            <span class="icon-language"></span>
+                            <a href="#" class="language__link">English version</a>
+                            <span class="icon-arrow-down"></span>
+                            <div class="dropdown dropdown-window dropdown--language">
+                                <div class="dropdown-body">
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-gb"></span>
+                                        <a href="#" class="language-dropdown__link">English</a>
+                                    </div>
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-ru"></span>
+                                        <a href="#" class="language-dropdown__link">Русский</a>
+                                    </div>
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-cn"></span>
+                                        <a href="#" class="language-dropdown__link">Chinese</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-nav">
+                            <div class="dropdown-toggle dropdown-toggle--none">
+                                <div class="btn btn-icon">
+                                    <span class="btn-icon__image">
+										<span class="icon-user"></span>
+                                    </span>
+                                    <span class="btn-icon__text">Профиль</span>
+                                </div>
+                                <div class="dropdown dropdown-window dropdown--profile">
+                                    <div class="dropdown-body">
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш ID в системе</div>
+                                            <div class="centered">
+                                                <span class="icon-user-id"></span>
+                                                <span>6983771</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш статус</div>
+                                            <div class="centered">
+                                                <span class="icon-okay-round green"></span>
+                                                <span class="green bold">Верифицирован</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш баланс</div>
+                                            <div class="centered">
+                                                <span class="icon-money-round green"></span>
+                                                <span class="green bold">$1 966 300</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-wallet"></span>
+                                                <a href="#">Кошельки</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-okay-lock"></span>
+                                                <a href="#">Ваши данные</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-login"></span>
+                                                <a href="#">Выйти</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-icon ml-15">
+								<span class="btn-icon__image">
+									<span class="icon-login"></span>
+								</span>
+								<span class="btn-icon__text">Выйти</span>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <div class="main">
+            <!-- MAIN CONTENT START -->
+            <div class="container">
+                <div class="main-flex">
+                    <aside class="main-sidebar">
+                        <nav class="main-sidebar__nav">
+                            <ul class="main-sidebar__list">
+                                <li>
+                                    <a href="#">
+										<span class="icon-widget-2 red"></span>
+									</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="icon-widget-3 red"></span>
+									</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <div class="content">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Личный кабинет</a>
+                            </li>
+                            <li>
+                                <span>Структура</span>
+                            </li>
+                        </ul>
+                        <div class="header-nav header-nav--page mb-75">
+                            <a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-dashboard"></span>
+								</span>
+								<span class="btn-icon__text">Дашборд</span>
+							</a>
+                            <a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-user"></span>
+								</span>
+								<span class="btn-icon__text">Профиль</span>
+							</a>
+                            <a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-wallet"></span>
+								</span>
+								<span class="btn-icon__text">Баланс</span>
+							</a>
+                            <a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-investment"></span>
+								</span>
+								<span class="btn-icon__text">Инвестиции</span>
+							</a>
+                            <a href="#" class="btn btn-icon active">
+								<span class="btn-icon__image">
+									<span class="icon-partner-tree"></span>
+								</span>
+								<span class="btn-icon__text">Партнёрская программа</span>
+							</a>
+                        </div>
+                        <h1 class="h1 mb-45">Партнёры</h1>
+                        <section class="partners">
+                            <div class="section-indent">
+                                <div class="partners-head">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="partners-head__item">
+                                                        <div class="status">Ваш ID в системе</div>
+                                                        <div class="centered">
+                                                            <span class="icon-user-id"></span>
+                                                            <span>6983771</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="partners-head__item">
+                                                        <div class="status">Реферальная ссылка</div>
+                                                        <div class="centered">
+                                                            <span class="icon-copy"></span>
+                                                            <a href="#withdrawal2" data-effect="mfp-zoom-out" class="btn-modal">Скопировать в буфер</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="partners-head__item">
+                                                <div class="status">Материалы</div>
+                                                <div class="centered">
+                                                    <span class="icon-material"></span>
+                                                    <a href="#">Маркетинговые материалы</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="double double-mobile">
+                                                <div class="double__img mt-5">
+                                                    <span class="icon-big1 black"></span>
+                                                </div>
+                                                <div class="double__content">
+                                                    <div class="partners-head__count mb-20">
+                                                        <div class="partners-head__count-row">Прибыль за всё время: <span>€8 695</span></div>
+                                                        <div class="partners-head__count-row">Текущая прибыль от партнёров: <span class="green">€798</span></div>
+                                                    </div>
+                                                    <a href="#withdrawal" class="btn btn--blue btn-modal" data-effect="mfp-zoom-out">Запросить вывод</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="partners-status">
+                                    <div class="table__wrap">
+                                        <table class="table table-status">
+                                            <tr>
+                                                <th>
+                                                    <div class="double">
+                                                        <div class="double__img">
+                                                            <span class="icon-status5 black"></span>
+                                                        </div>
+                                                        <div class="double__content font-14">
+                                                            <div class="status">Ваш статус-уровень</div>
+                                                            <div class="h3">Структурный менеджер</div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="h3 tl-center">Что нужно сделать для<br> повышения уровня</div>
+                                                </th>
+                                                <th>
+                                                    <div class="double">
+                                                        <div class="double__img">
+                                                            <span class="icon-status6 green"></span>
+                                                        </div>
+                                                        <div class="double__content font-24">
+                                                            <div class="status green bold">Следующий статус-уровень</div>
+                                                            <div class="h3">Региональный менеджер</div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="partners-status__item black">€1 000</div>
+                                                </td>
+                                                <td class="partners-status__normal">
+                                                    <div class="partners-status__item tl-center">
+                                                        <span>Личная инвестиция</span>
+                                                        <span class="green bold">+€2 000</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-counter dropdown-toggle dropdown-toggle--arrow dropdown-toggle--left">
+                                                        <svg id="svg_circle" width="67" height="10" viewBox="0 0 67 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <defs>
+                                                                <linearGradient id="left-to-right">
+                                                                    <stop offset="0" stop-color="#009432">
+                                                                        <animate dur="2s" class="anim" attributeName="offset" fill="freeze" from="0" to=".77" />
+                                                                    </stop>
+                                                                    <stop offset="0" stop-color="#ccc">
+                                                                        <animate dur="2s" class="anim2" attributeName="offset" fill="freeze" from="0" to=".77" />
+                                                                    </stop>
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <path d="M62.1509 0L60.6943 1.502L63.0564 3.93772H0V6.06223H63.0564L60.6943 8.49795L62.1509 10L67 5L62.1509 0Z" fill="url(#left-to-right)" id="svg_1" />
+                                                        </svg>
+                                                        <span class="count font-12">ещё 23%</span>
+                                                        <div class="dropdown dropdown-alert dropdown-left">
+                                                            <p>У вас в первой линии $4800 из $5000. Осталось совсем чуть чуть</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="partners-status__item">
+                                                        <div class="partners-status__item-price">€3 000</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="partners-status__item black">€5 000</div>
+                                                </td>
+                                                <td class="partners-status__normal">
+                                                    <div class="partners-status__item tl-center">
+                                                        <span>Инвестиции первой линии</span>
+                                                        <span class="green bold">+€5 000</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-counter dropdown-toggle dropdown-toggle--arrow dropdown-toggle--left">
+                                                        <svg id="svg_circle" width="67" height="10" viewBox="0 0 67 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <defs>
+                                                                <linearGradient id="left-to-right1">
+                                                                    <stop offset="0" stop-color="#009432">
+                                                                        <animate dur="1s" class="anim" attributeName="offset" fill="freeze" from="0" to=".14" />
+                                                                    </stop>
+                                                                    <stop offset="0" stop-color="#ccc">
+                                                                        <animate dur="1s" class="anim2" attributeName="offset" fill="freeze" from="0" to=".14" />
+                                                                    </stop>
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <path d="M62.1509 0L60.6943 1.502L63.0564 3.93772H0V6.06223H63.0564L60.6943 8.49795L62.1509 10L67 5L62.1509 0Z" fill="url(#left-to-right1)" id="svg_1" />
+                                                        </svg>
+                                                        <span class="count font-12">ещё 86%</span>
+                                                        <div class="dropdown dropdown-alert dropdown-left">
+                                                            <p>У вас в первой линии $4800 из $5000. Осталось совсем чуть чуть</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="partners-status__item">
+                                                        <div class="partners-status__item-price">€10 000</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="partners-status__item green bold">€20 000</div>
+                                                </td>
+                                                <td class="partners-status__normal">
+                                                    <div class="partners-status__item tl-center">
+                                                        <span>Общеструктурные инвестиции</span>
+                                                        <span class="green bold">+€0</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-counter dropdown-toggle dropdown-toggle--arrow dropdown-toggle--left">
+                                                        <svg id="svg_circle" width="67" height="10" viewBox="0 0 67 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M62.1509 0L60.6943 1.502L63.0564 3.93772H0V6.06223H63.0564L60.6943 8.49795L62.1509 10L67 5L62.1509 0Z" fill="#009432" id="svg_1" />
+                                                        </svg>
+                                                        <span class="count font-12">Готово!</span>
+                                                        <div class="dropdown dropdown-alert dropdown-left">
+                                                            <p>У вас в первой линии $4800 из $5000. Осталось совсем чуть чуть</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="partners-status__item">
+                                                        <div class="partners-status__item-price">€20 000</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="table-status__solid">
+                                                    <div class="partners-status__item bold tl-center">После повышения, Вы получите</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="partners-status__item black">2</div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-status__item tl-center">Доступные линии структуры</div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-status__item">
+                                                        <div class="partners-status__item-price">3</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="partners-status__item black">€150</div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-status__item tl-center">Доход с партнеров</div>
+                                                </td>
+                                                <td>
+                                                    <div class="partners-status__item">
+                                                        <div class="partners-status__item-price">€300</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="h1 mb-45">Статистика Вашей структуры</h2>
+                            <div class="section-indent section-indent--half">
+                                <div class="partners-stat chart">
+                                    <div class="d-lg-flex align-items-center justify-content-between mb-30">
+                                        <div class="tab-content" id="ueberTabA">
+                                            <div class="tab-pane active show" id="panel_a_first" role="tabpanel" aria-labelledby="first-tab"">
+                                                <div id="myChartLegend" class="myChartLegend"></div>
+                                            </div>
+                                            <div class="tab-pane" id="panel_a_second" role="tabpanel" aria-labelledby="second-tab">
+                                                <div id="myChartLegend2" class="myChartLegend"></div>
+                                            </div>
+                                            <div class="tab-pane" id="panel_a_thrid" role="tabpanel" aria-labelledby="thrid-tab">
+                                                <div id="myChartLegend3" class="myChartLegend"></div>
+                                            </div>
+                                        </div>
+                                        <ul class="tabs tabs-chart nav nav-tabs" id="ueberTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="contacts-nav__tab nav-link active show" id="first-tab" data-target="#panel_b_first" data-secondary="#panel_a_first" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Все время</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="contacts-nav__tab nav-link" id="second-tab" data-target="#panel_b_second" data-secondary="#panel_a_second" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Месяц</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="contacts-nav__tab nav-link" id="third-tab" data-target="#panel_b_thrid" data-secondary="#panel_a_thrid" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">3 месяца</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart__content tab-content">
+                                        <div class="tab_item">
+                                            <div class="tab-content" id="ueberTabB">
+                                                <div class="tab-pane active show" id="panel_b_first" role="tabpanel" aria-labelledby="first-tab"">
+                                                    <div class="chart__chart mb-20">
+                                                        <canvas id="myChart" class="myLineChart-partner"></canvas>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="panel_b_second" role="tabpanel" aria-labelledby="second-tab">
+                                                    <div class="chart__chart mb-20">
+                                                        <canvas id="myChartMonth" class="myLineChart-partner"></canvas>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="panel_b_thrid" role="tabpanel" aria-labelledby="third-tab">
+                                                    <div class="chart__chart mb-20">
+                                                        <canvas id="myChart3Month" class="myLineChart-partner"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-45 align-items-center">
+                                                <div class="col-auto">
+                                                   <ul class="charts-nav nav nav-tabs" id="myTab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a href="#faqTab-1" id="faqTab-1-tab" class="charts-nav__tab nav-link active show" data-toggle="tab" role="tab" aria-controls="faqTab-1" aria-selected="true">Численность структуры</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#faqTab-2" id="faqTab-2-tab" class="charts-nav__tab nav-link" data-toggle="tab" role="tab" aria-controls="faqTab-2" aria-selected="false">Объём инвестиций</a>
+                                                    </li>
+                                                </ul> 
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="h3 ml-60 h3--mont black partners-chr">Активные партнёры</div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                  <div class="tab-content">
+                                                        <div class="contacts-tab tab-pane fade active show" id="faqTab-1" role="tabpanel" aria-labelledby="faqTab-1-tab">
+                                                            <div class="chart-item">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 chart-item__lvl">
+                                                                        <div class="status">1 уровень</div>
+                                                                        <div class="h3">10 человек</div>
+                                                                        <p>+5 человек за месяц</p>
+                                                                        <div class="centered">
+                                                                            <span class="icon-chart2 green"></span>
+                                                                            <span class="bold black">+39%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 chart-item__lvl">
+                                                                        <div class="status">Все 8 уровней</div>
+                                                                        <div class="h3">65 человек</div>
+                                                                        <p>+10 человек за месяц</p>
+                                                                        <div class="centered">
+                                                                            <span class="icon-chart3 red"></span>
+                                                                            <span class="bold black">−27% </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="centered mb-20">
+                                                                    <span class="icon-triangle yellow"></span>
+                                                                    <span class="bold black">Рост вашей структуры замедлился на 15%. Ускорьтесь!</span>
+                                                                </div>
+                                                                <a href="#" class="btn btn--blue">Показать всю структуру</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-tab tab-pane fade" id="faqTab-2" role="tabpanel" aria-labelledby="faqTab-2-tab">
+                                                            <div class="chart-item">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 chart-item__lvl">
+                                                                        <div class="status">1 уровень</div>
+                                                                        <div class="h3">€18 560</div>
+                                                                        <p>+€15 000 за месяц</p>
+                                                                        <div class="centered">
+                                                                            <span class="icon-chart2 green"></span>
+                                                                            <span class="bold black">+39%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 chart-item__lvl">
+                                                                        <div class="status">Все 8 уровней</div>
+                                                                        <div class="h3">€890 330</div>
+                                                                        <p>−€650 000 за месяц</p>
+                                                                        <div class="centered">
+                                                                            <span class="icon-chart3 red"></span>
+                                                                            <span class="bold black">−27% </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="double">
+                                                                    <div class="double__img">
+                                                                        <span class="icon-chart4 green"></span>
+                                                                    </div>
+                                                                    <div class="double__content font-14">
+                                                                        <div class="bold black">Недостаточно дохода?</div>
+                                                                        <p>Увеличьте обьем инвестиций до €50 000 и Ваш статус-уровень поднимется до «Платинового партнёра»</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="partners-chr--mobile h3 h3--mont black">Активные партнёры</div>
+                                                    <div class="round-chart round-chart--partner">
+                                                        <div class="row align-items-center mb-45">
+                                                            <div class="col-sm-4">
+                                                                <canvas id="doughnut-chart" class="doughnut-chart"></canvas>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <div class="single-chart__nav">
+                                                                    <div class="single-chart__active centered">
+                                                                        <span class="single-chart__active">Активных партнёров</span>
+                                                                        <div class="icon-ask2 ml-30 dropdown-toggle dropdown-toggle--arrow">
+                                                                            <div class="dropdown dropdown-alert">
+                                                                                <div class="dropdown-row">
+                                                                                    <div class="status">Ф.И.О. куратора</div>
+                                                                                    <div class="dropdown-info">Хабиб Абдулманапович Нурмагомедов</div>
+                                                                                </div>
+                                                                                <div class="dropdown-row">
+                                                                                    <div class="status">Телефон</div>
+                                                                                    <div class="dropdown-info">+7 806 669 32 89</div>
+                                                                                </div>
+                                                                                <div class="dropdown-row">
+                                                                                    <div class="status">Email</div>
+                                                                                    <div class="dropdown-info">khabib05@gmail.com</div>
+                                                                                </div>
+                                                                                <div class="dropdown-row">
+                                                                                    <div class="status">Skype</div>
+                                                                                    <div class="dropdown-info">live:e6ff61fc0fbeeb71</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <span class="single-chart__disable">Партнёры без инвестиций</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="centered">
+                                                            <span class="icon-alert"></span>
+                                                            <span>Увеличьте % активных партнеров и поднимите собственный доход</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-bonus bg-gray">
+                    <h2 class="h1 mb-45">Бонусы</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="partners-bonus__item active">
+                                <div class="partners-bonus__item-icon">
+                                    <span class="icon-bonus white"></span>
+                                </div>
+                                <div class="status actual bold">Актуален</div>
+                                <div class="h3">+€300 за трёх партнёров</div>
+                                <p>Приведи ещё трёх человек свою структуру до 31 декабря 2018 и получил €300 бонусов</p>
+                                <div class="timer">
+                                    <div class="timer__row">
+                                        <span class="timer__days timer__time active"></span>
+                                        <div class="timer__text">дней</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__hours timer__time active"></span>
+                                        <div class="timer__text">часов</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__minutes timer__time active"></span>
+                                        <div class="timer__text">мин.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="partners-bonus__item">
+                                <div class="partners-bonus__item-icon">
+                                    <span class="icon-bonus white"></span>
+                                </div>
+                                <div class="status active bold">Выполнен</div>
+                                <div class="h3 green">+€300 за трёх партнёров</div>
+                                <p>Приведи ещё трёх человек свою структуру до 31 декабря 2018 и получил €300 бонусов</p>
+                                <div class="timer">
+                                    <div class="timer__row">
+                                        <span class="timer__days timer__time">00</span>
+                                        <div class="timer__text">дней</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__hours timer__time">00</span>
+                                        <div class="timer__text">часов</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__minutes timer__time">00</span>
+                                        <div class="timer__text">мин.</div>
+                                    </div>
+                                </div>
+                                <div class="partners-bonus__item-end font-24">Акция завершена</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="partners-bonus__item disabled">
+                                <div class="partners-bonus__item-icon">
+                                    <span class="icon-bonus white"></span>
+                                </div>
+                                <div class="status disabled bold">Выполнен</div>
+                                <div class="h3">+€300 за трёх партнёров</div>
+                                <p>Приведи ещё трёх человек свою структуру до 31 декабря 2018 и получил €300 бонусов</p>
+                                <div class="timer">
+                                    <div class="timer__row">
+                                        <span class="timer__days timer__time">00</span>
+                                        <div class="timer__text">дней</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__hours timer__time">00</span>
+                                        <div class="timer__text">часов</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__minutes timer__time">00</span>
+                                        <div class="timer__text">мин.</div>
+                                    </div>
+                                </div>
+                                <div class="partners-bonus__item-end font-24">Акция завершена</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="partners-bonus__item disabled">
+                                <div class="partners-bonus__item-icon">
+                                    <span class="icon-bonus white"></span>
+                                </div>
+                                <div class="status disabled bold">Выполнен</div>
+                                <div class="h3">+€300 за трёх партнёров</div>
+                                <p>Приведи ещё трёх человек свою структуру до 31 декабря 2018 и получил €300 бонусов</p>
+                                <div class="timer">
+                                    <div class="timer__row">
+                                        <span class="timer__days timer__time">00</span>
+                                        <div class="timer__text">дней</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__hours timer__time">00</span>
+                                        <div class="timer__text">часов</div>
+                                    </div>
+                                    <div class="timer__row">
+                                        <span class="timer__minutes timer__time">00</span>
+                                        <div class="timer__text">мин.</div>
+                                    </div>
+                                </div>
+                                <div class="partners-bonus__item-end font-24">Акция завершена</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-indent">
+                    <div class="h1 mb-45">Партнёрская история</div>
+                    <div class="table__wrap">
+                        <table class="table table-responsive-first">
+                            <thead>
+                                <tr>
+                                    <th>Событие</th>
+                                    <th>Дата</th>
+                                    <th>Время</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    <div class="centered centered--top">
+                                        <span class="icon-table1 blue"></span>
+                                        <div class="bold bold--small">Иконки сюда подберём позже для каждого события</div>
+                                    </div>
+                                </td>
+                                <td>11 октября 2018</td>
+                                <td>13:48</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="centered centered--top">
+                                        <span class="icon-table1 blue"></span>
+                                        <div class="bold bold--small">Иконки сюда подберём позже для каждого события </div>
+                                    </div>
+                                </td>
+                                <td>11 октября 2018</td>
+                                <td>13:48</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="centered centered--top">
+                                        <span class="icon-table1 blue"></span>
+                                        <div class="bold bold--small">Иконки сюда подберём позже для каждого события </div>
+                                    </div>
+                                </td>
+                                <td>11 октября 2018</td>
+                                <td>13:48</td>
+                            </tr>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="centered loadMore">
+                                            <div class="lds-spinner">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <a>Показать больше</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                        </section>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="footer-item">
+                        <div class="logo logo--footer">
+                            <img src="img/logo.svg" alt="alt">
+							</div>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Технологии</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="#">Стратегии</a></li>
+                                <li><a href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="#">Беслатный звонок</a></li>
+                                <li><a href="#">Написать в чат</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row justify-content-md-between justify-content-center align-items-center">
+                        <div class="col-md-auto">
+                            <div class="copyright">© 2018 FCM market</div>
+                        </div>
+                        <div class="col-md-auto">
+                            <ul class="footer__bottom-list">
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Ещё какая-то инфа</a></li>
+                                <li><a href="#">И ещё что-то важное</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- FOOTER END -->
+    </div>
+    <!-- MODAL MODAL - WITHDRAWAL -->
+    <div class="modal modal-400 mfp-hide mfp-with-anim" id="withdrawal">
+        <div class="modal__wrap">
+            <div class="modal__head tl-center font-36 mb-45">Запрос на вывод парнёрской прибыли</div>
+            <form action="" class="form maxw-280 auto">
+                <div class="form-row mb-15">
+                    <label for="validationDefault01" class="form__label status">Введите сумму</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">€</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationDefault01">
+                    </div>
+                </div>
+                <div class="double mb-30">
+                    <div class="double__img double__img-small">
+                        <span class="icon-dollar green"></span>
+                    </div>
+                    <div class="double__content modal__withdrawal-total">
+                        <span>Минимальная сумма €25</span>
+                        <span>Максимальная €10 000</span>
+                    </div>
+                </div>
+                <button class="btn btn--blue w100 mb-15">Отправить заявку на вывод</button>
+                <div class="centered font-14">
+                    <span class="icon-ask"></span>
+                    <a href="#">Как происходит вывод прибыли</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-400 mfp-hide mfp-with-anim" id="withdrawal2">
+        <div class="modal__wrap">
+            <form action="" class="form auto">
+                <div class="form-group mb-30">
+                    <span id="copyLink" class="font-16">Реферальная ссылка №32129574</span>
+                </div>
+                <span data-clipboard-target="#copyLink" id="copy" class="btn btn--blue">Скопировать в буфер</span>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-400 mfp-hide mfp-with-anim" id="withdrawal3">
+        <div class="modal__wrap tl-center">
+            <div class="modal__head font-36 mb-30">Ваш запрос принят</div>
+            <p>Мы обработаем его в течении 2-3 рабочих дней и дадим знать, когда деньги поступят на основной счёт</p>
+        </div>
+    </div>
+    <!-- Custom HTML -->
+    <script src="js/scripts.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/times.js"></script>
+    <script src="js/chart-round.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

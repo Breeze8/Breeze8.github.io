@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "Organization",
+		  "url": "http://atlantic.com",
+		  "logo": "http://www.atlantic.com/img/logo.svg"
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="page">
+
+		<!-- HEADER START -->
+
+		<header class="header">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="header__left">
+						<div class="hamburger">
+							<span class="icon-Menu"></span>
+						</div>
+						<a href="#" class="logo logo--header">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="language">
+							<span class="icon-language"></span>
+							<a href="#" class="language__link">English version</a>
+							<span class="icon-arrow-down"></span>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header-nav">
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-user"></span>
+								</span>
+								<span class="btn-icon__text">Профиль</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-login"></span>
+								</span>
+								<span class="btn-icon__text">Выйти</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- HEADER END -->
+
+		<div class="main">
+	
+			<!-- MAIN CONTENT START -->
+
+			<div class="container">
+				<div class="main-flex">
+					<aside class="main-sidebar">
+						<nav class="main-sidebar__nav">
+							<ul class="main-sidebar__list">
+								<li>
+									<a href="#">
+										<span class="icon-widget-2 red"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon-widget-3 red"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<div class="content">
+						<ul class="breadcrumbs">
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Личный кабинет</a>
+							</li>
+							<li>
+								<a href="#">Инвестиции</a>
+							</li>
+							<li>
+								<span>Вклад №6794</span>
+							</li>
+						</ul>
+						<div class="header-nav header-nav--page mb-75">
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-dashboard"></span>
+								</span>
+								<span class="btn-icon__text">Дашборд</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-user"></span>
+								</span>
+								<span class="btn-icon__text">Профиль</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-wallet"></span>
+								</span>
+								<span class="btn-icon__text">Баланс</span>
+							</a>
+							<a href="#" class="btn btn-icon active">
+								<span class="btn-icon__image">
+									<span class="icon-investment"></span>
+								</span>
+								<span class="btn-icon__text">Инвестиции</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-partner-tree"></span>
+								</span>
+								<span class="btn-icon__text">Партнёрская программа</span>
+							</a>
+						</div>
+						<div class="section-indent">
+							<h1 class="h1 mb-45">Доходность Вклада</h1>
+							<div class="yield">
+								<div class="yield-item">
+									<div class="font-12 black">Сумма вклада</div>
+								</div>
+								<div class="yield-item">
+									<div class="h2 h2--cond green">$1 291 100</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">ID вклада</div>
+									<div class="font-14 cond black">986541</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">Дата создания</div>
+									<div class="font-14 cond black">20 октября 2018</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">Длительность</div>
+									<div class="font-14 cond black">34 месяца</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">Дата завершения</div>
+									<div class="font-14 cond black">31 февраля 2018</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">Недельная доходность</div>
+									<div class="font-14 cond green">+25%</div>
+								</div>
+								<div class="yield-item">
+									<div class="status">Доходность за всё время</div>
+									<div class="font-14 cond green">+2525% </div>
+								</div>
+							</div>
+							<div class="yield-canvas section-indent">
+								<canvas id="ctx"></canvas>
+							</div>
+							<div class="yield-block">
+								<div class="row">
+									<div class="col-lg-7">
+										<h3 class="h3 h3--mont mb-45">Информация о доходности </h3>
+										<div class="form-row mb-30">
+											<div class="col-sm-4">
+												<div class="status">Доходность за всё время</div>
+												<div class="green h3">$781 100</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="status">Уже получили</div>
+												<div class="green h3">$625 029</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="status">Доходность за день </div>
+												<div class="green h3">$923</div>
+											</div>
+										</div>
+										<div class="round-chart mb-90">
+											<div class="row align-items-center">
+												<div class="col-sm-4">
+													<canvas id="doughnut-chart" class="doughnut-chart"></canvas>
+												</div>
+												<div class="col-sm-8">
+													<div class="single-chart__nav">
+														<span class="single-chart__active">Уже получили 83.74%</span>
+														<span class="single-chart__disable">Осталось получить 16.26%</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<div class="yield-info">
+											<h3 class="h3 h3--mont mb-10">Ваш торговый счёт</h3>
+											<div class="centered mb-45">
+												<span class="icon-details1"></span>
+												<a href="#">Перейти</a>
+											</div>
+											<div class="row mb-30">
+												<div class="col-6">
+													<div class="status">Логин</div>
+													<div class="centered">
+														<span class="icon-user-id"></span>
+														<span>********</span>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="status">Пароль</div>
+													<div class="centered">
+														<span class="icon-password"></span>
+														<span>********</span>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn--blue mb-10">Получить данные для входа</a>
+											<div class="black font-10">Мы отправим их на Ваш подтверждённый email</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="h3 h3--mont mb-45">Частозадаваемые вопросы</div>
+							<ul class="faq-accordion start">
+								<li>
+									<a href="#">
+										<span class="icon-ask2"></span>
+										<span>Друзей и сплетнями, прежде чем обнародуются перед публикой?</span>
+									</a>
+									<div class="faq-accordion__drop">
+										<p>Для вставки на интернет-страницы и слова, получив текст-рыбу, широко используемый. Имеется разница в качестве рыбы текст на сайтах и зла средневековый. Средневековый книгопечатник вырвал отдельные фразы и зла средневековый книгопечатник. Контент — написание символов на том языке. Наиболее распространенных слов использующими латинский алфавит, могут возникнуть небольшие проблемы. Неповторяющийся набор слов. веб-дизайнерами. При запуске проекта из его трактата о пределах добра.</p>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon-ask2"></span>
+										<span>Ему нести совсем необязательно значительно различается кроме того нечитабельность?</span>
+									</a>
+									<div class="faq-accordion__drop">
+										<p>Для вставки на интернет-страницы и слова, получив текст-рыбу, широко используемый. Имеется разница в качестве рыбы текст на сайтах и зла средневековый. Средневековый книгопечатник вырвал отдельные фразы и зла средневековый книгопечатник. Контент — написание символов на том языке. Наиболее распространенных слов использующими латинский алфавит, могут возникнуть небольшие проблемы. Неповторяющийся набор слов. веб-дизайнерами. При запуске проекта из его трактата о пределах добра.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- FOOTER START -->
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="footer-item">
+							<div class="logo logo--footer">
+								<img src="img/logo.svg" alt="alt">
+							</div>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Команда</a></li>
+								<li><a href="#">Технологии</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Стратегии</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Беслатный звонок</a></li>
+								<li><a href="#">Написать в чат</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row justify-content-md-between justify-content-center align-items-center">
+						<div class="col-md-auto">
+							<div class="copyright">© 2018 FCM market</div>
+						</div>
+						<div class="col-md-auto">
+							<ul class="footer__bottom-list">
+								<li><a href="#">Политика конфиденциальности</a></li>
+								<li><a href="#">Ещё какая-то инфа</a></li>
+								<li><a href="#">И ещё что-то важное</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- FOOTER END -->
+
+	</div>
+
+	<!-- Custom HTML -->
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/chart-invest.js"></script>
+	<script src="js/chart-round.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

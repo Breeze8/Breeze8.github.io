@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Профессиональная вёрстка сайтов</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Профессиональная HTML5 CSS3 верстка сайтов, адаптивная верстка, разработка сайтов, landing page под ключ">
+	<meta name="keywords" content="Верстка, верстка сайтов, адаптивная верстка, заказать верстку, psd to html, html5, css, css3, js, javascript, jquery, pixel perfect, less, sass">
+
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="css/pignose.parallaxslider.min.css" />
+	<link rel="stylesheet" href="fonts/material-icons-google.css" />
+
+	<link rel="stylesheet" href="fonts/fonts.css" />
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '1500434636764497');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=1500434636764497&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108802381-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108802381-1');
+	</script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57493686, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            triggerEvent: true
+        });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/57493686" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+	<div id="preloader">
+		<div class="grid">
+			<div class="grid-holder">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="preload-holder">
+			<div class="line-container">
+				<div id="load-line">
+
+				</div>
+			</div>
+			<span id="status"></span>
+		</div>
+	</div>
+	<div class="navigation home-navigation">
+		<div class="nav-holder">
+
+			<div class="nav-logo">
+				<a href="index.html">
+					<span>
+						.Spacelab
+					</span>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<ul class="nav-group" id="nav-group">
+					<li>
+						<a href="#top" class="scrollto current_page_item">Главная</a>
+					</li>
+					<li>
+						<a href="#services" class="scrollto ">Услуги</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="scrollto">Портфолио</a>
+					</li>
+					<li>
+						<a href="#reviews" class="scrollto">Отзывы</a>
+					</li>
+					<li>
+						<a href="#contacts" class="scrollto">Контакты</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="phone-nav ">
+				<div class="phone-nav__contacts">
+					<!-- <a href="tel:+380638939776" onclick="ym(57493686, 'reachGoal', 'phoneClick'); return true;">+38 (063) 893-97-76</a> -->
+					<!-- <a href="mailto:stashenkodenis@gmail.com">stashenkodenis@gmail.com</a> -->
+				</div>
+				<button data-toggle="modal" data-target="#modal-recall"  class="send-button explore">Есть вопросы ?<span class="icon-right"></span><span class="icon-right after"></span></button>
+				<div class="mobile-send-button waves-effect waves-light">
+					<a href="#modal-recall" data-toggle="modal"><i class="material-icons">create</i></a>
+				</div>
+			</div>
+			<div class="show-menu-btn">
+				<div class="ico-box">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="javascript-void(0);">Меню</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- <a href="tg://resolve?domain=brezze1" class="fixed-btn telegrams">
+		<svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" fill="#039be5" r="12"/><path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#fff"/></svg>
+	</a> -->
+
+	<div class="overlay-menu">
+		<div class="texture "> 
+			<img src="images/texture.png" alt="">
+		</div>
+		<div class="menu-table">
+			<div class="menu-table-cell">
+				<ul class="overlay-nav">
+
+					<li>
+						<a href="#top" class=" scrollto">
+							<span data-letters="Home">Главная</span>
+						</a>
+					</li>
+					<li>
+						<a href="#services" class=" scrollto">
+							<span data-letters="Services">Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#portfolio" class=" scrollto">
+							<span data-letters="Portfolio">Портфолио</span>
+						</a>
+					</li>
+					<li>
+						<a href="#reviews" class=" scrollto">
+							<span data-letters="Portfolio">Отзывы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#contacts" class=" scrollto">
+							<span data-letters="Contacts">Контакты</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<header id="top">
+
+		<div class="header-top">
+			<div class="cover-box">
+				<img src="images/gradient.jpg" alt="">
+			</div>
+			<div class="large-text" data-parallax='{"x": 150}'>
+				<span>.Вёрстка</span>
+			</div>
+		</div>
+		<div class="header-bottom" >
+			
+		</div>
+		<div class="header-bottom-piece" ></div>
+		<div class="header-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header-content-holder">
+							<div class="letter-holder">
+								<div class="letter-box" data-parallax='{"y": 100}'>
+									<div class="cover-box">
+										<img src="images/illustr-9.svg" alt="alt">
+									</div>
+									<!--<p class="letter-box-label">
+										Best Choice <br/>For you
+									</p>-->
+									<!--<span data-parallax='{"x": -40}' >D</span>-->
+								</div>
+							</div>
+							<div class="head-text" >
+								<div class="angle-top"></div>
+								<div class="head-text-top">
+									<h1>Профессиональная вёрстка сайтов</h1>
+									<div class="head-subtitle"><span >Front-end Developer</span></div>
+
+								</div>
+								<div class="head-text-bottom">
+									<p>Качественная вёрстка сайтов любой сложности</p>
+									<button data-toggle="modal" data-target="#modal-recall" class="send-button explore">Заказать вёрстку<span class="icon-right"></span><span class="icon-right after"></span></button>
+								</div>
+								<div class="angle-bottom"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="grid-holder">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="to-bottom">
+			<a href="#services" class="scrollto">
+				<img src="images/arrow-bottom.png" alt="">
+			</a>
+		</div>
+	</header>
+
+
+	<div class="wrapper">
+
+		<div class="grid">
+			<div class="grid-holder">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="services" id="services">
+			<div class="texture " data-parallax='{"y": 180}'> 
+				<img src="images/texture.png" alt="">
+			</div>
+			<div class="ellipse-extra-small ellipse-extra-small1" data-parallax='{"y": -250}'></div>
+			
+			<div class="grid">
+				<div class="grid-holder">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="service-top">
+							<div class="service-title">
+								<div class="circle-heading">
+									<div class="circle-icon">
+										<img src="images/ellipse.png" alt="">
+									</div>
+									<div class="circle-title">
+										<h2>Услуги</h2>
+									</div>
+								</div>
+							</div>
+							<div class="service-picture " data-parallax='{"y": -80}'>
+								<div class="service-picture-box">
+									<div class="cover-box">
+										<img src="images/illustr-7.svg" alt="alt">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service-row">
+				<div class="service-item">
+					<div class="service-holder">
+						<div class="service-bg" data-parallax='{"y": -40}'></div>
+						<div class="service-content" data-parallax='{"y": 40}'>
+							<div class="service-text">
+								<h3><img src="images/dots/1.png" alt="">HTML Вёрстка</h3>
+								<p>Адаптивная вёрстка сайтов из PSD, Sketch, Figma, Adobe XD, AI форматов</p>
+								<ol>
+									<li>
+										<span>Адаптивность, отзывчивость (responsive), резина;</span>
+									</li>
+									<li>
+										<span>Использование передовых технологий;</span>
+									</li>
+									<li>
+										<span>SASS/SCSS, GULP, PUG;</span>
+									</li>
+									<li>
+										<span>CSS3\JS анимация сайтов;</span>
+									</li>
+									<li>
+										<span>Только чистый и понятный код;</span>
+									</li>
+								</ol>
+								<button data-toggle="modal" data-target="#modal-verstka"  class="send-button explore">Заказать<span class="icon-right"></span><span class="icon-right after"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="service-item">
+					<div class="service-holder">
+						<div class="service-bg"  data-parallax='{"y": 40}'></div>
+						<div class="service-content"  data-parallax='{"y": -40}'>
+							<div class="service-text">
+								<h3><img src="images/dots/2.png" alt="">Разработка, интеграция и настройка CMS</h3>
+								<p>Разработка полностью настраиваемого и функционально динамического веб-сайта с помощью CMS WordPress.</p>
+								<ol>
+									<li>
+										<span>Landing Page</span>
+									</li>
+									<li>
+										<span>Сайты визитки</span>
+									</li>
+									<li>
+										<span>Промо сайты</span>
+									</li>
+									<li>
+										<span>Корпоративные сайты</span>
+									</li>
+									<li>
+										<span>Интернет магазины</span>
+									</li>
+								</ol>
+								<button data-toggle="modal" data-target="#modal-recall"  class="send-button explore">Заказать<span class="icon-right"></span><span class="icon-right after"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="service-item">-->
+					<!--<div class="service-holder">-->
+						<!--<div class="service-bg" data-parallax='{"y": -30}'></div>-->
+						<!--<div class="service-content" data-parallax='{"y": 50}'>-->
+							<!--<div class="service-text">-->
+								<!--<h3><img src="images/dots/3.png" alt="">Разработка Landing Page под ключ</h3>-->
+								<!--<ol>-->
+									<!--<li>-->
+										<!--<span>Экспресс-анализ бизнеса;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Разработка концепта и УТП;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Профессиональный копирайтинг;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Разработка прототипа;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Индивидуальный элитный дизайн;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Адаптивная верстка;</span>-->
+									<!--</li>-->
+									<!--<li>-->
+										<!--<span>Установка CMS (админ-панели);</span>-->
+									<!--</li>-->
+								<!--</ol>-->
+								<!--<button data-toggle="modal" data-target="#modal-landing"  class="send-button explore">Заказать<span class="icon-right"></span><span class="icon-right after"></span></button>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+
+
+		<div class="portfolio-home" id="portfolio">
+			<div class="ellipse-extra-small ellipse-extra-small2 " data-parallax='{"y": 450}'></div>
+			<div class="ellipse-small" data-parallax='{"y": -350}'></div>
+			<div class="texture2 " data-parallax='{"y": 180}'> 
+				<img src="images/texture2.png" alt="">
+			</div>
+			<div class="ellipse" data-parallax='{"x": -300}'></div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="circle-heading">
+							<div class="circle-icon">
+								<img src="images/ellipse.png" alt="">
+							</div>
+							<div class="circle-title">
+								<h2>Портфолио</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="portfolio-move" data-parallax='{"y": -50}'>
+							<div class="portfolio-home-row">
+								<div class="portfolio-home-item item-small item-1">
+									<a href="/portfolio/atlantic/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/654.png" alt="alt" style="width: 100%; height: 100%">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>01</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>FCM Marketing</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="portfolio-home-item item-large item-2">
+									<a href="/portfolio/bookings/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/bookings.jpg" alt="alt">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>02</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>Booking</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="portfolio-home-row row-inverse">
+								<div class="portfolio-home-item item-large item-4">
+									<a href="/portfolio/casino/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/casino.jpg" alt="alt">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>03</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>GBet</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="portfolio-home-item item-small item-3">
+									<a href="/portfolio/whisky/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/whisky.jpg" alt="alt">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>04</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>Whisky</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="portfolio-home-row">
+								<div class="portfolio-home-item item-small item-1 item-5">
+									<a href="/portfolio/profilsplus/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/24.jpg" alt="alt" style="width: 100%; height: 100%">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>05</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>Profil Plus</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="portfolio-home-item item-large item-2 item-6">
+									<a href="/portfolio/wise/" target="_blank">
+										<div class="portfolio-home-holder">
+											<div class="cover-box">
+												<img src="images/header-screens/blogs.jpg" alt="alt">
+											</div>
+											<div class="portfolio-home-layer"></div>
+											<div class="portfolio-home-container">
+												<div class="item-number">
+													<span>06</span><sup>/Work</sup>
+												</div>
+												<div class="item-cat">
+													<span># Web Development</span>
+												</div>
+												<div class="item-title">
+													<span>Wise</span>
+												</div>
+												<div class="item-link">
+													<span>Открыть проект</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="subscribe">
+			<div class="container">
+				<div class="subscribe__row">
+					<div class="subscribe__content subscribe__item">
+						<h2>Понравились примеры? <br> Давайте обсудим ваш проект!</h2>
+						<p>Отправьте запрос на расчет стоимости проекта, чтобы обсудить задачу и получить оптимальное предложение исходя из Ваших потребностей.</p>
+					</div>
+					<form method="POST" action="mail.php" class="subscribe__form subscribe__item form-mainer" onsubmit="ym(57493686, 'reachGoal', 'letsDiscuss'); return true;">
+						<input type="hidden" name="input-hidden" value="Давайте обсудим ваш проект!">
+						<div class="subscribe__form-row">
+							<input type="text" placeholder="Ваше имя" name="name" required>
+						</div>
+						<div class="subscribe__form-row">
+							<input type="text" placeholder="Ваш телефон" name="phone" required>
+						</div>
+						<div class="subscribe__form-row">
+							<button class="send-button" >Оставить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="reviews" id="reviews">
+			<div class="texture3 " data-parallax='{"y": 150}'>
+				<img src="images/texture3.png" alt="">
+			</div>
+			<div class="ellipse-small" data-parallax='{"y": -450}'></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="circle-heading">
+							<div class="circle-icon">
+								<img src="images/ellipse.png" alt="">
+							</div>
+							<div class="circle-title">
+								<h2>Отзывы</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="reviewss">
+					<div class="reviews-slider">
+						<a href="https://www.weblancer.net/users/Breeze2/reviews/?account_type=freelancer" target="_blank" class="reviews-slide">
+							<img src="images/review-1.png" alt="alt">
+						</a>
+						<a href="https://www.weblancer.net/users/Breeze2/reviews/?account_type=freelancer" target="_blank" class="reviews-slide">
+							<img src="images/review-2.png" alt="alt">
+						</a>
+						<a href="https://www.weblancer.net/users/Breeze2/reviews/?account_type=freelancer" target="_blank" class="reviews-slide">
+							<img src="images/review-3.png" alt="alt">
+						</a>
+						<a href="https://www.weblancer.net/users/Breeze2/reviews/?account_type=freelancer" target="_blank" class="reviews-slide">
+							<img src="images/review-4.png" alt="alt">
+						</a>
+						<a href="https://www.weblancer.net/users/Breeze2/reviews/?account_type=freelancer" target="_blank" class="reviews-slide">
+							<img src="images/review-5.png" alt="alt">
+						</a>
+						<a href="https://freelancehunt.com/freelancer/brezze.html#reviews" target="_blank" class="reviews-slide">
+							<img src="images/review-6.png" alt="alt">
+						</a>
+						<a href="https://freelancehunt.com/freelancer/brezze.html#reviews" target="_blank" class="reviews-slide">
+							<img src="images/review-7.png" alt="alt">
+						</a>
+						<a href="https://freelancehunt.com/freelancer/brezze.html#reviews" target="_blank" class="reviews-slide">
+							<img src="images/review-8.png" alt="alt">
+						</a>
+						<a href="https://freelancehunt.com/freelancer/brezze.html#reviews" target="_blank" class="reviews-slide">
+							<img src="images/review-9.png" alt="alt">
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="contacts" id="contacts">
+			<div class="texture3 " data-parallax='{"y": 150}'> 
+				<img src="images/texture3.png" alt="">
+			</div>
+			<div class="ellipse-small" data-parallax='{"y": -450}'></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="circle-heading">
+							<div class="circle-icon">
+								<img src="images/ellipse.png" alt="">
+							</div>
+							<div class="circle-title">
+								<h2>Обратная связь</h2>
+							</div>
+						</div>
+						<div class="cirlce-subtitle">Оставьте заявку и я свяжусь с вами в течении 30 минут!</div>
+					</div>
+				</div>
+				<div class="contact-form-wrap">
+					<div class="contact-bg" data-parallax='{"y": -40}'></div>
+					<div class="contact-form" data-parallax='{"y": 40}'>
+						<div class="circle-title">
+							<h2>Заказать верстку </h2>
+						</div>
+						<form action="mail.php" method="post" name="form-2" class="form-mainer" onsubmit="ym(57493686, 'reachGoal', 'orderVerstkaFooter'); return true;">
+							<input type="hidden" name="input-hidden" value="Заказать верстку подвал сайта">
+							<div class="form-group">
+								<input class="form-control" name="name" type="text" placeholder="Ваше имя" required>
+							</div>
+							<div class="form-group">
+								<input class="form-control" name="phone" type="text" placeholder="Ваш телефон" required>
+							</div>
+							<div class="button-holder">
+								<button class="feedback send-button explore" name="send">Отправить сообщение<span class="icon-right"></span><span class="icon-right after"></span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="grid">
+				<div class="grid-holder">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<span>2020 © Все права защищены</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="to-top">
+				<a href="#top" class="scrollto">
+					<img src="images/arrow-top.png" alt="">
+				</a>
+			</div>
+		</footer>
+	</div>
+	<div class="modal fade modal-recall" id="modal-recall" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<!--<div class="modal-dialog__thank">-->
+				<!--<button type="button" class="close close&#45;&#45;thanks"><i class="material-icons">clear</i></button>-->
+				<!--<span>Спасибо за вашу заявку! <br> Я свяжусь с вами в ближайшее время</span>-->
+			<!--</div>-->
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+
+			<div class="contact-form">
+				<div class="modal-head">
+					<div class="modal-logo">
+						<a href="index.html">
+							<span>
+								.Spacelab
+							</span>
+						</a>
+					</div>
+					<h3>Отправить заявку</h3>
+				</div>
+				<form action="mail.php" method="POST" name="form-2" class="form-mainer" onsubmit="ym(57493686, 'reachGoal', 'sendApplication'); return true;">
+					<input type="hidden" name="input-hidden" value="Отправить заявку">
+					<div class="form-group">
+						<input class="form-control" name="name" type="text" placeholder="Ваше имя" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" name="phone" type="text" placeholder="Ваш телефон" required>
+					</div>
+					<div class="button-holder">
+						<button class="feedback send-button explore" name="send">Отправить заявку<span class="icon-right"></span><span class="icon-right after"></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-recall" id="modal-verstka" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<!--<div class="modal-dialog__thank">-->
+			<!--<button type="button" class="close close&#45;&#45;thanks"><i class="material-icons">clear</i></button>-->
+			<!--<span>Спасибо за вашу заявку! <br> Я свяжусь с вами в ближайшее время</span>-->
+			<!--</div>-->
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+
+			<div class="contact-form">
+				<div class="modal-head">
+					<div class="modal-logo">
+						<a href="index.html">
+							<span>
+								.Spacelab
+							</span>
+						</a>
+					</div>
+					<h3>Заказать вёрстку</h3>
+				</div>
+				<form action="mail.php" method="POST" name="form-2" class="form-mainer" onsubmit="ym(57493686, 'reachGoal', 'orderVerstka'); return true;">
+					<input type="hidden" name="input-hidden" value="Заказать вёрстку">
+					<div class="form-group">
+						<input class="form-control" name="name" type="text" placeholder="Ваше имя" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" name="phone" type="text" placeholder="Ваш телефон" required>
+					</div>
+					<div class="button-holder">
+						<button class="feedback send-button explore" name="send">Отправить заявку<span class="icon-right"></span><span class="icon-right after"></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-recall" id="modal-landing" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<!--<div class="modal-dialog__thank">-->
+			<!--<button type="button" class="close close&#45;&#45;thanks"><i class="material-icons">clear</i></button>-->
+			<!--<span>Спасибо за вашу заявку! <br> Я свяжусь с вами в ближайшее время</span>-->
+			<!--</div>-->
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+
+			<div class="contact-form">
+				<div class="modal-head">
+					<div class="modal-logo">
+						<a href="index.html">
+							<span>
+								.Spacelab
+							</span>
+						</a>
+					</div>
+					<h3>Заказать Landing Page</h3>
+				</div>
+				<form action="mail.php" method="POST" name="form-2" class="form-mainer" onsubmit="ym(57493686, 'reachGoal', 'orderLanding'); return true;">
+					<input type="hidden" name="input-hidden" value="Заказать Landing Page">
+					<div class="form-group">
+						<input class="form-control" name="name" type="text" placeholder="Ваше имя" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" name="phone" type="text" placeholder="Ваш телефон" required>
+					</div>
+					<div class="button-holder">
+						<button class="feedback send-button explore"  name="send">Отправить заявку<span class="icon-right"></span><span class="icon-right after"></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-dialog__thank" style="display: none;">
+		<button type="button" class="close close--thanks"><i class="material-icons">clear</i></button>
+		<span>Спасибо за вашу заявку! <br> Я свяжусь с вами в ближайшее время</span>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+	<script src="js/jquery-imagefill.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.parallax-scroll.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/jquery.fadethis.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/rellax.js"></script>
+	<script src="js/reveal/anime.min.js"></script>
+	<script src="js/reveal/scrollMonitor.js"></script>
+	<script src="js/reveal/main.js"></script>
+	<script src="js/form.js"></script>
+
+</body>
+</html>

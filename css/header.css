@@ -1,0 +1,360 @@
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+header h1 {
+  color: #ffffff;
+}
+header .large-text {
+  position: absolute;
+  bottom: 14%;
+  left: 40px;
+}
+header .large-text span {
+  display: block;
+  font-size: 20vw;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.08);
+  font-family: 'Conv_ProximaNova-Bold';
+}
+header .header-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  top: 55%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  transition-duration: 400ms;
+  transition-property: all;
+  -webkit-transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  visibility: visible;
+  opacity: 1;
+}
+header .header-top {
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+header .header-top .cover-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .header-bottom-piece {
+  display: block;
+  position: absolute;
+  height: 47%;
+  left: 50%;
+  background-color: #3b3da8;
+  width: 800px;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  bottom: 0;
+}
+header .header-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color: #3b3da8;
+  height: 47%;
+  right: 0;
+}
+header .grid {
+  opacity: 0.2;
+}
+.head-text-top {
+  top: -30px;
+  position: relative;
+}
+.head-text-bottom {
+  position: relative;
+  padding-top: 6px;
+  padding-right: 0px;
+  font-family: 'ProximaNova-Regular';
+}
+.head-text-bottom p {
+  line-height: 28px;
+  font-size: 16px;
+}
+.head-text-bottom p a {
+  color: #ffffff;
+  font-family: 'ProximaNova-Extrabld';
+  text-decoration: underline;
+}
+.head-text {
+  position: relative;
+  color: #ffffff;
+  width: 60%;
+  height: 270px;
+  margin-top: 80px;
+}
+.head-subtitle {
+  text-align: right;
+  padding-top: 15px;
+  display: none;
+}
+.head-subtitle span {
+  display: inline-block;
+  position: relative;
+  font-family: 'ProximaNova-Extrabld';
+  letter-spacing: 0.14em;
+  font-size: 20px;
+}
+.head-subtitle span:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 35px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  left: -15px;
+  top: 13px;
+}
+.header-content-holder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.letter-holder {
+  width: 40%;
+}
+.letter-holder .letter-box {
+  overflow: hidden;
+  position: relative;
+  width: 365px;
+  height: 500px;
+  border: 10px solid #ffffff;
+  box-shadow: 0px 45px 45px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 45px 45px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 45px 45px rgba(0, 0, 0, 0.23);
+  top: 60px;
+}
+.letter-holder .letter-box .cover-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.letter-holder .letter-box span {
+  display: block;
+  color: #4c4ee8;
+  font-size: 500px;
+  font-family: 'Conv_ProximaNova-Bold';
+  line-height: 345px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -33px;
+  right: -52px;
+  z-index: 2;
+}
+.letter-holder .letter-box .letter-box-label {
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  top: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Conv_ProximaNova-Bold';
+  letter-spacing: 0.2em;
+  line-height: 18px;
+  font-size: 12px;
+}
+.angle-top {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+.angle-bottom {
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -60px;
+  bottom: -50px;
+}
+
+.head-text-bottom .send-button .icon-right:after {
+  color: #000;
+}
+
+.head-text-bottom .send-button {
+  background-color: #fff;
+}
+
+.head-text-bottom .icon-right:after {
+  color: #fff;
+}
+
+.header-content .container {
+  max-width: 1470px;
+  width: 100%;
+}
+
+@-webkit-keyframes shake {
+  10%,90% {
+    -webkit-transform: translate3d(-1px,0,0);
+    transform: translate3d(-1px,0,0)
+  }
+
+  20%,80% {
+    -webkit-transform: translate3d(2px,0,0);
+    transform: translate3d(2px,0,0)
+  }
+
+  30%,50%,70% {
+    -webkit-transform: translate3d(-4px,0,0);
+    transform: translate3d(-4px,0,0)
+  }
+
+  40%,60% {
+    -webkit-transform: translate3d(4px,0,0);
+    transform: translate3d(4px,0,0)
+  }
+}
+
+@keyframes shake {
+  10%,90% {
+    -webkit-transform: translate3d(-1px,0,0);
+    transform: translate3d(-1px,0,0)
+  }
+
+  20%,80% {
+    -webkit-transform: translate3d(2px,0,0);
+    transform: translate3d(2px,0,0)
+  }
+
+  30%,50%,70% {
+    -webkit-transform: translate3d(-4px,0,0);
+    transform: translate3d(-4px,0,0)
+  }
+
+  40%,60% {
+    -webkit-transform: translate3d(4px,0,0);
+    transform: translate3d(4px,0,0)
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.shakes svg {
+  animation: shake .82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.fixed-btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999999;
+    opacity: 0;
+}
+
+.fixed-btn svg {
+    display: block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform .5s ease, opacity .5s ease;
+}
+
+.fixed-btn svg:hover {
+    transform:translateY(10px);
+}
+
+.fixed-btn.active {
+    opacity: 1;
+}
+
+.portfolio-home-item .cover-box img {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  object-fit: cover;
+  height: 100% !important;
+}
+
+.phone-nav__contacts {
+  text-align: left;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.phone-nav__contacts a {
+  color: #fff;
+  font-family: 'ProximaNova-Extrabld';
+  line-height: 1;
+  position: relative;
+}
+
+.phone-nav__contacts a:first-child {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.phone-nav__contacts a:last-child {
+  font-size: 14px;
+}
+
+.phone-nav__contacts a:hover, .phone-nav__contacts a:active:hover, .phone-nav__contacts a:visited:hover, .phone-nav__contacts a:active, .phone-nav__contacts a:visited, .phone-nav__contacts a:focus, .phone-nav__contacts a:focus:hover  {
+  text-decoration: none !important;
+}
+
+.phone-nav__contacts a:hover:after {
+  -moz-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 400ms;
+  transition-property: all;
+  -webkit-transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.phone-nav__contacts a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  top: 110%;
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 400ms;
+  transition-property: all;
+  -webkit-transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.navigation.nav-sticky .phone-nav__contacts a {
+  color: #000;
+}
+
+.navigation.nav-sticky .phone-nav__contacts a::after {
+  background-color: #000;
+}

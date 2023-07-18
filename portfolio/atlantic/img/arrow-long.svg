@@ -1,0 +1,15 @@
+<svg id="svg_circle" width="67" height="10" viewBox="0 0 67 10" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+
+    <!-- <defs>
+      <linearGradient id="left-to-right">
+        <stop offset="0" stop-color="#009432">
+          <animate dur="2s" class="anim" attributeName="offset" fill="freeze" from="0" to="1" />
+        </stop>
+        <stop offset="0" stop-color="#ccc">
+          <animate dur="2s" class="anim2" attributeName="offset" fill="freeze" from="0" to="1" />
+        </stop>
+        
+      </linearGradient>
+    </defs> -->
+    <path d="M62.1509 0L60.6943 1.502L63.0564 3.93772H0V6.06223H63.0564L60.6943 8.49795L62.1509 10L67 5L62.1509 0Z"  fill="#c8c8c8" id="svg_1" />
+  </svg>
