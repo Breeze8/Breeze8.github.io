@@ -1,0 +1,40 @@
+<svg width="1345" height="638" viewBox="0 0 1345 638" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M10 109.856C139.93 113.618 256.613 33.3547 406.924 33.3547C557.236 33.3547 654.556 134.938 792.639 122.397C930.722 109.856 1040.78 -14.7197 1186.51 15.7971C1332.23 46.3139 1345.99 236.103 1338.35 373.22C1330.7 510.336 1275.16 640.346 1186.51 618.608C1097.85 596.87 981.675 514.517 792.639 555.067C603.603 595.616 520.55 484.836 406.924 542.107C316.024 587.924 104.433 603.559 10 605.649" stroke="#4E4E4E" stroke-width="2" stroke-dasharray="8 4"/>
+</g>
+<circle cx="12" cy="109" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="12" cy="109" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="12" cy="109" r="11.5" stroke="#FFA200"/>
+<circle cx="1162" cy="609" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="1162" cy="609" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="1162" cy="609" r="11.5" stroke="#FFA200"/>
+<circle cx="781" cy="555" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="781" cy="555" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="781" cy="555" r="11.5" stroke="#FFA200"/>
+<circle cx="394" cy="547" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="394" cy="547" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="394" cy="547" r="11.5" stroke="#FFA200"/>
+<circle cx="12" cy="605" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="12" cy="605" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="12" cy="605" r="11.5" stroke="#FFA200"/>
+<circle cx="394" cy="33" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="394" cy="33" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="394" cy="33" r="11.5" stroke="#FFA200"/>
+<circle cx="781" cy="121" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="781" cy="121" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="781" cy="121" r="11.5" stroke="#FFA200"/>
+<circle cx="1162" cy="12" r="6" fill="#FFA200"/>
+<circle opacity="0.5" cx="1162" cy="12" r="8.5" stroke="#FFA200"/>
+<circle opacity="0.1" cx="1162" cy="12" r="11.5" stroke="#FFA200"/>
+<defs>
+<filter id="filter0_d" x="5.9707" y="10" width="1339.03" height="627.998" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="12"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
