@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "Organization",
+		  "url": "http://atlantic.com",
+		  "logo": "http://www.atlantic.com/img/logo.svg"
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="page">
+
+		<!-- HEADER START -->
+
+		<header class="header">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="header__left">
+						<div class="hamburger">
+							<span class="icon-Menu"></span>
+						</div>
+						<a href="#" class="logo logo--header">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="language">
+							<span class="icon-language"></span>
+							<a href="#" class="language__link">English version</a>
+							<span class="icon-arrow-down"></span>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header-nav">
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-user"></span>
+								</span>
+								<span class="btn-icon__text">Профиль</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-login"></span>
+								</span>
+								<span class="btn-icon__text">Выйти</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- HEADER END -->
+
+		<div class="main">
+	
+			<!-- MAIN CONTENT START -->
+
+			<div class="container">
+				<div class="main-flex">
+					<aside class="main-sidebar">
+						<nav class="main-sidebar__nav">
+							<ul class="main-sidebar__list">
+								<li>
+									<a href="#">
+										<span class="icon-widget-2 red"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon-widget-3 red"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					<div class="content">
+						<ul class="breadcrumbs">
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Личный кабинет</a>
+							</li>
+							<li>
+								<a href="#">Инвестиции</a>
+							</li>
+							<li>
+								<span>Создание инвестиции</span>
+							</li>
+						</ul>
+						<div class="header-nav header-nav--page mb-75">
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-dashboard"></span>
+								</span>
+								<span class="btn-icon__text">Дашборд</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-user"></span>
+								</span>
+								<span class="btn-icon__text">Профиль</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-wallet"></span>
+								</span>
+								<span class="btn-icon__text">Баланс</span>
+							</a>
+							<a href="#" class="btn btn-icon active">
+								<span class="btn-icon__image">
+									<span class="icon-investment"></span>
+								</span>
+								<span class="btn-icon__text">Инвестиции</span>
+							</a>
+							<a href="#" class="btn btn-icon">
+								<span class="btn-icon__image">
+									<span class="icon-partner-tree"></span>
+								</span>
+								<span class="btn-icon__text">Партнёрская программа</span>
+							</a>
+						</div>
+						<div class="investments section-indent">
+							<div class="head">
+								<h1 class="h1 mb-45">Создание инвестиции</h1>
+								<div class="error mb-60">
+									<div class="centered">
+										<span class="icon-error red"></span>
+										<div class="h3">Недостаточно средств. <a href="#">Пополните счёт</a>, для создания инвестиции.</div>
+									</div>
+								</div>
+							</div>
+							<div class="step step--disabled mb-45">
+								<div class="centered mb-15">
+									<h3 class="h3 h3--mont">Шаг 1. Выбрана стратегия «Голубой павлин»</h3>
+									<span class="icon-okay-round green ml-30"></span>
+								</div>
+								<div class="centered mb-15">
+									<div class="investments-deposit-create__row">Доходность от <span class="bold">15% в неделю </span></div>
+									<div class="investments-deposit-create__row ml-30">Срок инвестирования <span class="bold">6 месяцев</span></div>
+								</div>
+								<a href="#" class="font-14 l-black">Вернуться к выбору стратегии</a>
+							</div>
+							<div class="step">
+								<h3 class="h3 h3--mont mb-45">Шаг 2. Укажите сумма для инвестирования</h3>
+								<form action="/" class="form" novalidate>
+									<div class="form-row mb-45">
+										<div class="col-auto">
+											<label for="validationDefault02" class="form__label status">Введите сумму</label>
+											<div class="input-group">
+										    	<div class="input-group-prepend">
+										    		<span class="input-group-text">€</span>
+										    	</div>
+										    	<input type="text" class="form-control is-invalid" id="validationDefault01">
+										    </div>
+										    <div class="invalid-feedback">Недостаточно средств. <a href="#"> Пополните счёт,</a> для создания инвестиции.</div>
+										</div>
+										<div class="col-auto">
+											<div class="status">Предполагаемая доходность</div>
+											<span class="font-14 green cond">€6 540 в день</span>
+										</div>
+									</div>
+									<div class="form-row align-items-center">
+										<div class="col-auto">
+											<button class="btn btn--red">Инвестировать</button>
+										</div>
+										<div class="col-auto">
+											<div class="custom-control custom-checkbox">
+											  <input type="checkbox" checked class="custom-control-input" id="customCheck1">
+											  <label class="custom-control-label center" for="customCheck1">Я принимаю <a href="#">соглашение об инвестировании</a></label>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- FOOTER START -->
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="footer-item">
+							<div class="logo logo--footer">
+								<img src="img/logo.svg" alt="alt">
+							</div>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Команда</a></li>
+								<li><a href="#">Технологии</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Стратегии</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<ul class="footer-item__list">
+								<li><a href="#">Беслатный звонок</a></li>
+								<li><a href="#">Написать в чат</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row justify-content-md-between justify-content-center align-items-center">
+						<div class="col-md-auto">
+							<div class="copyright">© 2018 FCM market</div>
+						</div>
+						<div class="col-md-auto">
+							<ul class="footer__bottom-list">
+								<li><a href="#">Политика конфиденциальности</a></li>
+								<li><a href="#">Ещё какая-то инфа</a></li>
+								<li><a href="#">И ещё что-то важное</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- FOOTER END -->
+
+	</div>
+
+	<!-- Custom HTML -->
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

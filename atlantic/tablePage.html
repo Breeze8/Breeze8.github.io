@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>
+        Условия партнерской программы
+        | FCM Market + PC official website
+    </title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://fcm-deploy.com/",
+        "logo": "http://fcm-deploy.com/static/common/img/logo.svg"
+    },
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <!-- HAMBURGER MENU START -->
+        <div class="menu">
+            <div class="container">
+                <span class="menu__close" onclick="menuIn()">
+                    <img src="img/menu-close.svg" alt="alt">
+                </span>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="row menu-left">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="/ru/">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ru/team/">Команда</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ru/technologies/">Технологии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="/ru/strategies/">Стратегии</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ru/news/">Новости</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ru/contacts/">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-content">
+                            <p>Вы авторизованы</p>
+                            <div class="header-nav">
+                                <a href="/ru/registration/" class="btn btn-icon">
+                                    <span class="btn-icon__image">
+                                        <span class="icon-user"></span>
+                                    </span>
+                                    <span class="btn-icon__text">Профиль</span>
+                                </a>
+                                <a href="/ru/logout/" class="btn btn-icon ml-15">
+                                    <span class="btn-icon__image">
+                                        <span class="icon-login"></span>
+                                    </span>
+                                    <span class="btn-icon__text">Выйти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HAMBURGER MENU END -->
+        <!-- HEADER START -->
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="header__left">
+                        <div class="hamburger" onclick="menuIn()">
+                            <span class="icon-Menu"></span>
+                        </div>
+                        <a href="/ru/" class="logo logo--header">
+                            <img src="img/logo.svg" alt="FCM Market + PC">
+                        </a>
+                        <div class="language dropdown-toggle dropdown-toggle--none">
+                            <form id="set_language_form" action="/i18n/setlang/" method="post">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="9NagjGgaBCETTIdea2u3oTPgSsRZ6H4hcz1vut3jHfdBAEIY7LFJwbaIApbPHqlt">
+                                <input name="language" type="hidden" value="">
+                            </form>
+                            <span class="icon-language"></span>
+                            <a href="#" class="language__link" style="text-transform: capitalize;">Русский</a>
+                            <span class="icon-arrow-down"></span>
+                            <div class="dropdown dropdown-window dropdown--language">
+                                <div class="dropdown-body">
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-gb"></span>
+                                        <a href="#" data-lang="en" class="language-dropdown__link" style="text-transform: capitalize;">English</a>
+                                    </div>
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-de"></span>
+                                        <a href="#" data-lang="de" class="language-dropdown__link" style="text-transform: capitalize;">Deutsch</a>
+                                    </div>
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-es"></span>
+                                        <a href="#" data-lang="es" class="language-dropdown__link" style="text-transform: capitalize;">español</a>
+                                    </div>
+                                    <div class="dropdown-row">
+                                        <span class="flag-icon flag-icon-ru"></span>
+                                        <a href="#" data-lang="ru" class="language-dropdown__link" style="text-transform: capitalize;">Русский</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-nav">
+                            <div class="dropdown-toggle dropdown-toggle--none">
+                                <div class="btn btn-icon">
+                                    <span class="btn-icon__image">
+                                        <span class="icon-user"></span>
+                                    </span>
+                                    <span class="btn-icon__text">Профиль</span>
+                                </div>
+                                <div class="dropdown dropdown-window dropdown--profile">
+                                    <div class="dropdown-body">
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш ID в системе</div>
+                                            <div class="centered">
+                                                <span class="icon-user-id"></span>
+                                                <span>1004585</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш статус</div>
+                                            <div class="centered">
+                                                <span class="icon-okay-round green"></span>
+                                                <span class="green bold">Верифицирован</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="status">Ваш баланс</div>
+                                            <div class="centered">
+                                                <span class="icon-money-round green"></span>
+                                                <span class="green bold">$ 500000,00</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-user-id"></span>
+                                                <a href="/ru/accounts/">Кабинет</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-wallet"></span>
+                                                <a href="/ru/accounts/pay/wallets/">Кошельки</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-okay-lock"></span>
+                                                <a href="/ru/accounts/profile/">Ваши данные</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <div class="centered">
+                                                <span class="icon-login"></span>
+                                                <a href="/ru/logout/">Выйти</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/ru/logout/" class="btn btn-icon ml-15">
+                                <span class="btn-icon__image">
+                                    <span class="icon-login"></span>
+                                </span>
+                                <span class="btn-icon__text">Выйти</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <div class="main">
+            <!-- MAIN CONTENT START -->
+            <div class="container">
+                <div class="main-flex">
+                    <aside class="main-sidebar">
+                        <nav class="main-sidebar__nav">
+                            <ul class="main-sidebar__list">
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-widget-2 red"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#callBack" class="btn-modal" data-effect="mfp-zoom-out">
+                                        <span class="icon-widget-3 red"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <div class="content">
+                        <!-- BREADCRUMBS START -->
+                        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="http://fcm-deploy.com/">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="http://fcm-deploy.com/ru/accounts/">
+                                    <span itemprop="name">Личный кабинет</span>
+                                </a>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="http://fcm-deploy.com/ru/accounts/partnerconditions/">
+                                    <span itemprop="name">Условия партнерской программы</span>
+                                </a>
+                                <meta itemprop="position" content="3" />
+                            </li>
+                        </ol>
+                        <!-- BREADCRUMBS END -->
+                        <div class="header-nav header-nav--page mb-75">
+                            <a href="/ru/accounts/" class="btn btn-icon ">
+                                <span class="btn-icon__image">
+                                    <span class="icon-dashboard"></span>
+                                </span>
+                                <span class="btn-icon__text">Дашборд</span>
+                            </a>
+                            <a href="/ru/accounts/profile/" class="btn btn-icon ">
+                                <span class="btn-icon__image">
+                                    <span class="icon-user"></span>
+                                </span>
+                                <span class="btn-icon__text">Профиль</span>
+                            </a>
+                            <a href="/ru/accounts/pay/" class="btn btn-icon ">
+                                <span class="btn-icon__image">
+                                    <span class="icon-wallet"></span>
+                                </span>
+                                <span class="btn-icon__text">Баланс</span>
+                            </a>
+                            <a href="/ru/accounts/investments/list/" class="btn btn-icon  ">
+                                <span class="btn-icon__image">
+                                    <span class="icon-investment"></span>
+                                </span>
+                                <span class="btn-icon__text">Инвестиции</span>
+                            </a>
+                            <a href="/ru/accounts/partner" class="btn btn-icon  active">
+                                <span class="btn-icon__image">
+                                    <span class="icon-partner-tree"></span>
+                                </span>
+                                <span class="btn-icon__text">Структура</span>
+                            </a>
+                        </div>
+                        <!-- CONTENT PART -->
+                        <div class="faq">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-indent">
+                                        <div class="c-post">
+                                            <h1>Условия партнерской программы</h1>
+                                            <p>Вы — партнер компании FCM Market! Кроме инвестиционного дохода по Вашим инвестициям, Вы можете получать партнерские вознаграждения за привлечение новых инвесторов. На этой странице собрана наиболее важная информация для Вашего сведения.</p>
+                                            <h2>Статус-уровни и условия карьерного роста</h2>
+                                            <p>В рамках компании FCM Market, Вы можете продвигаться по карьерной лестнице, достигая более высоких статус-уровней, а следовательно, получая более высокие партнерские вознаграждения.</p>
+                                            <p>Таблица статус-уровней и условий карьерного роста</p>
+                                            <table class="table table-different">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Статус-уровень</th>
+                                                        <th class="text-center">Личный объем ($)</th>
+                                                        <th class="text-center">Объем 1 линии ($)</th>
+                                                        <th class="text-center">Структурный объем ($)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <th>Агент</th>
+                                                        <td class="text-center">250</td>
+                                                        <td class="text-center">0</td>
+                                                        <td class="text-center">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <th>Консультант</th>
+                                                        <td class="text-center">250</td>
+                                                        <td class="text-center">1 000</td>
+                                                        <td class="text-center">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <th>Эксперт</th>
+                                                        <td class="text-center">500</td>
+                                                        <td class="text-center">3 000</td>
+                                                        <td class="text-center">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>4</th>
+                                                        <th>Структурный Менеджер</th>
+                                                        <td class="text-center">1 000</td>
+                                                        <td class="text-center">5 000</td>
+                                                        <td class="text-center">25 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>5</th>
+                                                        <th>Региональный Менеджер</th>
+                                                        <td class="text-center">2 500</td>
+                                                        <td class="text-center">15 000</td>
+                                                        <td class="text-center">50 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>6</th>
+                                                        <th>Старший Менеджер</th>
+                                                        <td class="text-center">5 000</td>
+                                                        <td class="text-center">30 000</td>
+                                                        <td class="text-center">100 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>7</th>
+                                                        <th>Управляющий Менеджер</th>
+                                                        <td class="text-center">10 000</td>
+                                                        <td class="text-center">50 000</td>
+                                                        <td class="text-center">250 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>8</th>
+                                                        <th>Структурный Директор</th>
+                                                        <td class="text-center">25 000</td>
+                                                        <td class="text-center">100 000</td>
+                                                        <td class="text-center">500 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>9</th>
+                                                        <th>Региональный Директор</th>
+                                                        <td class="text-center">50 000</td>
+                                                        <td class="text-center">250 000</td>
+                                                        <td class="text-center">1 000 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>10</th>
+                                                        <th>Исполнительный Директор</th>
+                                                        <td class="text-center">75 000</td>
+                                                        <td class="text-center">500 000</td>
+                                                        <td class="text-center">2 500 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>11</th>
+                                                        <th>Вице-президент</th>
+                                                        <td class="text-center">100 000</td>
+                                                        <td class="text-center">750 000</td>
+                                                        <td class="text-center">5 000 000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>12</th>
+                                                        <th>Президент</th>
+                                                        <td class="text-center">150 000</td>
+                                                        <td class="text-center">1 000 000</td>
+                                                        <td class="text-center">7 500 000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Объемы партнерских вознаграждений</h2>
+                                            <p>Получайте партнерские вознаграждения за привлечение новых инвесторов!</p>
+                                            <p>Таблица расчета партнерских вознаграждений</p>
+                                            <table class="table table-different">
+                                                <thead>
+                                                    <tr>
+                                                        <th rowspan="2">#</th>
+                                                        <th rowspan="2">Статус-уровень</th>
+                                                        <th colspan="8" class="text-center">Уровень структуры</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-right">1</th>
+                                                        <th class="text-right">2</th>
+                                                        <th class="text-right">3</th>
+                                                        <th class="text-right">4</th>
+                                                        <th class="text-right">5</th>
+                                                        <th class="text-right">6</th>
+                                                        <th class="text-right">7</th>
+                                                        <th class="text-right">8</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <th>Агент</th>
+                                                        <td class="text-right">7.0%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <th>Консультант</th>
+                                                        <td class="text-right">7.0%</td>
+                                                        <td class="text-right">4.67%</td>
+                                                        <td class="text-right">3.11%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <th>Эксперт</th>
+                                                        <td class="text-right">7.0%</td>
+                                                        <td class="text-right">4.67%</td>
+                                                        <td class="text-right">3.11%</td>
+                                                        <td class="text-right">2.07%</td>
+                                                        <td class="text-right">1.38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>4</th>
+                                                        <th>Структурный Менеджер</th>
+                                                        <td class="text-right">8.4%</td>
+                                                        <td class="text-right">5.6%</td>
+                                                        <td class="text-right">3.73%</td>
+                                                        <td class="text-right">2.48%</td>
+                                                        <td class="text-right">1.66%</td>
+                                                        <td class="text-right">1.1%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>5</th>
+                                                        <th>Региональный Менеджер</th>
+                                                        <td class="text-right">8.4%</td>
+                                                        <td class="text-right">5.6%</td>
+                                                        <td class="text-right">3.73%</td>
+                                                        <td class="text-right">2.48%</td>
+                                                        <td class="text-right">1.66%</td>
+                                                        <td class="text-right">1.1%</td>
+                                                        <td class="text-right">0.73%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>6</th>
+                                                        <th>Старший Менеджер</th>
+                                                        <td class="text-right">8.4%</td>
+                                                        <td class="text-right">5.6%</td>
+                                                        <td class="text-right">3.73%</td>
+                                                        <td class="text-right">2.48%</td>
+                                                        <td class="text-right">1.66%</td>
+                                                        <td class="text-right">1.1%</td>
+                                                        <td class="text-right">0.73%</td>
+                                                        <td class="text-right">0.49%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>7</th>
+                                                        <th>Управляющий Менеджер</th>
+                                                        <td class="text-right">9.1%</td>
+                                                        <td class="text-right">6.07%</td>
+                                                        <td class="text-right">4.04%</td>
+                                                        <td class="text-right">2.69%</td>
+                                                        <td class="text-right">1.79%</td>
+                                                        <td class="text-right">1.2%</td>
+                                                        <td class="text-right">0.79%</td>
+                                                        <td class="text-right">0.53%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>8</th>
+                                                        <th>Структурный Директор</th>
+                                                        <td class="text-right">9.8%</td>
+                                                        <td class="text-right">6.54%</td>
+                                                        <td class="text-right">4.35%</td>
+                                                        <td class="text-right">2.9%</td>
+                                                        <td class="text-right">1.93%</td>
+                                                        <td class="text-right">1.29%</td>
+                                                        <td class="text-right">0.85%</td>
+                                                        <td class="text-right">0.57%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>9</th>
+                                                        <th>Региональный Директор</th>
+                                                        <td class="text-right">10.5%</td>
+                                                        <td class="text-right">7.0%</td>
+                                                        <td class="text-right">4.67%</td>
+                                                        <td class="text-right">3.1%</td>
+                                                        <td class="text-right">2.07%</td>
+                                                        <td class="text-right">1.38%</td>
+                                                        <td class="text-right">0.92%</td>
+                                                        <td class="text-right">0.61%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>10</th>
+                                                        <th>Исполнительный Директор</th>
+                                                        <td class="text-right">11.2%</td>
+                                                        <td class="text-right">7.47%</td>
+                                                        <td class="text-right">4.98%</td>
+                                                        <td class="text-right">3.31%</td>
+                                                        <td class="text-right">2.21%</td>
+                                                        <td class="text-right">1.47%</td>
+                                                        <td class="text-right">0.98%</td>
+                                                        <td class="text-right">0.66%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>11</th>
+                                                        <th>Вице-президент</th>
+                                                        <td class="text-right">11.9%</td>
+                                                        <td class="text-right">7.94%</td>
+                                                        <td class="text-right">5.29%</td>
+                                                        <td class="text-right">3.52%</td>
+                                                        <td class="text-right">2.35%</td>
+                                                        <td class="text-right">1.56%</td>
+                                                        <td class="text-right">1.04%</td>
+                                                        <td class="text-right">0.7%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>12</th>
+                                                        <th>Президент</th>
+                                                        <td class="text-right">12.6%</td>
+                                                        <td class="text-right">8.41%</td>
+                                                        <td class="text-right">5.6%</td>
+                                                        <td class="text-right">3.73%</td>
+                                                        <td class="text-right">2.48%</td>
+                                                        <td class="text-right">1.66%</td>
+                                                        <td class="text-right">1.1%</td>
+                                                        <td class="text-right">0.74%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Обратите внимание!</h2>
+                                            <p>Пожалуйста, обратите внимание на следующие важные обстоятельства партнерской программы компании FCM Market:</p>
+                                            <ul>
+                                                <li>В случае, если нижестоящий партнер получает более высокий статус-уровень, чем Вы, Вы перестаете получать партнерские вознаграждения от структуры данного партнера.</li>
+                                                <li>Компания FCM Market стремится к тому, чтобы сделать Ваши партнерские доходы максимально высокими. Поэтому при наличии возможности, могут вводиться дополнительные вознаграждения (в форме промо-акций, бонусных программ и так далее). Однако, такие меры вводятся компанией по ее усмотрению и предоставляются на условиях «как есть». Информацию о действующих промо-акциях и/или бонусных программах Вы можете почерпнуть из корпоративных новостей на сайте компании. </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CONTENT PART END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT PART -->
+        <!-- CONTENT PART END -->
+        <!-- FOOTER START -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="footer-item">
+                            <a href='/' class="logo logo--footer">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="/ru/team/">Команда</a></li>
+                                <li><a href="/ru/technologies/">Технологии</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="/ru/strategies/">Стратегии</a></li>
+                                <li><a href="/ru/news/">Новости</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="/ru/faq/">FAQ</a></li>
+                                <li><a href="/ru/contacts/">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <ul class="footer-item__list">
+                                <li><a href="#callBack" class="btn-modal" data-effect="mfp-zoom-out">Написать нам</a></li>
+                                <!-- <li><a href="#">Написать в чат</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row justify-content-md-between justify-content-center align-items-center">
+                        <div class="col-md-auto">
+                            <div class="copyright">© 2018-2019 FCM market + PC</div>
+                        </div>
+                        <div class="col-md-auto">
+                            <ul class="footer__bottom-list">
+                                <li><a href="/ru/client-agreement/">Клиентское соглашение</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- FEEDBACK MODAL START -->
+    <div class="modal modal-400 mfp-hide mfp-with-anim" id="callBack">
+        <div class="modal__wrap">
+            <div class="h3 mb-10">Оставьте заявку</div>
+            <p class="font-14 mb-30">Мы оветим Вам сегодня в течение дня</p>
+            <form action="/ru/contacts/ajax_save/" method="post" class="form ajaxForm" novalidate="novalidate">
+                <!-- form errors -->
+                <div class="error mb-60 centered ajaxFormError" style="display:none;">
+                    <span class="icon-error red"></span>
+                    <div class="font-14"></div>
+                </div>
+                <div class="error mb-60 centered ajaxFormSuccess" style="display:none;">
+                    <span class="icon-okay-round green"></span>
+                    <div class="font-14">Ваша заявка принята</div>
+                </div>
+                <!-- form errors end -->
+                <input type="hidden" name="csrfmiddlewaretoken" value="9NagjGgaBCETTIdea2u3oTPgSsRZ6H4hcz1vut3jHfdBAEIY7LFJwbaIApbPHqlt">
+                <div class="form-group mb-30">
+                    <label class="form__label status status--placeholder" for="id_name">Your name:</label>
+                    <input type="text" name="name" maxlength="255" class="form-control" required id="id_name">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group mb-30">
+                    <label class="form__label status status--placeholder" for="id_contact">Your phone or email:</label>
+                    <input type="text" name="contact" maxlength="255" class="form-control" required id="id_contact">
+                    <div class="form-text">Specify phone in international format please</div>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group mb-30">
+                    <label class="form__label status status--placeholder status--fixed status--placeholder" for="id_message">Message:</label>
+                    <textarea name="message" cols="40" rows="10" class="form-control form-control--textarea" required id="id_message">
+</textarea>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <button class="btn btn--blue">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- FEEDBACK MODAL END -->
+    <script src="/static/common/js/scripts.min.js"></script>
+    <script src="/static/common/js/bootstrap.min.js"></script>
+    <script src="/static/common/js/common.js"></script>
+</body>
+
+</html>

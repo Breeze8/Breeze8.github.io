@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="body-tour">
+
+	<!-- HEADER START -->
+	
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="hamburger laptop">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M18 18C18 18.5523 17.5523 19 17 19L3 19C2.44771 19 2 18.5523 2 18C2 17.4477 2.44771 17 3 17L17 17C17.5523 17 18 17.4477 18 18Z" fill="#A09B82"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 12.5523 21.5523 13 21 13L3 13C2.44772 13 2 12.5523 2 12C2 11.4477 2.44772 11 3 11L21 11C21.5523 11 22 11.4477 22 12Z" fill="#A09B82"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M14 6C14 6.55228 13.5523 7 13 7L3 7C2.44772 7 2 6.55228 2 6C2 5.44771 2.44772 5 3 5L13 5C13.5523 5 14 5.44772 14 6Z" fill="#A09B82"/>
+					</svg>
+				</div>
+				<div class="header__top-row">
+					<div class="dropdown__close laptop">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M3.69586 3.69672C3.40296 3.98961 3.40296 4.46449 3.69586 4.75738L7.93852 9.00004L3.6959 13.2427C3.403 13.5356 3.403 14.0104 3.6959 14.3033C3.98879 14.5962 4.46366 14.5962 4.75656 14.3033L8.99918 10.0607L13.2418 14.3033C13.5347 14.5962 14.0096 14.5962 14.3025 14.3033C14.5954 14.0104 14.5954 13.5356 14.3025 13.2427L10.0598 9.00004L14.3025 4.75738C14.5954 4.46448 14.5954 3.98961 14.3025 3.69672C14.0096 3.40382 13.5347 3.40382 13.2418 3.69672L8.99917 7.93938L4.75652 3.69672C4.46362 3.40383 3.98875 3.40383 3.69586 3.69672Z" fill="#AEADA5"/>
+						</svg>
+					</div>
+					<div class="header__top-info laptop">
+						<a href="#" class="header__top-info-item">
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.75 11C2.75 10.7239 2.97386 10.5 3.25 10.5L9.25 10.5C9.38261 10.5 9.50979 10.4473 9.60355 10.3536C9.69732 10.2598 9.75 10.1326 9.75 10L9.75 2C9.75 1.86739 9.69732 1.74022 9.60355 1.64645C9.50979 1.55268 9.38261 1.5 9.25 1.5L3.25 1.5C2.97386 1.5 2.75 1.27614 2.75 1C2.75 0.723858 2.97386 0.5 3.25 0.5L9.25 0.5C9.64783 0.5 10.0294 0.658035 10.3107 0.93934C10.592 1.22064 10.75 1.60217 10.75 2L10.75 10C10.75 10.3978 10.592 10.7794 10.3107 11.0607C10.0294 11.342 9.64782 11.5 9.25 11.5L3.25 11.5C2.97386 11.5 2.75 11.2761 2.75 11Z" fill="#C7C6C1"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.10355 5.64645C8.29881 5.84171 8.29881 6.15829 8.10355 6.35355L6.10355 8.35355C5.90829 8.54882 5.59171 8.54882 5.39645 8.35355C5.20118 8.15829 5.20118 7.84171 5.39645 7.64645L7.04289 6L5.39645 4.35356C5.20118 4.15829 5.20118 3.84171 5.39645 3.64645C5.59171 3.45119 5.90829 3.45119 6.10355 3.64645L8.10355 5.64645Z" fill="#C7C6C1"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 6C8.25 6.27614 8.02614 6.5 7.75 6.5L2.25 6.5C1.97386 6.5 1.75 6.27614 1.75 6C1.75 5.72386 1.97386 5.5 2.25 5.5L7.75 5.5C8.02614 5.5 8.25 5.72386 8.25 6Z" fill="#C7C6C1"/>
+							</svg>
+							<span>Enter site</span>
+						</a>
+						<a href="#" class="header__top-info-item">
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 6C2.22386 6 2 6.22386 2 6.5V10C2 10.2761 2.22386 10.5 2.5 10.5H9.5C9.77614 10.5 10 10.2761 10 10V6.5C10 6.22386 9.77614 6 9.5 6H2.5ZM1 6.5C1 5.67157 1.67157 5 2.5 5H9.5C10.3284 5 11 5.67157 11 6.5V10C11 10.8284 10.3284 11.5 9.5 11.5H2.5C1.67157 11.5 1 10.8284 1 10V6.5Z" fill="#C7C6C1"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.5C5.46957 1.5 4.96086 1.71071 4.58579 2.08579C4.21071 2.46086 4 2.96957 4 3.5V5.5C4 5.77614 3.77614 6 3.5 6C3.22386 6 3 5.77614 3 5.5V3.5C3 2.70435 3.31607 1.94129 3.87868 1.37868C4.44129 0.81607 5.20435 0.5 6 0.5C6.79565 0.5 7.55871 0.81607 8.12132 1.37868C8.68393 1.94129 9 2.70435 9 3.5V5.5C9 5.77614 8.77614 6 8.5 6C8.22386 6 8 5.77614 8 5.5V3.5C8 2.96957 7.78929 2.46086 7.41421 2.08579C7.03914 1.71071 6.53043 1.5 6 1.5Z" fill="#C7C6C1"/>
+							</svg>
+							<span>Registration</span>
+						</a>
+					</div>
+					<ul class="header__top-menu">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Bonus Club</a></li>
+						<li><a href="#">Delivery</a></li>
+						<li><a href="#">Payments</a></li>
+					</ul>
+					<div class="header__top-nav">
+						<div class="header__top-nav-item">
+							<div class="language dropdown">
+								<div class="language__toggler dropdown__toggler">
+									<div class="language__toggler-img">
+										<img src="img/icon-language.svg" alt="alt">
+									</div>
+									<div class="language__toggler-text">ENg</div>
+								</div>
+								<div class="language__dropdown dropdown__block">
+									<div class="language__dropdown-item">
+										<div class="language__dropdown-img">
+											<img src="img/icon-language.svg" alt="alt">
+										</div>
+										<div class="language__dropdown-text">ge</div>
+									</div>
+									<div class="language__dropdown-item">
+										<div class="language__dropdown-img">
+											<img src="img/icon-language.svg" alt="alt">
+										</div>
+										<div class="language__dropdown-text">ru</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__top-nav-item">
+							<div class="currency dropdown">
+								<div class="currency__toggler dropdown__toggler">
+									<div class="currency__toggler-text">EUR <span>€</span></div>
+								</div>
+								<div class="currency__dropdown dropdown__block">
+									<div class="currency__dropdown-item">USD €</div>
+									<div class="currency__dropdown-item">RUB €</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__top-nav-item laptop">
+							<a href="#" class="btn btn--medium btn--red">Product Catalog</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__middle">
+			<div class="container">
+				<div class="header__middle-row">
+					<div class="laptop header__laptop-menu">
+						<img src="img/catalog.svg" alt="alt" class="header__laptop-catalog">
+						<img src="img/icon-close.svg" alt="alt" class="header__laptop-close">
+						<img src="img/catalog-arrow.svg" alt="alt" class="header__laptop-next">
+					</div>
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="Logo" class="logo__black">
+						<img src="img/logo-white.svg" alt="alt" class="logo__white">
+					</a>
+					<div class="header__fixed-catalog btn btn--red btn--small">Catalog</div>
+					<div class="header__features">
+						<div class="header__features-item">
+							<div class="header__features-img">
+								<img src="img/icon-header-1.svg" alt="alt">
+							</div>
+							<div class="header__features-content">
+								<div class="header__features-head">Save & Secure.</div>
+								<div class="header__features-text">Secure worldwide delivery</div>
+							</div>
+						</div>
+						<div class="header__features-item">
+							<div class="header__features-img">
+								<img src="img/icon-header-2.svg" alt="alt">
+							</div>
+							<div class="header__features-content">
+								<div class="header__features-head">Express Shipping.</div>
+								<div class="header__features-text">Fast Worldwide Delivery</div>
+							</div>
+						</div>
+						<div class="header__features-item">
+							<div class="header__features-img">
+								<img src="img/icon-header-3.svg" alt="alt">
+							</div>
+							<div class="header__features-content">
+								<div class="header__features-head">100% Original.</div>
+								<div class="header__features-text">Only High Quality Products</div>
+							</div>
+						</div>
+						<div class="header__features-item">
+							<div class="header__features-img">
+								<img src="img/icon-header-4.svg" alt="alt">
+							</div>
+							<div class="header__features-content">
+								<div class="header__features-flex">
+									<div class="header__features-head">4.92/5.</div>
+									<div class="rating">
+										<img src="img/icon-full-star.svg" alt="alt">
+										<img src="img/icon-full-star.svg" alt="alt">
+										<img src="img/icon-full-star.svg" alt="alt">
+										<img src="img/icon-full-star.svg" alt="alt">
+										<img src="img/icon-full-star.svg" alt="alt">
+									</div>
+								</div>
+								<div class="header__features-text">Truted by Feefo rating</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__middle-nav">
+						<div class="header__middle-item">
+							<div class="login dropdown">
+								<div class="login__toggler dropdown__toggler">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><g/><g><path fill="#3c3700" d="M10.73 1.293C11.495 1.056 12.285 1 13.28 1a1 1 0 0 1 .99.852c2.665.97 3.344 3.501 3.24 4.788v.001a29.153 29.153 0 0 1-.224 1.868c.209.339.346.792.346 1.375 0 .022 0 .044-.002.066-.076 1.153-.326 1.865-.934 2.293-.044.03-.088.058-.127.082-.212 1.23-.568 1.826-.906 2.277l-.107.142c-.079.104-.098.13-.12.175-.007.014-.031.062-.035.211.087.05.216.116.407.207.31.148.728.334 1.307.592l.239.1c1.194.5 2.2.923 2.946 1.568.875.756 1.329 1.74 1.673 3.169a1 1 0 0 1-1.945.468c-.3-1.246-.616-1.761-1.036-2.125-.498-.43-1.222-.735-2.662-1.34l-.019-.009-.014-.006a65.18 65.18 0 0 1-1.349-.611 5.559 5.559 0 0 1-.844-.47c-.249-.18-.49-.426-.614-.792-.092-.272-.09-.551-.09-.68v-.03c0-.433.076-.795.237-1.127.118-.243.285-.458.382-.584l.044-.058c.16-.213.393-.531.55-1.505v-.003c.066-.406.228-.763.544-1.033.127-.109.254-.18.312-.212h.002l.032-.018c.035-.087.095-.305.129-.777a.893.893 0 0 0-.038-.27 1 1 0 0 1-.352-.93l.002-.014.006-.04a27.987 27.987 0 0 0 .1-.684c.061-.434.129-.975.167-1.436.055-.695-.372-2.325-2.215-2.839a1.116 1.116 0 0 1-.273-.108 1.302 1.302 0 0 1-.514-.516c-.503.027-.867.085-1.195.187-.47.145-.937.4-1.672.917-.967.707-1.22 1.837-1.181 2.359.04.463.108 1.003.169 1.437a45.465 45.465 0 0 0 .1.685l.007.04.002.013c.057.356-.083.71-.354.932a.891.891 0 0 0-.038.269c.034.471.094.689.128.775h.001l.032.018.002.001c.059.033.185.103.313.212.317.27.479.628.545 1.035v.002c.156.973.389 1.29.55 1.504l.044.058c.097.126.264.341.382.583.162.333.237.695.237 1.129v.03c0 .129.002.373-.06.607a1.504 1.504 0 0 1-.52.793 3.632 3.632 0 0 1-.706.425c-.257.125-.592.275-1.007.461l-.017.008-.022.01-.01.004c-1.414.594-2.322.975-2.985 1.496-.592.466-1.016 1.072-1.286 2.222a1 1 0 1 1-1.947-.458c.358-1.523.997-2.55 1.997-3.336.88-.692 2.016-1.168 3.262-1.69l.184-.078c.43-.193.731-.328.952-.436.066-.032.12-.06.165-.084-.003-.16-.028-.211-.035-.225v-.002a1.026 1.026 0 0 0-.12-.174l-.108-.142c-.338-.451-.694-1.048-.906-2.278a2.124 2.124 0 0 1-.126-.08c-.61-.428-.86-1.14-.937-2.295a1 1 0 0 1-.002-.065c0-.585.138-1.038.347-1.377-.014-.095-.03-.202-.045-.317a31.025 31.025 0 0 1-.181-1.546V6.64c-.086-1.079.365-2.95 2.004-4.14l.012-.009c.797-.562 1.47-.96 2.24-1.198zM7.402 12.215c-.004-.01-.006-.017-.007-.016l.003.018h.005v-.002zm-.004.002zm1.092-1.563c.01.019.015.026.015.024m5.78-8.573a.03.03 0 0 0 .001.002m1.207 8.546c-.011.014-.016.023-.015.024"/></g></g></g></svg>
+									<span>Michael</span>
+								</div>
+								<div class="login__dropdown dropdown__block">
+									<div class="dropdown__close laptop">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.69586 3.69672C3.40296 3.98961 3.40296 4.46449 3.69586 4.75738L7.93852 9.00004L3.6959 13.2427C3.403 13.5356 3.403 14.0104 3.6959 14.3033C3.98879 14.5962 4.46366 14.5962 4.75656 14.3033L8.99918 10.0607L13.2418 14.3033C13.5347 14.5962 14.0096 14.5962 14.3025 14.3033C14.5954 14.0104 14.5954 13.5356 14.3025 13.2427L10.0598 9.00004L14.3025 4.75738C14.5954 4.46448 14.5954 3.98961 14.3025 3.69672C14.0096 3.40382 13.5347 3.40382 13.2418 3.69672L8.99917 7.93938L4.75652 3.69672C4.46362 3.40383 3.98875 3.40383 3.69586 3.69672Z" fill="#AEADA5"/>
+										</svg>
+									</div>
+									<div class="login__dropdown-header">
+										<div class="login__dropdown-name">Michael Forrest</div>
+										<div class="login__dropdown-points">You have <span>450 points</span></div>
+										<div class="header__cart laptop">
+											<div class="header__cart-img">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><g/><g><path fill="#3c3700" d="M8 20a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></g><g><path fill="#3c3700" d="M16 20a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></g><g><path fill="#3c3700" d="M1.32 3a1 1 0 0 1 1-1h2a1 1 0 0 1 .98.804L5.82 5H22a1 1 0 0 1 .983 1.187l-1.602 8.398A3 3 0 0 1 18.391 17H8.69a3 3 0 0 1-2.99-2.414L4.03 6.239a.993.993 0 0 1-.017-.084L3.5 4H2.32a1 1 0 0 1-1-1zm4.901 4l1.44 7.195a1 1 0 0 0 1 .805H18.42a1 1 0 0 0 1-.802L20.792 7z"/></g></g></g></svg>
+												<div class="header__cart-count">5</div>
+											</div>
+											<div class="header__cart-content">34 980 <span>€</span></div>
+										</div>
+									</div>
+									<div class="login__dropdown-body">
+										<ul class="login__dropdown-list">
+											<li><a href="#">Personal information</a></li>
+											<li><a href="#">Order history</a></li>
+											<li><a href="#">Bonus points</a></li>
+											<li><a href="#">Email notifications</a></li>
+											<li><a href="#">Wish list</a></li>
+										</ul>
+									</div>
+									<a href="#" class="login__dropdown-footer">Logout</a>
+								</div>
+							</div>
+						</div>
+						<div class="header__middle-item">
+							<a href="#" class="header__cart">
+								<div class="header__cart-img">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><g/><g><path fill="#3c3700" d="M8 20a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></g><g><path fill="#3c3700" d="M16 20a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></g><g><path fill="#3c3700" d="M1.32 3a1 1 0 0 1 1-1h2a1 1 0 0 1 .98.804L5.82 5H22a1 1 0 0 1 .983 1.187l-1.602 8.398A3 3 0 0 1 18.391 17H8.69a3 3 0 0 1-2.99-2.414L4.03 6.239a.993.993 0 0 1-.017-.084L3.5 4H2.32a1 1 0 0 1-1-1zm4.901 4l1.44 7.195a1 1 0 0 0 1 .805H18.42a1 1 0 0 0 1-.802L20.792 7z"/></g></g></g></svg>
+									<div class="header__cart-count">5</div>
+								</div>
+								<div class="header__cart-content">34 980 <span>€</span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__bottom-row">
+					<nav class="main-nav">
+						<ul class="main-list">
+							<li>
+								<a href="#">Selected collection</a>
+							</li>
+							<li>
+								<a href="#">New arrivals</a>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">Single malt scotch</a>
+								<div class="main-dropdown">
+									<div class="main-dropdown__row">
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Category 1</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Most popular</a></li>
+												<li><a href="#">New arrivals</a></li>
+												<li><a href="#">Closed Distilleries</a></li>
+												<li><a href="#">Cask strength</a></li>
+												<li><a href="#">Single Cask</a></li>
+												<li><a href="#">Miniatures</a></li>
+												<li><a href="#">Old and Rare</a></li>
+												<li><a href="#">Collectable Bottles</a></li>
+												<li><a href="#">Gift bottles & Sets</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Region</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li><a href="#">Island</a></li>
+												<li><a href="#">Lowland</a></li>
+												<li><a href="#">Campbeltown</a></li>
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Distillery</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Aberfeldy</a></li>
+												<li><a href="#">Aberlour</a></li>
+												<li><a href="#">Auchentoshan</a></li>
+												<li><a href="#">Balvenie</a></li>
+												<li><a href="#">Bowmore</a></li>
+												<li><a href="#">Dalmore</a></li>
+												<li><a href="#">Glenfarclas</a></li>
+												<li><a href="#">Glenfiddich</a></li>
+												<li><a href="#">Glenturret</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Age</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">No age</a></li>
+												<li><a href="#">10 ></a></li>
+												<li><a href="#">10-15</a></li>
+												<li><a href="#">15-20</a></li>
+												<li><a href="#">20-25</a></li>
+												<li><a href="#">25-30</a></li>
+												<li><a href="#">30-50</a></li>
+												<li><a href="#">Over 50</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Vintage</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">2015 <</a></li>
+												<li><a href="#">2010-2015</a></li>
+												<li><a href="#">2005-2010</a></li>
+												<li><a href="#">2000-2005</a></li>
+												<li><a href="#">1995-2000</a></li>
+												<li><a href="#">1990-1995</a></li>
+												<li><a href="#">1985-1990</a></li>
+												<li><a href="#">1970-1985</a></li>
+												<li><a href="#">1940-1970</a></li>
+												<li><a href="#">1940 ></a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Price</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Lower 5000</a></li>
+												<li><a href="#">5000-10000</a></li>
+												<li><a href="#">1000-15000</a></li>
+												<li><a href="#">15000-30000</a></li>
+												<li><a href="#">30000-50000</a></li>
+												<li><a href="#">50000-100000</a></li>
+												<li><a href="#">Over 100000</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="main-list__overlay"></div>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">World Whisky</a>
+								<div class="main-dropdown">
+									<div class="main-dropdown__row">
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Category 2</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Most popular</a></li>
+												<li><a href="#">New arrivals</a></li>
+												<li><a href="#">Closed Distilleries</a></li>
+												<li><a href="#">Cask strength</a></li>
+												<li><a href="#">Single Cask</a></li>
+												<li><a href="#">Miniatures</a></li>
+												<li><a href="#">Old and Rare</a></li>
+												<li><a href="#">Collectable Bottles</a></li>
+												<li><a href="#">Gift bottles & Sets</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Region</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li><a href="#">Island</a></li>
+												<li><a href="#">Lowland</a></li>
+												<li><a href="#">Campbeltown</a></li>
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Distillery</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Aberfeldy</a></li>
+												<li><a href="#">Aberlour</a></li>
+												<li><a href="#">Auchentoshan</a></li>
+												<li><a href="#">Balvenie</a></li>
+												<li><a href="#">Bowmore</a></li>
+												<li><a href="#">Dalmore</a></li>
+												<li><a href="#">Glenfarclas</a></li>
+												<li><a href="#">Glenfiddich</a></li>
+												<li><a href="#">Glenturret</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Age</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">No age</a></li>
+												<li><a href="#">10 ></a></li>
+												<li><a href="#">10-15</a></li>
+												<li><a href="#">15-20</a></li>
+												<li><a href="#">20-25</a></li>
+												<li><a href="#">25-30</a></li>
+												<li><a href="#">30-50</a></li>
+												<li><a href="#">Over 50</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Vintage</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">2015 <</a></li>
+												<li><a href="#">2010-2015</a></li>
+												<li><a href="#">2005-2010</a></li>
+												<li><a href="#">2000-2005</a></li>
+												<li><a href="#">1995-2000</a></li>
+												<li><a href="#">1990-1995</a></li>
+												<li><a href="#">1985-1990</a></li>
+												<li><a href="#">1970-1985</a></li>
+												<li><a href="#">1940-1970</a></li>
+												<li><a href="#">1940 ></a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Price</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Lower 5000</a></li>
+												<li><a href="#">5000-10000</a></li>
+												<li><a href="#">1000-15000</a></li>
+												<li><a href="#">15000-30000</a></li>
+												<li><a href="#">30000-50000</a></li>
+												<li><a href="#">50000-100000</a></li>
+												<li><a href="#">Over 100000</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="main-list__overlay"></div>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">World spirits</a>
+								<div class="main-dropdown">
+									<div class="main-dropdown__row">
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Category 3</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Most popular</a></li>
+												<li><a href="#">New arrivals</a></li>
+												<li><a href="#">Closed Distilleries</a></li>
+												<li><a href="#">Cask strength</a></li>
+												<li><a href="#">Single Cask</a></li>
+												<li><a href="#">Miniatures</a></li>
+												<li><a href="#">Old and Rare</a></li>
+												<li><a href="#">Collectable Bottles</a></li>
+												<li><a href="#">Gift bottles & Sets</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Region</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li><a href="#">Island</a></li>
+												<li><a href="#">Lowland</a></li>
+												<li><a href="#">Campbeltown</a></li>
+												<li><a href="#">Speyside</a></li>
+												<li><a href="#">Highland</a></li>
+												<li><a href="#">Islay</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Distillery</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Aberfeldy</a></li>
+												<li><a href="#">Aberlour</a></li>
+												<li><a href="#">Auchentoshan</a></li>
+												<li><a href="#">Balvenie</a></li>
+												<li><a href="#">Bowmore</a></li>
+												<li><a href="#">Dalmore</a></li>
+												<li><a href="#">Glenfarclas</a></li>
+												<li><a href="#">Glenfiddich</a></li>
+												<li><a href="#">Glenturret</a></li>
+												<li class="main-dropdown__show"><a href="#">Show all..</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Age</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">No age</a></li>
+												<li><a href="#">10 ></a></li>
+												<li><a href="#">10-15</a></li>
+												<li><a href="#">15-20</a></li>
+												<li><a href="#">20-25</a></li>
+												<li><a href="#">25-30</a></li>
+												<li><a href="#">30-50</a></li>
+												<li><a href="#">Over 50</a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Vintage</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">2015 <</a></li>
+												<li><a href="#">2010-2015</a></li>
+												<li><a href="#">2005-2010</a></li>
+												<li><a href="#">2000-2005</a></li>
+												<li><a href="#">1995-2000</a></li>
+												<li><a href="#">1990-1995</a></li>
+												<li><a href="#">1985-1990</a></li>
+												<li><a href="#">1970-1985</a></li>
+												<li><a href="#">1940-1970</a></li>
+												<li><a href="#">1940 ></a></li>
+											</ul>
+										</div>
+										<div class="main-dropdown__item">
+											<div class="main-dropdown__head">Price</div>
+											<ul class="main-dropdown__list">
+												<li><a href="#">Lower 5000</a></li>
+												<li><a href="#">5000-10000</a></li>
+												<li><a href="#">1000-15000</a></li>
+												<li><a href="#">15000-30000</a></li>
+												<li><a href="#">30000-50000</a></li>
+												<li><a href="#">50000-100000</a></li>
+												<li><a href="#">Over 100000</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="main-list__overlay"></div>
+							</li>
+						</ul>
+					</nav>
+					<div class="search-wrap">
+						<div class="search">
+							<form action="/" class="search__form">
+								<input type="text" class="search__input" placeholder="Search ...">
+								<button class="search__button search__button-loop">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><g/><g transform="rotate(135.3 7.5 8)"><path fill="#a09b82" d="M11.632 7.671a3.96 3.96 0 1 1-7.922 0 3.96 3.96 0 0 1 7.922 0zM7.672 2.25a5.421 5.421 0 1 0 0 10.843 5.421 5.421 0 0 0 0-10.843z"/></g><g><path fill="#a09b82" d="M10.773 10.806c.287-.283.688-.342.897-.132l2.976 3.008c.209.21.145.612-.141.895-.287.284-.688.343-.897.132l-2.976-3.008c-.209-.21-.145-.611.141-.895z"/></g></g></g></svg>
+								</button>
+							</form>
+							<div class="search__dropdown">
+								<div class="search__dropdown-main">
+									<a href="#" class="search__dropdown-main-row">
+										<div class="search__dropdown-main-text"><span>Whiskey Jack</span> Deniels</div>
+										<div class="search__dropdown-main-subtext">in Selected collection</div>
+									</a>
+									<a href="#" class="search__dropdown-main-row">
+										<div class="search__dropdown-main-text"><span>Whiskey Jack </span> Johnson Ehite</div>
+										<div class="search__dropdown-main-subtext">in Single malt scotch</div>
+									</a>
+									<a href="#" class="search__dropdown-main-row">
+										<div class="search__dropdown-main-text"><span>Whiskey Jack </span> Rossignoly</div>
+										<div class="search__dropdown-main-subtext">in New arrivals</div>
+									</a>
+									<a href="#" class="search__dropdown-main-row">
+										<div class="search__dropdown-main-text"><span>Whiskey Jack</span> United Kingdom</div>
+										<div class="search__dropdown-main-subtext">in Selected collection</div>
+									</a>
+								</div>
+								<div class="search__dropdown-table">
+									<a href="#" class="search__dropdown-table-row">
+										<div class="search__dropdown-table-img">
+											<img src="img/search-icon-1.png" alt="alt">
+										</div>
+										<div class="search__dropdown-table-content">
+											<div class="search__dropdown-table-name">The Loch Fyne Aultmore12 Year Old.</div>
+											<div class="search__dropdown-table-volume">0,75l</div>
+										</div>
+										<div class="search__dropdown-table-final">
+											<div class="search__dropdown-table-price">€ 453.99</div>
+											<div class="search__dropdown-table-status">In stock</div>
+										</div>
+									</a>
+									<a href="#" class="search__dropdown-table-row">
+										<div class="search__dropdown-table-img">
+											<img src="img/search-icon-2.png" alt="alt">
+										</div>
+										<div class="search__dropdown-table-content">
+											<div class="search__dropdown-table-name">The Loch Fyne Aultmore12 Year Old.</div>
+											<div class="search__dropdown-table-volume">0,75l</div>
+										</div>
+										<div class="search__dropdown-table-final">
+											<div class="search__dropdown-table-price">€ 78.99</div>
+											<div class="search__dropdown-table-status">In stock</div>
+										</div>
+									</a>
+									<a href="#" class="search__dropdown-table-row">
+										<div class="search__dropdown-table-img">
+											<img src="img/search-icon-3.png" alt="alt">
+										</div>
+										<div class="search__dropdown-table-content">
+											<div class="search__dropdown-table-name">The Loch Fyne Aultmore12 Year Old.</div>
+											<div class="search__dropdown-table-volume">0,75l</div>
+										</div>
+										<div class="search__dropdown-table-final">
+											<div class="search__dropdown-table-price">€ 236.99</div>
+											<div class="search__dropdown-table-status">In stock</div>
+										</div>
+									</a>
+								</div>
+								<a href="#" class="search__dropdown-result">Show all results</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- HEADER END -->
+
+	<!-- MAIN CONTENT START -->
+
+	<main class="main">
+		<section class="content">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+				    <ol class="breadcrumb">
+				        <li class="breadcrumb-item"><a href="#">Home</a></li>
+				        <li class="breadcrumb-item active" aria-current="page">Selected collection</li>
+				    </ol>
+				</nav>
+				<div class="c-head">
+					<h1 class="h1">Storage of the Collection</h1>
+				</div>
+				<div class="c-content">
+					<div class="c-content__container tl-center">
+						<div class="c-content__block c-content__header">
+							<h2>Storage of your whiskey</h2>
+							<h3>We are here to help. Our motto is 'Unlocking the mystery of whisky'. We un-complicate the apparently complicated. We speak in plain language and our service is legendary.</h3>
+							<p>With a selection of more than 1,000 whiskies including single malt Scotch whisky, rare whisky, exclusives and a large range of whisky gifts, there's something for everyone at The Whisky Shop. With our new daily whisky auctions, you can buy or sell rare and collectable whiskies with confidence and ease.</p>
+						</div>
+					</div>
+					<div class="c-content__container c-content__container--image">
+						<div class="c-content__image">
+							<img src="img/inner-3.jpg" alt="alt">
+							<div class="c-content__image-text tl-center">With a selection of more than 1,000 whiskies including single malt Scotch whisky, rare whisky, exclusives and a large range of whisky gifts, there's something for everyone at The Whisky Shop.</div>
+						</div>
+					</div>
+					<div class="c-content__container tl-center">
+						<div class="c-content__block">
+							<h4>Customers a unique shopping experience</h4>
+							<div class="row">
+								<div class="grid-md-6">
+									<ul>
+										<li>Exercitation excepteur enim tempor incididunt</li>
+										<li>Lorem id in sunt aute consectetur Lorem</li>
+										<li>Anim aliqua commodo eiusmod nulla velit eiusmod</li>
+										<li>Pariatur sint commodo eiusmod Lorem</li>
+										<li>Mollit veniam deserunt non dolor in sunt</li>
+									</ul>
+								</div>
+								<div class="grid-md-6">
+									<ul>
+										<li>Exercitation excepteur enim tempor incididunt</li>
+										<li>Lorem id in sunt aute consectetur Lorem</li>
+										<li>Anim aliqua commodo eiusmod nulla velit eiusmod</li>
+										<li>Pariatur sint commodo eiusmod Lorem</li>
+										<li>Mollit veniam deserunt non dolor in sunt</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="c-content__block">
+							<h3>The quality of the pure Scottish water is important</h3>
+							<p>The ground down malt, which is called 'grist', is now added to warm water to begin the extraction of the soluble sugars. The water is normally from a pure, reliable, local source - this is why most distilleries around the world are next to a river or lake. The character of this water can influence the final spirit as it can contain minerals from passing over or though granite, peat or other rock. The liquid combination of malt and water is called the 'mash'. It is put into a large vessel called a mash tun and stirred for several hours.</p>
+							<p>During this process, the sugars in the malt dissolve and these are drawn off through the bottom of the mash tun. The resulting liquid is called 'wort'. This process is normally carried out three times with the water temperature being increased each time to extract the maximum amount of sugar. Only wort from the first two times is used. The third lot is put back into the next batch of new grist. Any residue, such as husks, is called 'draff'. This is collected and used in the production of farm feed.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="get">
+			<div class="container">
+				<div class="get__header">
+					<h3 class="h3">We can storage your whiskey bottles</h3>
+					<div class="dark-gray">Contact us for a free quote, or other help</div>
+				</div>
+				<form action="/" class="get__form form">
+					<div class="row">
+						<div class="grid-md-4">
+							<div class="form__row">
+								<input type="text" placeholder="First name" class="form__input form__input--large">
+							</div>
+						</div>
+						<div class="grid-md-4">
+							<div class="form__row">
+								<input type="text" placeholder="Last Name" class="form__input form__input--large">
+							</div>
+						</div>
+						<div class="grid-md-4">
+							<div class="form__row">
+								<input type="email" placeholder="Email" class="form__input form__input--large">
+							</div>
+						</div>
+						<div class="grid-12">
+							<div class="form__row">
+								<textarea class="form__textarea form__textarea--large" placeholder="Your message..."></textarea>
+							</div>
+						</div>
+						<div class="grid-12">
+							<div class="form__row">
+								<div class="form__file">
+									<input type="file" id="file">
+									<label for="file">+ Add file</label>
+								</div>
+							</div>
+						</div>
+						<div class="grid-12">
+							<div class="flex flex--center flex--between">
+								<div class="g-recaptcha" data-sitekey="6LdYs8kUAAAAAMPPEz8ZHcau8oDbiTWED0SQmgnx"></div>
+								<button class="btn btn--red btn--large">Send message</button>
+							</div>
+						</div>
+						<div class="grid-12">
+							<div class="form__row">
+								<div class="dark-gray tl-right">* - Required fields</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="container">
+				<div class="subscribe__row">
+					<div class="subscribe__header">
+						<h4 class="h4">Subscribe to our Newsletter</h4>
+						<div class="subscribe__header-text">To be updated with all the latest products</div>
+					</div>
+					<form action="/" class="subscribe__form form">
+						<div class="subscribe__form-row">
+							<div class="rel">
+								<svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><g/><g><path fill="#a09b82" d="M13.337 3.333a.67.67 0 0 1 .666.667v8a.67.67 0 0 1-.666.667H2.67A.67.67 0 0 1 2.003 12V4a.67.67 0 0 1 .667-.667zM.67 12c0 1.101.898 2 2 2h10.667c1.101 0 2-.898 2-2V4c0-1.102-.899-2-2-2H2.67c-1.102 0-2 .898-2 2z"/></g><g><path fill="#a09b82" d="M.79 3.614a.667.667 0 0 1 .929-.163L8.003 7.85l6.285-4.4a.667.667 0 0 1 .764 1.093L8.386 9.21a.667.667 0 0 1-.765 0L.954 4.543a.667.667 0 0 1-.163-.929z"/></g></g></g></svg>
+								<input type="text" class="form__input form__input--icon" placeholder="Placeholder">
+							</div>
+							<button class="btn btn--medium btn--red transparent">Surscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- MAIN CONTENT  END -->
+
+	<!-- FOOTER START -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__top-row">
+					<div class="footer__top-item">
+						<div class="footer__top-item-block">
+							<ul class="footer__top-list footer__top-list--large">
+								<li><a href="#">Partners</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Bonus club</a></li>
+								<li><a href="#">Contacts</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__top-item">
+						<div class="footer__top-item-block">
+							<div class="footer__top-item-head">Delivery</div>
+							<ul class="footer__top-list">
+								<li><a href="#">Charges</a></li>
+								<li><a href="#">Insurance</a></li>
+								<li><a href="#">Customs</a></li>
+								<li><a href="#">Returns & cancellation</a></li>
+								<li><a href="#">Damaged & wrong item</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__top-item">
+						<div class="footer__top-item-block">
+							<div class="footer__top-item-head">Payments</div>
+							<ul class="footer__top-list">
+								<li><a href="#">Placing order</a></li>
+								<li><a href="#">Payment options</a></li>
+								<li><a href="#">Security & privacy</a></li>
+							</ul>
+						</div>
+						<div class="footer__top-item-block">
+							<div class="footer__top-item-head">Privacy policy</div>
+							<ul class="footer__top-list">
+								<li><a href="#">Terms & conditions</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__top-item">
+						<div class="footer__top-item-block">
+							<div class="footer__top-item-head">Contact us</div>
+							<div class="footer__top-contacts">
+								<a href="tel:380664557056" class="footer__top-phone">+38 066 455-70-56</a>
+								<a href="tel:380448967056" class="footer__top-phone">+38 044 896-70-56</a>
+							</div>
+						</div>
+						<div class="footer__top-item-block">
+							<div class="footer__top-item-head">Connect with us</div>
+							<ul class="socials">
+								<li>
+									<a href="#" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><g><g><path fill="#a09b82" d="M6 6h3v3H6v7H3V9H0V6h3V4.745c0-1.189.374-2.691 1.118-3.512C4.862.41 5.791 0 6.904 0H9v3H6.9c-.498 0-.9.402-.9.899z"/></g></g></svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><g><g><path fill="#a09b82" d="M15.891 3.013c.808-.496 1.343-1.173 1.605-2.034-.738.4-1.53.69-2.351.861-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388A3.623 3.623 0 0 0 3.68 9.509c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841.62.47 1.374.731 2.152.743C4.148 13.173 2.625 13.69.902 13.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.787 7.787 0 0 0 1.84-1.921 8.143 8.143 0 0 1-2.11.593z"/></g></g></svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g><g><g/><g><path fill="#a09b82" d="M3 4H0v10h3zm11 4.353c0-1.351-.317-2.313-.954-3.03-.633-.716-1.462-1.001-2.487-1.001C9.211 4.322 8.228 5 7.613 6h-.062l-.183-2H5c.04 1 0 10 0 10h3V7.738c.248-.777.742-1.165 1.521-1.165.983 0 1.479.693 1.479 2.085V14h3z"/></g><g><path fill="#a09b82" d="M1.5 3c.856 0 1.55-.672 1.55-1.5S2.356 0 1.5 0C.644 0-.05.672-.05 1.5S.644 3 1.5 3z"/></g></g></g></svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><g/><g><g><path fill="#a09b82" d="M15.368 5.786a1.158 1.158 0 1 0 0-2.316 1.158 1.158 0 0 0 0 2.316z"/></g><g><g><path fill="#a09b82" d="M14.316 0C17.368 0 20 2.526 20 5.684v8.632A5.66 5.66 0 0 1 14.316 20H5.684A5.66 5.66 0 0 1 0 14.316V5.684A5.66 5.66 0 0 1 5.684 0zm3.894 14.316V5.684c0-2.21-1.789-3.895-3.894-3.895H5.684A3.886 3.886 0 0 0 1.79 5.684v8.632c0 2.21 1.79 3.894 3.895 3.894h8.526c2.211 0 3.895-1.789 3.895-3.894z"/></g><g><path fill="#a09b82" d="M15.156 9.898a5.166 5.166 0 0 1-5.158 5.158A5.166 5.166 0 0 1 4.84 9.898 5.166 5.166 0 0 1 9.998 4.74a5.166 5.166 0 0 1 5.158 5.158zm-1.79.105c0-1.895-1.473-3.368-3.368-3.368-1.895 0-3.369 1.473-3.369 3.368 0 1.895 1.474 3.369 3.369 3.369 1.895 0 3.368-1.474 3.368-3.369z"/></g></g></g></g></g></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-row">
+					<div class="footer__bottom-info">
+						<div class="footer__bottom-logo">
+							<img src="img/logo-footer.svg" alt="alt">
+						</div>
+						<div class="copyright">
+							<span>© ООО «Whisky World» 2002—2019. All rights reserved.</span>
+							<span>The indicated value of the goods and the conditions for their acquisition are valid at the current date.</span>
+						 </div>
+					</div>
+					<div class="footer__bottom-payments">
+						<img src="img/payment-1.svg" alt="alt">
+						<img src="img/payment-2.svg" alt="alt">
+						<img src="img/payment-3.svg" alt="alt">
+						<img src="img/payment-4.svg" alt="alt">
+						<img src="img/payment-5.svg" alt="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- FOOTER END -->
+
+
+	<!-- COMPONENTS -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>
